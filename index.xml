@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo blog First</title>
+    <link>https://stu.github.io/</link>
+    <description>Recent content on Hugo blog First</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 20:28:56 +0800</lastBuildDate><atom:link href="https://stu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文字風格設計詠咒寶典001</title>
+      <link>https://stu.github.io/drafts/my-drafts/</link>
+      <pubDate>Thu, 23 Mar 2023 20:28:56 +0800</pubDate>
+      
+      <guid>https://stu.github.io/drafts/my-drafts/</guid>
+      <description>這一篇是第一篇文章</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://stu.github.io/2023/03/my-first-post/</link>
+      <pubDate>Thu, 23 Mar 2023 20:17:38 +0800</pubDate>
+      
+      <guid>https://stu.github.io/2023/03/my-first-post/</guid>
+      <description>This is a custom summary and does &lt;em&gt;not&lt;/em&gt; appear in the post.</description>
+    </item>
+    
+  </channel>
+</rss>
