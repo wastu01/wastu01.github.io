@@ -2,24 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stu.github.io/drafts/</loc>
-    <lastmod>2023-03-23T20:28:56+08:00</lastmod>
-  </url><url>
-    <loc>https://stu.github.io/</loc>
-    <lastmod>2023-03-23T20:28:56+08:00</lastmod>
-  </url><url>
-    <loc>https://stu.github.io/drafts/my-drafts/</loc>
-    <lastmod>2023-03-23T20:28:56+08:00</lastmod>
-  </url><url>
-    <loc>https://stu.github.io/2023/03/my-first-post/</loc>
-    <lastmod>2023-03-23T20:17:38+08:00</lastmod>
-  </url><url>
-    <loc>https://stu.github.io/posts/</loc>
-    <lastmod>2023-03-23T20:17:38+08:00</lastmod>
-  </url><url>
     <loc>https://stu.github.io/archives/</loc>
   </url><url>
     <loc>https://stu.github.io/categories/</loc>
+  </url><url>
+    <loc>https://stu.github.io/</loc>
   </url><url>
     <loc>https://stu.github.io/tags/</loc>
   </url>
