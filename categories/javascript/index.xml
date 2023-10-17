@@ -1,3 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on Wang's Blog</title><link>/categories/javascript/</link><description>Recent content in Javascript on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>/article/openstreetmap-leaflet-map/</guid><description>製作網頁地圖 Demo： https://github.com/wastu01/leaflet
-1 2 3 &amp;lt;script&amp;gt; alert(document.cookie); &amp;lt;/script&amp;gt; 參考資料 https://leafletjs.com
-OSM + Leaflet 學習筆記 系列文</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on Wang's Blog</title><link>https://wastu01.github.io/categories/javascript/</link><description>Recent content in Javascript on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>https://wastu01.github.io/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/openstreetmap-leaflet-map/</guid><description>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png" alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化" />&lt;h1 id="製作網頁地圖">製作網頁地圖&lt;/h1>
+&lt;h2 id="demo">Demo：&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/wastu01/leaflet" target="_blank" rel="noopener"
+>https://github.com/wastu01/leaflet&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">alert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">cookie&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://leafletjs.com" target="_blank" rel="noopener"
+>https://leafletjs.com&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.letswrite.tw/leaflet-osm-basic" target="_blank" rel="noopener"
+>OSM + Leaflet 學習筆記 系列文&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/rick.gif"
+width="360"
+height="308"
+srcset="https://wastu01.github.io/article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_480x0_resize_box_1.gif 480w, https://wastu01.github.io/article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_1024x0_resize_box_1.gif 1024w"
+loading="lazy"
+alt="Photo by Rick"
+class="gallery-image"
+data-flex-grow="116"
+data-flex-basis="280px"
+>&lt;/p></description></item></channel></rss>
