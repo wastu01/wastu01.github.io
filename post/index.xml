@@ -1,7 +1,340 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Wang's Blog</title><link>https://wastu01.github.io/post/</link><description>Recent content in Posts on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>https://wastu01.github.io/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/openstreetmap-leaflet-map/</guid><description>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png" alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化" />&lt;h1 id="製作網頁地圖">製作網頁地圖&lt;/h1>
-&lt;h2 id="demo">Demo：&lt;/h2>
-&lt;p>&lt;a class="link" href="https://github.com/wastu01/leaflet" target="_blank" rel="noopener"
->https://github.com/wastu01/leaflet&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Wang's Blog</title><link>https://wastu01.github.io/post/</link><description>Recent content in Posts on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Canva 魔法媒體工具 文字生成影片 Runway</title><link>https://wastu01.github.io/article/canva-magic/</link><pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/canva-magic/</guid><description>&lt;img src="https://wastu01.github.io/article/canva-magic/Canva-text-to-video.png" alt="Featured image of post Canva 魔法媒體工具 文字生成影片 Runway" />&lt;h1 id="canva-魔法媒體工具-文字生成影片-runway">Canva 魔法媒體工具 文字生成影片 Runway&lt;/h1>
+&lt;p>Canva 推出新的影片生成工具： Magic Studio&lt;/p>
+&lt;p>將 Gen-2 整合到 Canva 的 Magic Media App&lt;/p>
+&lt;p>允許使用者在欄位中輸入文字生成長達 4 秒的影片&lt;/p>
+&lt;p>目前僅限 Canvas 付費用戶使用&lt;/p>
+&lt;hr>
+&lt;p>以下是文件示範展示：&lt;/p>
+&lt;h2 id="魔法文案工具">魔法文案工具&lt;/h2>
+&lt;h2 id="一鍵生成文案">一鍵生成文案&lt;/h2>
+&lt;iframe loading="lazy" style="position: relative; width: 100%; height: 600px; max-height: 80vh; border: none; padding: 0; margin: 0; overflow: hidden;"
+src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+&lt;/iframe>
+AI 生成設計的文案 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?utm_content=DAFxDP6jH9M&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener">文案舉例說明並附上AI生成影片&lt;/a>
+&lt;h2 id="canva-新功能實測簡報展示httpswwwcanvacomdesigndafxnw2-xsm5axcu5tefpkuxeiyghvnrgwatchutm_contentdafxnw2-xsmutm_campaigndesignshareutm_mediumlinkutm_sourcepublishsharelink">&lt;a class="link" href="https://www.canva.com/design/DAFxNW2-XsM/5axcu5tEFPKUxeiYghvnRg/watch?utm_content=DAFxNW2-XsM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=publishsharelink" target="_blank" rel="noopener"
+>canva 新功能實測簡報展示：&lt;/a>&lt;/h2>
+&lt;div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;">
+&lt;iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxNW2-XsM&amp;#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+&lt;/iframe>
+&lt;/div>
+使用 Canva 設計製作 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxNW2-XsM&amp;#x2F;watch?utm_content=DAFxNW2-XsM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener">影片主題：使用 Canva 文字生成影片&lt;/a>
+&lt;hr>
+&lt;p>歡迎點擊前往觀看更多&lt;/p>
+&lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+>https://hackmd.io/@DCT&lt;/a>&lt;/p>
+&lt;p>My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>https://medium.com/mr-wang&lt;/a>&lt;/p>
+&lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+>https://wastu01.github.io/&lt;/a>&lt;/p>
+&lt;hr></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
+&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測&lt;/h1>
+&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
+&lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
+>https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a>&lt;/p>
+&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片&lt;/h2>
+&lt;p>提示詞：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Cinematic render of an intense action scene in a city at night, featuring a dark-colored vintage Ford Mustang speeding on a damp road, surrounded by fiery explosions, haze, and dramatic teal &amp;amp; orange lighting.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果圖：&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HyOtCkK-p.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>提示詞：生成一張 1280x640 比例的 social preview 有關於 網頁版本 Apple 風格的計算機，圖片仿造蘋果公司的風格&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Digital representation of a web calculator, imbued with Apple design principles, juxtaposed against a background evocative of Apple renowned product introduction visuals.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果圖：&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/Sy3IC_KZ6.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HJzCJYt-a.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="分析圖片">分析圖片&lt;/h2>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>這是一個計算器的界面設計。以下是該界面的特點:&lt;/p>
+&lt;ol>
+&lt;li>顏色配色: 主要以深色背景為主，搭配明亮的按鈕顏色。&lt;/li>
+&lt;li>視窗左上角: 有三個顏色點，通常表示應用程式的最小化、最大化和關閉按鈕。&lt;/li>
+&lt;li>數字按鈕: 從0到9，供使用者輸入數字。&lt;/li>
+&lt;li>運算子按鈕: 有加(+)、減(-)、乘(x)、除(÷)以及其他功能鍵，如正負號切換(+/-)、百分比(%)等。&lt;/li>
+&lt;li>控制按鈕: 有「AC」按鈕，通常用於清除輸入或結果。&lt;/li>
+&lt;li>螢幕顯示: 目前為0，這是計算器的初始值。&lt;/li>
+&lt;/ol>
+&lt;p>整體來說，這個設計相當簡潔，主要功能都能夠快速識別，應該很容易上手使用。&lt;/p>
+&lt;h2 id="製作網頁">製作網頁&lt;/h2>
+&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
+&lt;hr>
+&lt;p>請幫我以此為樣式製作出網頁，並能夠點擊進行運算&lt;/p>
+&lt;p>1.一個外觀類似Apple計算機的HTML介面。&lt;/p>
+&lt;p>2.使用CSS來設計計算機的外觀，使其看起來像Apple的計算機。&lt;/p>
+&lt;p>3.使用JavaScript處理按鈕點擊事件以實現計算功能，並將計算結果顯示在計算機螢幕上。&lt;/p>
+&lt;p>4.包括外部的CSS和JavaScript文件，以確保代碼結構整潔。&lt;/p>
+&lt;p>我們先處理外觀介面的部分，計算的功能稍待再執行&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>iOS-Calculator-Web&lt;/strong>&lt;/p>
+&lt;p>網頁版計算機，模仿 iOS裝置計算機外觀的介面，使用HTML與ChatGPT製作。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/wastu01/iOS-Caculator-Html/main/iOS-Calculator-Web.png"
+loading="lazy"
+alt="網頁版計算機 Caculator"
+>&lt;/p>
+&lt;hr>
+&lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+>https://hackmd.io/@DCT&lt;/a>&lt;/p>
+&lt;p>My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>https://medium.com/mr-wang&lt;/a>&lt;/p>
+&lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+>https://wastu01.github.io/&lt;/a>&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;mark>salamanders&lt;/mark>&lt;/li>
+&lt;/ul></description></item><item><title>2023-10-06-新竹湖口後山祕境-茶香步道</title><link>https://wastu01.github.io/article/aerial-photography-hsinchucity/</link><pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/aerial-photography-hsinchucity/</guid><description>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_8.jpg" alt="Featured image of post 2023-10-06-新竹湖口後山祕境-茶香步道" />&lt;h1 id="地點">地點&lt;/h1>
+&lt;p>湖口&lt;/p>
+&lt;h1 id="簡介">簡介&lt;/h1>
+&lt;p>綠區 綠油油 茶&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_1.jpg"
+width="1479"
+height="1109"
+srcset="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_1_hu6c2fba3ef8b72d688cb73759611c4359_208901_480x0_resize_q75_box.jpg 480w, https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_1_hu6c2fba3ef8b72d688cb73759611c4359_208901_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_2.jpg"
+width="1479"
+height="1109"
+srcset="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_2_hudec685374c71a843b06763e25984c35c_215649_480x0_resize_q75_box.jpg 480w, https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_2_hudec685374c71a843b06763e25984c35c_215649_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_3.jpg"
+width="1479"
+height="1109"
+srcset="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_3_hu18440f5d40d050ead93a18b84b723eca_229970_480x0_resize_q75_box.jpg 480w, https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_3_hu18440f5d40d050ead93a18b84b723eca_229970_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_4.jpg"
+width="1109"
+height="1479"
+srcset="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_4_hu49cc846b27be0330b8b812fe39a48cbc_175408_480x0_resize_q75_box.jpg 480w, https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_4_hu49cc846b27be0330b8b812fe39a48cbc_175408_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="74"
+data-flex-basis="179px"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_5.jpg"
+width="1109"
+height="1479"
+srcset="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_5_hu5c14b29be963c23b8c4a50ba316e7349_113439_480x0_resize_q75_box.jpg 480w, https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_5_hu5c14b29be963c23b8c4a50ba316e7349_113439_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="74"
+data-flex-basis="179px"
+>&lt;/p>
+&lt;h1 id="新聞報導">新聞報導&lt;/h1>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/LEDyCTEHpq4"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h1 id="空拍畫面">空拍畫面&lt;/h1>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/CMYWzP75q_s"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>多媒體創作區</title><link>https://wastu01.github.io/article/my-digital-works-in-youtube/</link><pubDate>Tue, 03 Oct 2023 08:50:29 +0800</pubDate><guid>https://wastu01.github.io/article/my-digital-works-in-youtube/</guid><description>&lt;img src="https://wastu01.github.io/article/my-digital-works-in-youtube/youtube-channel.png" alt="Featured image of post 多媒體創作區" />&lt;p>
+&lt;span class="nowrap">
+&lt;span class="emojify">🔝&lt;/span>
+&lt;/span>
+&lt;h1 id="3d建模">3D建模&lt;/h1>
+&lt;p>&lt;strong>Blender&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.youtube.com/@11305205219/videos" target="_blank" rel="noopener"
+>https://www.youtube.com/@11305205219/videos&lt;/a>&lt;/p>
+&lt;p>&lt;kbd>Behance : &lt;a class="link" href="https://www.behance.net/gallery/96577587/_" target="_blank" rel="noopener"
+>https://www.behance.net/gallery/96577587/_&lt;/a> &lt;/kbd>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/article/my-digital-works-in-youtube/blender-wine-modeling.png"
+width="1920"
+height="1080"
+srcset="https://wastu01.github.io/article/my-digital-works-in-youtube/blender-wine-modeling_hud4c956e6a7e4032dd65a367a51999ce4_532522_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/my-digital-works-in-youtube/blender-wine-modeling_hud4c956e6a7e4032dd65a367a51999ce4_532522_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+>&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>3DSmax&lt;/strong>&lt;/p>
+&lt;p>&lt;kbd>Behance : &lt;a class="link" href="https://www.behance.net/gallery/113360331/Fan-Modeling" target="_blank" rel="noopener"
+>https://www.behance.net/gallery/113360331/Fan-Modeling&lt;/a>&lt;/kbd>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/LLXQANxKF5g"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h1 id="2d動畫">2D動畫&lt;/h1>
+&lt;p>&lt;kbd> 愛死機器人 Remake &lt;/kbd>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VSUGN5chbaA"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;kbd> 校園防毒守門員－國中篇「飲料的誘惑」| 教育部國民及學前教育署 &lt;/kbd>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/MvZiPBP6wYE"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;br>
+&lt;p>2023 更新： 更快的做法是命令 &lt;kbd>ChatGPT&lt;/kbd> 為 &lt;kbd>A.I&lt;/kbd> 程式導師
+提問如何用 &lt;kbd>Python&lt;/kbd> 爬取 PM2.5，(或使用 AutoGPT 設定明確目標執行爬蟲)，接下來剩下來的時間思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;kbd>&lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
+>IFTTT&lt;/a>&lt;/kbd> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
+&lt;p>實際案例應用：
+新竹科學園區空氣品質監測網：
+&lt;a class="link" href="https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx" target="_blank" rel="noopener"
+>https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx&lt;/a>&lt;/p>
+&lt;p>將 &lt;code>json&lt;/code> 剖析用 &lt;a class="link" href="https://developers.google.com/chart?hl=en" target="_blank" rel="noopener"
+>Google Chart&lt;/a> 畫出趨勢圖
+&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96.png"
+width="2788"
+height="1288"
+srcset="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="216"
+data-flex-basis="519px"
+>&lt;/p>
+&lt;p>實際案例教學:
+&lt;a class="link" href="https://yanwei-liu.medium.com/pm2-5%E7%9A%84line%E6%A9%9F%E5%99%A8%E4%BA%BA-%E4%BD%BF%E7%94%A8python-ifttt-%E5%82%B3%E9%80%81%E6%9C%80%E6%96%B0pm2-5%E6%95%B8%E5%80%BC-b5655436363e" target="_blank" rel="noopener"
+>PM2.5 的 Line 機器人：使用 Python + IFTTT 傳送最新 PM2.5 數值&lt;/a>&lt;/p>
+&lt;p>Python 爬取空氣品質指標 ( AQI )：https://steam.oxxostudio.tw/category/python/spider/aqi.html&lt;/p>
+&lt;hr>
+&lt;p>課堂作業：爬取空氣品質 PM2.5 的即時資訊
+抓取政府資料開放平台 &lt;code>JSON&lt;/code> 資料 並做檔案處理&lt;/p>
+&lt;p>2022-04-29 更新：收到環保署資料開放平臺通知為提升 API 介接服務品質，平臺於 111 年 2 月 8 日更版，已更新第 2 版 API 資料介接功能，第 1 版 API 將於 5 月 19 日停止服務，為確保您的使用權益，歡迎至平臺重新註冊申請 API Key。所以有猜到下方 API Key 的可能日後也無法使用囉！&lt;/p>
+&lt;p>2023-08026 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自 112 年 8 月 22 日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺 API 維持新、舊 API URL 平行服務三個月，請於 112 年 11 月 22 日期限前內完成 API URL 更新。（白話文：API URL 規則有更改請更新）&lt;/p>
+&lt;hr>
+&lt;h1 id="執行畫面">執行畫面：&lt;/h1>
+&lt;iframe height="900px" width="100%" src="https://repl.it/@wastu01/PM25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">&lt;/iframe>
+&lt;h2 id="獲得資料方式">獲得資料方式&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>JSON&lt;/code> 格式：requests 獲取資料 python 直接解析&lt;/li>
+&lt;/ul>
+&lt;p>好用外掛工具 (chrome)：&lt;/p>
+&lt;p>查看 Web API json 格式：
+&lt;a class="link" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"
+>https://chrome.google.com/webstore/detail/jsonview/&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>資料格式 : JSON、CSV、XML&lt;/p>
+&lt;p>Web API（Web Application Programming Interface）
+&lt;a class="link" href="https://tw.alphacamp.co/blog/api-introduction-understand-web-api-http-json" target="_blank" rel="noopener"
+>認識 Web API、HTTP 和 JSON 資料交換格式&lt;/a>&lt;/p>
+&lt;h2 id="資訊擷取來源">資訊擷取來源&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://data.gov.tw" target="_blank" rel="noopener"
+>https://data.gov.tw/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/7f812f1495c2457dab774d63ba22ed78.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>後來發現有更好用 最新試行版(已正式上架)的&lt;/p>
+&lt;p>&lt;a class="link" href="https://data.moenv.gov.tw/" target="_blank" rel="noopener"
+>環保署環境資料開放平台開放資料 API&lt;/a>&lt;/p>
+&lt;p>註冊 API Key 後可以篩選更多參數來撈資料&lt;/p>
+&lt;p>要解析的 json 網址：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://data.gov.tw/dataset/40448" target="_blank" rel="noopener"
+>每小時提供各測站之空氣品質指標（AQI）&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener"
+>非公開 API 點擊無效&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>資料集名稱先記好比較快找到&lt;/p>
+&lt;p>&lt;img src="https://data.epa.gov.tw/base/images/access_data_img_zh_02.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>註冊 API 使用說明：
+&lt;a class="link" href="https://data.epa.gov.tw/paradigm" target="_blank" rel="noopener"
+>https://data.epa.gov.tw/paradigm&lt;/a>&lt;/p>
+&lt;h2 id="request-and-json">request and json&lt;/h2>
+&lt;p>透過 &lt;code>json&lt;/code> 回傳的是一個 &lt;code>list&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">requests&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi_url&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=自行註冊&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 環保署環境資料開放平臺 試行版 https://data.epa.gov.tw/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># API 金鑰免費申請 ～&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">requests&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi_url&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">json&lt;/span>&lt;span class="p">()[&lt;/span>&lt;span class="s1">&amp;#39;records&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">status_code&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### 200  正常回傳&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### 404 回傳錯誤&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">response&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="輸出-list">輸出 List&lt;/h2>
+&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/92475ef8e70f465492ae72420bb458e5.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="檔案處理">檔案處理&lt;/h2>
+&lt;p>“r” 唯讀模式&lt;/p>
+&lt;p>“w” 寫入模式（覆寫）&lt;/p>
+&lt;p>“a” 寫入模式（續寫）&lt;/p>
+&lt;p>&lt;code>with open(&amp;quot;data_pm25.txt&amp;quot;, &amp;quot;w&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as file:&lt;/code>&lt;/p>
+&lt;p>再用 for 把資料寫入 file 當中&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -9,9 +342,208 @@
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">alert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">document&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">cookie&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;file.txt&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;w&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;file-write&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
+>輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials-requesting-web-api-edd417a57ba5" target="_blank" rel="noopener"
+>輕鬆學習 Python：透過 API 擷取網站資料&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-bf0648108581" target="_blank" rel="noopener"
+>Python 初學第十二講—檔案處理&lt;/a>&lt;/p>
+&lt;p>補充：ChatGPT 指令大全
+&lt;a class="link" href="https://www.explainthis.io/zh-hant/chatgpt" target="_blank" rel="noopener"
+>https://www.explainthis.io/zh-hant/chatgpt&lt;/a>&lt;/p>
+&lt;p>本篇原始文章：&lt;/p>
+&lt;p>&lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
+>&lt;img src="https://avatars.githubusercontent.com/u/47618277?s=100&amp;amp;v=4"
+loading="lazy"
+alt="AQI"
+>&lt;/a>&lt;/p></description></item><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>https://wastu01.github.io/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/openstreetmap-leaflet-map/</guid><description>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png" alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化" />&lt;h1 id="製作網頁地圖">製作網頁地圖&lt;/h1>
+&lt;h2 id="demo">Demo：&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/wastu01/leaflet" target="_blank" rel="noopener"
+>https://github.com/wastu01/leaflet&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;span class="lnt">59
+&lt;/span>&lt;span class="lnt">60
+&lt;/span>&lt;span class="lnt">61
+&lt;/span>&lt;span class="lnt">62
+&lt;/span>&lt;span class="lnt">63
+&lt;/span>&lt;span class="lnt">64
+&lt;/span>&lt;span class="lnt">65
+&lt;/span>&lt;span class="lnt">66
+&lt;/span>&lt;span class="lnt">67
+&lt;/span>&lt;span class="lnt">68
+&lt;/span>&lt;span class="lnt">69
+&lt;/span>&lt;span class="lnt">70
+&lt;/span>&lt;span class="lnt">71
+&lt;/span>&lt;span class="lnt">72
+&lt;/span>&lt;span class="lnt">73
+&lt;/span>&lt;span class="lnt">74
+&lt;/span>&lt;span class="lnt">75
+&lt;/span>&lt;span class="lnt">76
+&lt;/span>&lt;span class="lnt">77
+&lt;/span>&lt;span class="lnt">78
+&lt;/span>&lt;span class="lnt">79
+&lt;/span>&lt;span class="lnt">80
+&lt;/span>&lt;span class="lnt">81
+&lt;/span>&lt;span class="lnt">82
+&lt;/span>&lt;span class="lnt">83
+&lt;/span>&lt;span class="lnt">84
+&lt;/span>&lt;span class="lnt">85
+&lt;/span>&lt;span class="lnt">86
+&lt;/span>&lt;span class="lnt">87
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">// Original tutorial &amp;amp; code :
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">// https://superplug.in/supermarquee/demo/7
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">// https://www.letswrite.tw/leaflet-osm-basic/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">document.addEventListener(&amp;#39;DOMContentLoaded&amp;#39;, () =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let center = [24.7824571,120.9957021]; // 預設中心點為台北市動物園
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 跟使用者要位置
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> function successGPS(position) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const lat = position.coords.latitude;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const lng = position.coords.longitude;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> center = [lat, lng];
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 接著寫確認了座標後要執行的事
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> triggerLeaflet()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> };
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> function errorGPS() {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> window.alert(&amp;#39;無法判斷您的所在位置，無法使用此功能。預設地點將為 NCHC&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 接著寫使用者「封鎖」位置資訊請求後要執行的事
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> triggerLeaflet()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if(navigator.geolocation) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> navigator.geolocation.getCurrentPosition(successGPS, errorGPS);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> console.log(successGPS);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> } else {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> window.alert(&amp;#39;您的裝置不具備GPS，無法使用此功能&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> // 接著寫使用者裝置不支援位置資訊時要執行的事
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> triggerLeaflet();
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> function triggerLeaflet() {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let zoom = 16; // 0 - 18
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let center = [24.7825236,120.9957928]; // 中心點座標
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let map = L.map(&amp;#39;map&amp;#39;).setView(center,zoom);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> L.tileLayer(&amp;#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&amp;#39;, {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> maxZoom: 18,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> attribution: &amp;#39;&amp;amp;copy; &amp;lt;a href=&amp;#34;http://www.openstreetmap.org/copyright&amp;#34;&amp;gt;OpenStreetMap&amp;lt;/a&amp;gt;&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }).addTo(map);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const marker = L.marker(center, {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> title: &amp;#39;aaaa&amp;#39;, // 跟 &amp;lt;a&amp;gt; 的 title 一樣
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> opacity: 1.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }).addTo(map);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> marker.bindPopup(&amp;#39;&amp;lt;b&amp;gt;Hello Guys !&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;I am in NCHC. &amp;lt;a target=&amp;#34;_blank&amp;#34; title=&amp;#34;另開視窗&amp;#34; href=&amp;#34;https://www.google.com/maps/dir//No.%207,%20R&amp;amp;D%206th%20Rd,%20East%20District,%20Hsinchu%20City,%20300&amp;#34;&amp;gt;click me to here&amp;lt;/a&amp;gt;&amp;#39;).openPopup();
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> marker.bindTooltip(&amp;#34;my tooltip text&amp;#34;, {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> direction: &amp;#39;bottom&amp;#39;, // right、left、top、bottom、center。default: auto
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> sticky: true, // true 跟著滑鼠移動。default: false
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> permanent: false, // 是滑鼠移過才出現，還是一直出現
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> opacity: 1.0
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }).openTooltip();
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const popup = L.popup();
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> function onMapClick(e) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let lat = e.latlng.lat; // 緯度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> let lng = e.latlng.lng; // 經度
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> popup
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .setLatLng(e.latlng)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .setContent(`緯度：${lat}&amp;lt;br/&amp;gt;經度：${lng}`)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> .openOn(map);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> map.on(&amp;#39;click&amp;#39;, onMapClick);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const mySuperMarquee = new SuperMarquee( document.getElementById( &amp;#34;supermarquee&amp;#34; ),{&amp;#34;content&amp;#34; : &amp;#34;國家科學及技術委員會財團法人國家實驗研究院國家高速網路與計算中心&amp;#34;});
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> document.querySelector( &amp;#34;.demo-button-container&amp;#34; ).addEventListener( &amp;#34;click&amp;#34;, e =&amp;gt; {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const { target } = e;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> if ( target.classList.contains( &amp;#34;btn-primary&amp;#34; ) ) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const oldBtn = document.querySelector( &amp;#34;.btn-light&amp;#34; );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> oldBtn.classList.remove( &amp;#34;btn-light&amp;#34; );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> oldBtn.classList.add( &amp;#34;btn-primary&amp;#34; );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> target.classList.remove( &amp;#34;btn-primary&amp;#34; );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> target.classList.add( &amp;#34;btn-light&amp;#34; );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> mySuperMarquee.setScrollSpeed( target.innerHTML.toLowerCase() );
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> });
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">})
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>

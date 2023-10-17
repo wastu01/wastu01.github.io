@@ -1,18 +1,188 @@
-<!doctype html><html lang=zh-tw dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="簡易製作網頁地圖並顯示定位"><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link rel=canonical href=https://wastu01.github.io/article/openstreetmap-leaflet-map/><link rel=stylesheet href=/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css><meta property="og:title" content="OpenStreetMap-Leaflet-網頁地圖視覺化"><meta property="og:description" content="簡易製作網頁地圖並顯示定位"><meta property="og:url" content="https://wastu01.github.io/article/openstreetmap-leaflet-map/"><meta property="og:site_name" content="Wang's Blog"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="leaflet"><meta property="article:tag" content="openstreetmap"><meta property="article:published_time" content="2023-10-02T00:00:00+00:00"><meta property="article:modified_time" content="2023-10-17T14:56:45+00:00"><meta property="og:image" content="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png"><meta name=twitter:site content="@larry113052000"><meta name=twitter:creator content="@larry113052000"><meta name=twitter:title content="OpenStreetMap-Leaflet-網頁地圖視覺化"><meta name=twitter:description content="簡易製作網頁地圖並顯示定位"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png"><link rel="shortcut icon" href=img/favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-69M3QRWRW8"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-69M3QRWRW8",{anonymize_ip:!1})}</script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切換選單>
+<!doctype html><html lang=zh-tw dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="簡易製作網頁地圖並顯示定位"><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link rel=canonical href=https://wastu01.github.io/article/openstreetmap-leaflet-map/><link rel=stylesheet href=/scss/style.min.93ce36651fe1c8f3b0404948aa4590a05da15994ab2de9c7e24c68e67ff97a07.css><meta property="og:title" content="OpenStreetMap-Leaflet-網頁地圖視覺化"><meta property="og:description" content="簡易製作網頁地圖並顯示定位"><meta property="og:url" content="https://wastu01.github.io/article/openstreetmap-leaflet-map/"><meta property="og:site_name" content="Wang's Blog"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Leaflet"><meta property="article:tag" content="Openstreetmap"><meta property="article:published_time" content="2023-10-02T00:00:00+00:00"><meta property="article:modified_time" content="2023-10-17T17:09:01+00:00"><meta property="og:image" content="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png"><meta name=twitter:site content="@larry113052000"><meta name=twitter:creator content="@larry113052000"><meta name=twitter:title content="OpenStreetMap-Leaflet-網頁地圖視覺化"><meta name=twitter:description content="簡易製作網頁地圖並顯示定位"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png"><link rel="shortcut icon" href=img/favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-69M3QRWRW8"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-69M3QRWRW8",{anonymize_ip:!1})}</script><style>:root{--article-font-family:"Noto Sans TC",var(--base-font-family)}</style><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切換選單>
 <span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu004c43e97f67a4499ad68068a5e31fdb_14672_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
-<span class=emoji>🤖</span></figure><div class=site-meta><h1 class=site-name><a href=/>Wang's Blog</a></h1><h2 class=site-description>這是Wa.01的Blog</h2></div></header><ol class=social-menu><li><a href=https://github.com/wastu01 target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.youtube.com/@11305205219/videos target=_blank title=Youtube rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 014-4h12a4 4 0 014 4v8a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M10 9l5 3-5 3z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主頁</span></a></li><li><a href=/%E9%97%9C%E6%96%BC%E6%88%91/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>關於我</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>所有文章</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>文章搜尋</span></a></li><li><a href=/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>社群連結</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>夜晚模式</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目錄</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#demo>Demo：</a></li><li><a href=#參考資料>參考資料</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/article/openstreetmap-leaflet-map/><img src=/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_800x0_resize_box_3.png srcset="/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_800x0_resize_box_3.png 800w, /article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_1600x0_resize_box_3.png 1600w" width=800 height=190 loading=lazy alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化"></a></div><div class=article-details><header class=article-category><a href=/categories/javascript/>Javascript</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/article/openstreetmap-leaflet-map/>OpenStreetMap-Leaflet-網頁地圖視覺化</a></h2><h3 class=article-subtitle>簡易製作網頁地圖並顯示定位</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Oct 02, 2023</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>閱讀時間: 1 分鐘</time></div></footer></div></header><section class=article-content><h1 id=製作網頁地圖>製作網頁地圖</h1><h2 id=demo>Demo：</h2><p><a class=link href=https://github.com/wastu01/leaflet target=_blank rel=noopener>https://github.com/wastu01/leaflet</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-markdown data-lang=markdown><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span>
-</span></span><span class=line><span class=cl>    <span class=nx>alert</span><span class=p>(</span><span class=nb>document</span><span class=p>.</span><span class=nx>cookie</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=參考資料>參考資料</h2><p><a class=link href=https://leafletjs.com target=_blank rel=noopener>https://leafletjs.com</a></p><p><a class=link href=https://www.letswrite.tw/leaflet-osm-basic target=_blank rel=noopener>OSM + Leaflet 學習筆記 系列文</a></p><p><img src=/article/openstreetmap-leaflet-map/rick.gif width=360 height=308 srcset="/article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_480x0_resize_box_1.gif 480w, /article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_1024x0_resize_box_1.gif 1024w" loading=lazy alt="Photo by Rick" class=gallery-image data-flex-grow=116 data-flex-basis=280px></p></section><footer class=article-footer><section class=article-tags><a href=/tags/leaflet/>leaflet</a>
-<a href=/tags/openstreetmap/>openstreetmap</a></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最後更新 Oct 17, 2023 14:56 UTC</span></section></footer></article><script src=https://giscus.app/client.js data-repo=wastu01/Gitalk data-repo-id=R_kgDOKbN6Xw data-category=Announcements data-category-id=DIC_kwDOKbN6X84CZzx5 data-mapping=title data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=en crossorigin=anonymous async></script>
+<span class=emoji>🤖</span></figure><div class=site-meta><h1 class=site-name><a href=/>Wang's Blog</a></h1><h2 class=site-description>這是Wa.01的Blog</h2></div></header><ol class=social-menu><li><a href=https://github.com/wastu01 target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.youtube.com/@11305205219/videos target=_blank title=Youtube rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 014-4h12a4 4 0 014 4v8a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M10 9l5 3-5 3z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主頁</span></a></li><li><a href=/%E9%97%9C%E6%96%BC%E6%88%91/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>關於我</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>所有文章</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>文章搜尋</span></a></li><li><a href=/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>社群連結</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>夜晚模式</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目錄</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#demo>Demo：</a></li><li><a href=#參考資料>參考資料</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/article/openstreetmap-leaflet-map/><img src=/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_800x0_resize_box_3.png srcset="/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_800x0_resize_box_3.png 800w, /article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96_hu56df059e0daf95c54fd81223ff5d553e_281746_1600x0_resize_box_3.png 1600w" width=800 height=190 loading=lazy alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化"></a></div><div class=article-details><header class=article-category><a href=/categories/javascript/ style=background-color:#2a9d8f;color:#fff>Javascript</a>
+<a href=/categories/%E6%B8%AC%E8%A9%A6/>測試</a>
+<a href=/categories/%E7%B6%B2%E9%A0%81/ style=background-color:#2a9d8f;color:#fff>網頁</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/article/openstreetmap-leaflet-map/>OpenStreetMap-Leaflet-網頁地圖視覺化</a></h2><h3 class=article-subtitle>簡易製作網頁地圖並顯示定位</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Oct 02, 2023</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>閱讀時間: 2 分鐘</time></div></footer></div></header><section class=article-content><h1 id=製作網頁地圖>製作網頁地圖</h1><h2 id=demo>Demo：</h2><p><a class=link href=https://github.com/wastu01/leaflet target=_blank rel=noopener>https://github.com/wastu01/leaflet</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span><span class=lnt>74
+</span><span class=lnt>75
+</span><span class=lnt>76
+</span><span class=lnt>77
+</span><span class=lnt>78
+</span><span class=lnt>79
+</span><span class=lnt>80
+</span><span class=lnt>81
+</span><span class=lnt>82
+</span><span class=lnt>83
+</span><span class=lnt>84
+</span><span class=lnt>85
+</span><span class=lnt>86
+</span><span class=lnt>87
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// Original tutorial &amp; code : 
+</span></span><span class=line><span class=cl>// https://superplug.in/supermarquee/demo/7
+</span></span><span class=line><span class=cl>// https://www.letswrite.tw/leaflet-osm-basic/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  let center = [24.7824571,120.9957021]; // 預設中心點為台北市動物園
+</span></span><span class=line><span class=cl>  // 跟使用者要位置
+</span></span><span class=line><span class=cl>  function successGPS(position) {
+</span></span><span class=line><span class=cl>      const lat = position.coords.latitude;
+</span></span><span class=line><span class=cl>      const lng = position.coords.longitude;
+</span></span><span class=line><span class=cl>      center = [lat, lng];
+</span></span><span class=line><span class=cl>      // 接著寫確認了座標後要執行的事
+</span></span><span class=line><span class=cl>      triggerLeaflet()
+</span></span><span class=line><span class=cl>    };
+</span></span><span class=line><span class=cl>    function errorGPS() {
+</span></span><span class=line><span class=cl>      window.alert(&#39;無法判斷您的所在位置，無法使用此功能。預設地點將為 NCHC&#39;);
+</span></span><span class=line><span class=cl>      // 接著寫使用者「封鎖」位置資訊請求後要執行的事
+</span></span><span class=line><span class=cl>      triggerLeaflet()
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>    if(navigator.geolocation) {
+</span></span><span class=line><span class=cl>      navigator.geolocation.getCurrentPosition(successGPS, errorGPS);
+</span></span><span class=line><span class=cl>      console.log(successGPS);
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    } else {
+</span></span><span class=line><span class=cl>      window.alert(&#39;您的裝置不具備GPS，無法使用此功能&#39;);
+</span></span><span class=line><span class=cl>      // 接著寫使用者裝置不支援位置資訊時要執行的事
+</span></span><span class=line><span class=cl>      triggerLeaflet();
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    function triggerLeaflet() {
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>      let zoom = 16; // 0 - 18
+</span></span><span class=line><span class=cl>      let center = [24.7825236,120.9957928]; // 中心點座標
+</span></span><span class=line><span class=cl>      let map = L.map(&#39;map&#39;).setView(center,zoom);
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>        L.tileLayer(&#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, {
+</span></span><span class=line><span class=cl>            maxZoom: 18,
+</span></span><span class=line><span class=cl>            attribution: &#39;&amp;copy; &lt;a href=&#34;http://www.openstreetmap.org/copyright&#34;&gt;OpenStreetMap&lt;/a&gt;&#39;
+</span></span><span class=line><span class=cl>        }).addTo(map);
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>      const marker = L.marker(center, {
+</span></span><span class=line><span class=cl>          title: &#39;aaaa&#39;, // 跟 &lt;a&gt; 的 title 一樣
+</span></span><span class=line><span class=cl>          opacity: 1.0
+</span></span><span class=line><span class=cl>        }).addTo(map);
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>        marker.bindPopup(&#39;&lt;b&gt;Hello Guys !&lt;/b&gt;&lt;br&gt;I am in NCHC. &lt;a target=&#34;_blank&#34; title=&#34;另開視窗&#34; href=&#34;https://www.google.com/maps/dir//No.%207,%20R&amp;D%206th%20Rd,%20East%20District,%20Hsinchu%20City,%20300&#34;&gt;click me to here&lt;/a&gt;&#39;).openPopup();
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        marker.bindTooltip(&#34;my tooltip text&#34;, {
+</span></span><span class=line><span class=cl>          direction: &#39;bottom&#39;, // right、left、top、bottom、center。default: auto
+</span></span><span class=line><span class=cl>          sticky: true, // true 跟著滑鼠移動。default: false
+</span></span><span class=line><span class=cl>          permanent: false, // 是滑鼠移過才出現，還是一直出現
+</span></span><span class=line><span class=cl>          opacity: 1.0
+</span></span><span class=line><span class=cl>        }).openTooltip();
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>        const popup = L.popup();
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>        function onMapClick(e) {
+</span></span><span class=line><span class=cl>          let lat = e.latlng.lat; // 緯度
+</span></span><span class=line><span class=cl>          let lng = e.latlng.lng; // 經度
+</span></span><span class=line><span class=cl>          popup
+</span></span><span class=line><span class=cl>            .setLatLng(e.latlng)
+</span></span><span class=line><span class=cl>            .setContent(`緯度：${lat}&lt;br/&gt;經度：${lng}`)
+</span></span><span class=line><span class=cl>            .openOn(map);
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>        map.on(&#39;click&#39;, onMapClick);
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    const mySuperMarquee = new SuperMarquee( document.getElementById( &#34;supermarquee&#34; ),{&#34;content&#34; : &#34;國家科學及技術委員會財團法人國家實驗研究院國家高速網路與計算中心&#34;});
+</span></span><span class=line><span class=cl>    document.querySelector( &#34;.demo-button-container&#34; ).addEventListener( &#34;click&#34;, e =&gt; {
+</span></span><span class=line><span class=cl>        const { target } = e;
+</span></span><span class=line><span class=cl>        if ( target.classList.contains( &#34;btn-primary&#34;  ) ) {
+</span></span><span class=line><span class=cl>            const oldBtn = document.querySelector( &#34;.btn-light&#34; );
+</span></span><span class=line><span class=cl>            oldBtn.classList.remove( &#34;btn-light&#34; );
+</span></span><span class=line><span class=cl>            oldBtn.classList.add( &#34;btn-primary&#34; );
+</span></span><span class=line><span class=cl>            target.classList.remove( &#34;btn-primary&#34; );
+</span></span><span class=line><span class=cl>            target.classList.add( &#34;btn-light&#34; );
+</span></span><span class=line><span class=cl>            mySuperMarquee.setScrollSpeed( target.innerHTML.toLowerCase() );
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    });
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>})
+</span></span></code></pre></td></tr></table></div></div><h2 id=參考資料>參考資料</h2><p><a class=link href=https://leafletjs.com target=_blank rel=noopener>https://leafletjs.com</a></p><p><a class=link href=https://www.letswrite.tw/leaflet-osm-basic target=_blank rel=noopener>OSM + Leaflet 學習筆記 系列文</a></p><p><img src=/article/openstreetmap-leaflet-map/rick.gif width=360 height=308 srcset="/article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_480x0_resize_box_1.gif 480w, /article/openstreetmap-leaflet-map/rick_huc5421449dc0838a25fb029b0a92158ff_798553_1024x0_resize_box_1.gif 1024w" loading=lazy alt="Photo by Rick" class=gallery-image data-flex-grow=116 data-flex-basis=280px></p></section><footer class=article-footer><section class=article-tags><a href=/tags/leaflet/>Leaflet</a>
+<a href=/tags/openstreetmap/>Openstreetmap</a></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最後更新 Oct 17, 2023 17:09 UTC</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相關文章</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/article/chatgpt-dalle3-text-to-image/><div class=article-image><img src=/article/chatgpt-dalle3-text-to-image/apple.7cd5529cdcb46e0096f6f5684f4ca70c_huc96ed45303f04e79fc00e7d42e2d1344_458284_250x150_fill_box_smart1_3.png width=250 height=150 loading=lazy alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" data-key=ChatGPT-DALLE3-text-to-image data-hash="md5-fNVSnNy0bgCW9vVoT0ynDA=="></div><div class=article-details><h2 class=article-title>OpenAI ChatGPT 圖片生成/分析圖片 實測</h2></div></a></article></div></div></aside><script src=https://giscus.app/client.js data-repo=wastu01/Gitalk data-repo-id=R_kgDOKbN6Xw data-category=Announcements data-category-id=DIC_kwDOKbN6X84CZzx5 data-mapping=title data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=en crossorigin=anonymous async></script>
 <script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"light":"dark_dimmed")}})()</script><footer class=site-footer><section class=copyright>&copy;
 2023 版權 Wang</section><section class=powerby>Writed by Wa.01<br>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 建立<br>主題 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.21.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 設計</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 <button class="pswp__button pswp__button--share" title=Share></button>
 <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
 <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
 <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
-<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script><style>:root{--article-font-family:"Noto Sans TC",var(--base-font-family)}</style><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300;400&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>json on Wang's Blog</title><link>https://wastu01.github.io/tags/json/</link><description>Recent content in json on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/json/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;br>
+&lt;p>2023 更新： 更快的做法是命令 &lt;kbd>ChatGPT&lt;/kbd> 為 &lt;kbd>A.I&lt;/kbd> 程式導師
+提問如何用 &lt;kbd>Python&lt;/kbd> 爬取 PM2.5，(或使用 AutoGPT 設定明確目標執行爬蟲)，接下來剩下來的時間思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;kbd>&lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
+>IFTTT&lt;/a>&lt;/kbd> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
+&lt;p>實際案例應用：
+新竹科學園區空氣品質監測網：
+&lt;a class="link" href="https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx" target="_blank" rel="noopener"
+>https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx&lt;/a>&lt;/p>
+&lt;p>將 &lt;code>json&lt;/code> 剖析用 &lt;a class="link" href="https://developers.google.com/chart?hl=en" target="_blank" rel="noopener"
+>Google Chart&lt;/a> 畫出趨勢圖
+&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96.png"
+width="2788"
+height="1288"
+srcset="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="216"
+data-flex-basis="519px"
+>&lt;/p>
+&lt;p>實際案例教學:
+&lt;a class="link" href="https://yanwei-liu.medium.com/pm2-5%E7%9A%84line%E6%A9%9F%E5%99%A8%E4%BA%BA-%E4%BD%BF%E7%94%A8python-ifttt-%E5%82%B3%E9%80%81%E6%9C%80%E6%96%B0pm2-5%E6%95%B8%E5%80%BC-b5655436363e" target="_blank" rel="noopener"
+>PM2.5 的 Line 機器人：使用 Python + IFTTT 傳送最新 PM2.5 數值&lt;/a>&lt;/p>
+&lt;p>Python 爬取空氣品質指標 ( AQI )：https://steam.oxxostudio.tw/category/python/spider/aqi.html&lt;/p>
+&lt;hr>
+&lt;p>課堂作業：爬取空氣品質 PM2.5 的即時資訊
+抓取政府資料開放平台 &lt;code>JSON&lt;/code> 資料 並做檔案處理&lt;/p>
+&lt;p>2022-04-29 更新：收到環保署資料開放平臺通知為提升 API 介接服務品質，平臺於 111 年 2 月 8 日更版，已更新第 2 版 API 資料介接功能，第 1 版 API 將於 5 月 19 日停止服務，為確保您的使用權益，歡迎至平臺重新註冊申請 API Key。所以有猜到下方 API Key 的可能日後也無法使用囉！&lt;/p>
+&lt;p>2023-08026 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自 112 年 8 月 22 日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺 API 維持新、舊 API URL 平行服務三個月，請於 112 年 11 月 22 日期限前內完成 API URL 更新。（白話文：API URL 規則有更改請更新）&lt;/p>
+&lt;hr>
+&lt;h1 id="執行畫面">執行畫面：&lt;/h1>
+&lt;iframe height="900px" width="100%" src="https://repl.it/@wastu01/PM25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">&lt;/iframe>
+&lt;h2 id="獲得資料方式">獲得資料方式&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>JSON&lt;/code> 格式：requests 獲取資料 python 直接解析&lt;/li>
+&lt;/ul>
+&lt;p>好用外掛工具 (chrome)：&lt;/p>
+&lt;p>查看 Web API json 格式：
+&lt;a class="link" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"
+>https://chrome.google.com/webstore/detail/jsonview/&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>資料格式 : JSON、CSV、XML&lt;/p>
+&lt;p>Web API（Web Application Programming Interface）
+&lt;a class="link" href="https://tw.alphacamp.co/blog/api-introduction-understand-web-api-http-json" target="_blank" rel="noopener"
+>認識 Web API、HTTP 和 JSON 資料交換格式&lt;/a>&lt;/p>
+&lt;h2 id="資訊擷取來源">資訊擷取來源&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://data.gov.tw" target="_blank" rel="noopener"
+>https://data.gov.tw/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/7f812f1495c2457dab774d63ba22ed78.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>後來發現有更好用 最新試行版(已正式上架)的&lt;/p>
+&lt;p>&lt;a class="link" href="https://data.moenv.gov.tw/" target="_blank" rel="noopener"
+>環保署環境資料開放平台開放資料 API&lt;/a>&lt;/p>
+&lt;p>註冊 API Key 後可以篩選更多參數來撈資料&lt;/p>
+&lt;p>要解析的 json 網址：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://data.gov.tw/dataset/40448" target="_blank" rel="noopener"
+>每小時提供各測站之空氣品質指標（AQI）&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener"
+>非公開 API 點擊無效&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>資料集名稱先記好比較快找到&lt;/p>
+&lt;p>&lt;img src="https://data.epa.gov.tw/base/images/access_data_img_zh_02.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>註冊 API 使用說明：
+&lt;a class="link" href="https://data.epa.gov.tw/paradigm" target="_blank" rel="noopener"
+>https://data.epa.gov.tw/paradigm&lt;/a>&lt;/p>
+&lt;h2 id="request-and-json">request and json&lt;/h2>
+&lt;p>透過 &lt;code>json&lt;/code> 回傳的是一個 &lt;code>list&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">requests&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi_url&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=自行註冊&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 環保署環境資料開放平臺 試行版 https://data.epa.gov.tw/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># API 金鑰免費申請 ～&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">requests&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi_url&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">json&lt;/span>&lt;span class="p">()[&lt;/span>&lt;span class="s1">&amp;#39;records&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">status_code&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### 200  正常回傳&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### 404 回傳錯誤&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">response&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="輸出-list">輸出 List&lt;/h2>
+&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/92475ef8e70f465492ae72420bb458e5.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="檔案處理">檔案處理&lt;/h2>
+&lt;p>“r” 唯讀模式&lt;/p>
+&lt;p>“w” 寫入模式（覆寫）&lt;/p>
+&lt;p>“a” 寫入模式（續寫）&lt;/p>
+&lt;p>&lt;code>with open(&amp;quot;data_pm25.txt&amp;quot;, &amp;quot;w&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as file:&lt;/code>&lt;/p>
+&lt;p>再用 for 把資料寫入 file 當中&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">open&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;file.txt&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;w&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">write&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;file-write&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>
+&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
+>輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials-requesting-web-api-edd417a57ba5" target="_blank" rel="noopener"
+>輕鬆學習 Python：透過 API 擷取網站資料&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-bf0648108581" target="_blank" rel="noopener"
+>Python 初學第十二講—檔案處理&lt;/a>&lt;/p>
+&lt;p>補充：ChatGPT 指令大全
+&lt;a class="link" href="https://www.explainthis.io/zh-hant/chatgpt" target="_blank" rel="noopener"
+>https://www.explainthis.io/zh-hant/chatgpt&lt;/a>&lt;/p>
+&lt;p>本篇原始文章：&lt;/p>
+&lt;p>&lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
+>&lt;img src="https://avatars.githubusercontent.com/u/47618277?s=100&amp;amp;v=4"
+loading="lazy"
+alt="AQI"
+>&lt;/a>&lt;/p></description></item></channel></rss>

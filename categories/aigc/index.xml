@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AIGC on Wang's Blog</title><link>https://wastu01.github.io/categories/aigc/</link><description>Recent content in AIGC on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/categories/aigc/index.xml" rel="self" type="application/rss+xml"/><item><title>Canva 魔法媒體工具 文字生成影片 Runway</title><link>https://wastu01.github.io/article/canva-magic/</link><pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/canva-magic/</guid><description>&lt;img src="https://wastu01.github.io/article/canva-magic/Canva-text-to-video.png" alt="Featured image of post Canva 魔法媒體工具 文字生成影片 Runway" />&lt;h1 id="canva-魔法媒體工具-文字生成影片-runway">Canva 魔法媒體工具 文字生成影片 Runway&lt;/h1>
+&lt;p>Canva 推出新的影片生成工具： Magic Studio&lt;/p>
+&lt;p>將 Gen-2 整合到 Canva 的 Magic Media App&lt;/p>
+&lt;p>允許使用者在欄位中輸入文字生成長達 4 秒的影片&lt;/p>
+&lt;p>目前僅限 Canvas 付費用戶使用&lt;/p>
+&lt;hr>
+&lt;p>以下是文件示範展示：&lt;/p>
+&lt;h2 id="魔法文案工具">魔法文案工具&lt;/h2>
+&lt;h2 id="一鍵生成文案">一鍵生成文案&lt;/h2>
+&lt;iframe loading="lazy" style="position: relative; width: 100%; height: 600px; max-height: 80vh; border: none; padding: 0; margin: 0; overflow: hidden;"
+src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+&lt;/iframe>
+AI 生成設計的文案 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?utm_content=DAFxDP6jH9M&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener">文案舉例說明並附上AI生成影片&lt;/a>
+&lt;h2 id="canva-新功能實測簡報展示httpswwwcanvacomdesigndafxnw2-xsm5axcu5tefpkuxeiyghvnrgwatchutm_contentdafxnw2-xsmutm_campaigndesignshareutm_mediumlinkutm_sourcepublishsharelink">&lt;a class="link" href="https://www.canva.com/design/DAFxNW2-XsM/5axcu5tEFPKUxeiYghvnRg/watch?utm_content=DAFxNW2-XsM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=publishsharelink" target="_blank" rel="noopener"
+>canva 新功能實測簡報展示：&lt;/a>&lt;/h2>
+&lt;div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;">
+&lt;iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxNW2-XsM&amp;#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+&lt;/iframe>
+&lt;/div>
+使用 Canva 設計製作 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxNW2-XsM&amp;#x2F;watch?utm_content=DAFxNW2-XsM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener">影片主題：使用 Canva 文字生成影片&lt;/a>
+&lt;hr>
+&lt;p>歡迎點擊前往觀看更多&lt;/p>
+&lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+>https://hackmd.io/@DCT&lt;/a>&lt;/p>
+&lt;p>My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>https://medium.com/mr-wang&lt;/a>&lt;/p>
+&lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+>https://wastu01.github.io/&lt;/a>&lt;/p>
+&lt;hr></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
+&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測&lt;/h1>
+&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
+&lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
+>https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a>&lt;/p>
+&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片&lt;/h2>
+&lt;p>提示詞：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Cinematic render of an intense action scene in a city at night, featuring a dark-colored vintage Ford Mustang speeding on a damp road, surrounded by fiery explosions, haze, and dramatic teal &amp;amp; orange lighting.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果圖：&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HyOtCkK-p.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>提示詞：生成一張 1280x640 比例的 social preview 有關於 網頁版本 Apple 風格的計算機，圖片仿造蘋果公司的風格&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Digital representation of a web calculator, imbued with Apple design principles, juxtaposed against a background evocative of Apple renowned product introduction visuals.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>效果圖：&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/Sy3IC_KZ6.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HJzCJYt-a.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="分析圖片">分析圖片&lt;/h2>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>這是一個計算器的界面設計。以下是該界面的特點:&lt;/p>
+&lt;ol>
+&lt;li>顏色配色: 主要以深色背景為主，搭配明亮的按鈕顏色。&lt;/li>
+&lt;li>視窗左上角: 有三個顏色點，通常表示應用程式的最小化、最大化和關閉按鈕。&lt;/li>
+&lt;li>數字按鈕: 從0到9，供使用者輸入數字。&lt;/li>
+&lt;li>運算子按鈕: 有加(+)、減(-)、乘(x)、除(÷)以及其他功能鍵，如正負號切換(+/-)、百分比(%)等。&lt;/li>
+&lt;li>控制按鈕: 有「AC」按鈕，通常用於清除輸入或結果。&lt;/li>
+&lt;li>螢幕顯示: 目前為0，這是計算器的初始值。&lt;/li>
+&lt;/ol>
+&lt;p>整體來說，這個設計相當簡潔，主要功能都能夠快速識別，應該很容易上手使用。&lt;/p>
+&lt;h2 id="製作網頁">製作網頁&lt;/h2>
+&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
+&lt;hr>
+&lt;p>請幫我以此為樣式製作出網頁，並能夠點擊進行運算&lt;/p>
+&lt;p>1.一個外觀類似Apple計算機的HTML介面。&lt;/p>
+&lt;p>2.使用CSS來設計計算機的外觀，使其看起來像Apple的計算機。&lt;/p>
+&lt;p>3.使用JavaScript處理按鈕點擊事件以實現計算功能，並將計算結果顯示在計算機螢幕上。&lt;/p>
+&lt;p>4.包括外部的CSS和JavaScript文件，以確保代碼結構整潔。&lt;/p>
+&lt;p>我們先處理外觀介面的部分，計算的功能稍待再執行&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>iOS-Calculator-Web&lt;/strong>&lt;/p>
+&lt;p>網頁版計算機，模仿 iOS裝置計算機外觀的介面，使用HTML與ChatGPT製作。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/wastu01/iOS-Caculator-Html/main/iOS-Calculator-Web.png"
+loading="lazy"
+alt="網頁版計算機 Caculator"
+>&lt;/p>
+&lt;hr>
+&lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+>https://hackmd.io/@DCT&lt;/a>&lt;/p>
+&lt;p>My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>https://medium.com/mr-wang&lt;/a>&lt;/p>
+&lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+>https://wastu01.github.io/&lt;/a>&lt;/p>
+&lt;hr>
+&lt;ul>
+&lt;li>&lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;mark>salamanders&lt;/mark>&lt;/li>
+&lt;/ul></description></item></channel></rss>
