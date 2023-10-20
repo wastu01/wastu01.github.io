@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Wang's Blog</title><link>https://wastu01.github.io/post/</link><description>Recent content in Posts on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Wed, 18 Oct 2023 09:47:30 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/2023-10-18-.zh/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/2023-10-18-.zh/</guid><description>&lt;img src="https://wastu01.github.io/article/2023-10-18-.zh/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
-&lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&lt;/p>
-&lt;p>動機：申請到 Adobe firefly&lt;kbd>AI&lt;/kbd> 文字生成圖片 前期測試用戶，實測效果如何&lt;/p>
+&lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&amp;mdash;&lt;kbd>AI&lt;/kbd> 工具&lt;/p>
+&lt;p>動機：年初申請到 Adobe firefly 文字生成圖片的前期測試用戶，實測效果如何&lt;/p>
 &lt;hr>
 &lt;p>最新 Adobe Firefly 官方消息： &lt;a class="link" href="https://helpx.adobe.com/firefly/using/whats-new.html" target="_blank" rel="noopener"
 >https://helpx.adobe.com/firefly/using/whats-new.html&lt;/a>&lt;/p>
@@ -146,7 +146,11 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;!-- > [文字設計風格詠咒｜ChatGPT 咒語庫](/O4hgyaZUTOq34NtCq1K8fg) -->
-&lt;!-- 結合 [Runway GEN1](/pm0BymASSlGcC8j1C4LALw) 的效果： -->
+&lt;!-- 結合 [Runway GEN1]() 的效果 -->
+&lt;p>OpenAI ChatGPT 生成提示詞&lt;/p>
+&lt;p>Adobe Firefly 生成圖片&lt;/p>
+&lt;p>Runwayml Gen1 生成影片&lt;/p>
+&lt;p>結合三種不同的 AI 生成工具製作的效果：&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/9OqCZQdpceo"
@@ -155,7 +159,6 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;iframe width="100%" height="385" src="https://www.youtube.com/embed/9OqCZQdpceo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>&lt;/iframe>
 &lt;hr>
 &lt;p>歡迎點擊前往觀看更多&lt;/p>
 &lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
@@ -268,10 +271,7 @@ alt="網頁版計算機 Caculator"
 >https://medium.com/mr-wang&lt;/a>&lt;/p>
 &lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
 >https://wastu01.github.io/&lt;/a>&lt;/p>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;mark>salamanders&lt;/mark>&lt;/li>
-&lt;/ul></description></item><item><title>2023-10-06-新竹湖口後山祕境-茶香步道</title><link>https://wastu01.github.io/article/aerial-photography-hsinchucity/</link><pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/aerial-photography-hsinchucity/</guid><description>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_8.jpg" alt="Featured image of post 2023-10-06-新竹湖口後山祕境-茶香步道" />&lt;h1 id="地點">地點&lt;/h1>
+&lt;hr></description></item><item><title>2023-10-06-新竹湖口後山祕境-茶香步道</title><link>https://wastu01.github.io/article/aerial-photography-hsinchucity/</link><pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/aerial-photography-hsinchucity/</guid><description>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_8.jpg" alt="Featured image of post 2023-10-06-新竹湖口後山祕境-茶香步道" />&lt;h1 id="地點">地點&lt;/h1>
 &lt;p>湖口&lt;/p>
 &lt;h1 id="簡介">簡介&lt;/h1>
 &lt;p>綠區 綠油油 茶&lt;/p>

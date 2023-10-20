@@ -71,10 +71,7 @@ alt="網頁版計算機 Caculator"
 >https://medium.com/mr-wang&lt;/a>&lt;/p>
 &lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
 >https://wastu01.github.io/&lt;/a>&lt;/p>
-&lt;hr>
-&lt;ul>
-&lt;li>&lt;kbd>ALT&lt;/kbd> + &lt;kbd>Delete&lt;/kbd> to end the session.&lt;mark>salamanders&lt;/mark>&lt;/li>
-&lt;/ul></description></item><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>https://wastu01.github.io/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/openstreetmap-leaflet-map/</guid><description>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png" alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化" />&lt;h1 id="製作網頁地圖">製作網頁地圖&lt;/h1>
+&lt;hr></description></item><item><title>OpenStreetMap-Leaflet-網頁地圖視覺化</title><link>https://wastu01.github.io/article/openstreetmap-leaflet-map/</link><pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/openstreetmap-leaflet-map/</guid><description>&lt;img src="https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png" alt="Featured image of post OpenStreetMap-Leaflet-網頁地圖視覺化" />&lt;h1 id="製作網頁地圖">製作網頁地圖&lt;/h1>
 &lt;h2 id="demo">Demo：&lt;/h2>
 &lt;p>&lt;a class="link" href="https://github.com/wastu01/leaflet" target="_blank" rel="noopener"
 >https://github.com/wastu01/leaflet&lt;/a>&lt;/p>

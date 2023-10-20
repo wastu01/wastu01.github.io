@@ -1,39 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Wang's Blog</title><link>https://wastu01.github.io/page/</link><description>Recent content in Pages on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>所有文章</title><link>https://wastu01.github.io/archives/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/archives/</guid><description/></item><item><title>關於我</title><link>https://wastu01.github.io/%E9%97%9C%E6%96%BC%E6%88%91/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/%E9%97%9C%E6%96%BC%E6%88%91/</guid><description>&lt;h2 id="這邊是一名熱愛學習新領域的青年可以叫我多多-這邊主要分享">這邊是一名熱愛學習新領域的青年，可以叫我多多 這邊主要分享&lt;/h2>
-&lt;h3 id="技術類網頁建模動畫">技術類：網頁、建模、動畫&lt;/h3>
-&lt;h3 id="日常類-步道健走">日常類： 步道健走&lt;/h3>
-&lt;p>未來可能有一區專門放 AI 生成的相關筆記&lt;/p>
-&lt;p>目前正轉移在 HackMD 上的資料。&lt;/p>
-&lt;hr>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Wang's Blog</title><link>https://wastu01.github.io/page/</link><description>Recent content in Pages on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>WA.01</title><link>https://wastu01.github.io/wa.01/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/wa.01/</guid><description>&lt;p>這邊是一名熱愛學習新領域的青年，可以叫我多多&lt;/p>
+&lt;p>這邊主要分享&lt;/p>
+&lt;p>技術類：網頁、建模、動畫、AIGC&lt;/p>
+&lt;p>日常類： 步道健走&lt;/p>
+&lt;p>目前正轉移在 &lt;a class="link" href="https://hackmd.io/@DCT/wa01-%e7%ad%86%e8%a8%98%e7%b4%a2%e5%bc%95" target="_blank" rel="noopener"
+>HackMD&lt;/a> 上的資料。&lt;/p>
+&lt;p>圖片略縮圖使用 unsplash 圖庫, AI 生成圖&lt;/p>
+&lt;p>文章皆為自己所撰寫。&lt;/p>
+&lt;p>CC by 3.0&lt;/p>
+&lt;hr></description></item><item><title>所有文章</title><link>https://wastu01.github.io/archives/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/archives/</guid><description/></item><item><title>文章搜尋</title><link>https://wastu01.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/search/</guid><description/></item><item><title>社群連結</title><link>https://wastu01.github.io/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/</guid><description>&lt;p>我的其他社群媒體平台：&lt;/p>
 &lt;p>Youtube : &lt;a class="link" href="https://www.youtube.com/@11305205219/videos" target="_blank" rel="noopener"
 >多多&lt;/a>&lt;/p>
 &lt;p>HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
 >https://hackmd.io/@DCT&lt;/a>&lt;/p>
 &lt;p>Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
 >https://medium.com/mr-wang&lt;/a>&lt;/p>
-&lt;p>Index coderbridge : &lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
->https://index.coderbridge.io&lt;/a>&lt;/p></description></item><item><title>文章搜尋</title><link>https://wastu01.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/search/</guid><description/></item><item><title>社群連結</title><link>https://wastu01.github.io/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/</guid><description>&lt;p>我的其他社群媒體平台：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item></channel></rss>
+&lt;p>Coderbridge : &lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
+>https://index.coderbridge.io&lt;/a>&lt;/p></description></item></channel></rss>
