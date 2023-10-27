@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OCR on Wang's Blog</title><link>https://wastu01.github.io/tags/ocr/</link><description>Recent content in OCR on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Fri, 27 Oct 2023 10:37:31 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/ocr/index.xml" rel="self" type="application/rss+xml"/><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
+&lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練&lt;/h1>
+&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化&lt;/h2>
+&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/xBEiIlt.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>雖然可以爬好幾10xxx張，但是看了資訊安全政策好像會被 ban
+所以弄了一個驗證碼產生器，自製訓練庫，好處是可自定義演算法，本機端即可儲存圖片。&lt;/p>
+&lt;p>實際操作畫面如下：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/ORSlEI8.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>人工智慧課堂企劃報告後，老師說明有 OCR 這個目前由 Google 維護的識別引擎&lt;/p>
+&lt;p>用途為可辨識掃描的文件/圖片中的文字，提供實務上業界的需求，可應用在掃描健檢報告數據，存入資料庫。&lt;/p>
+&lt;p>我們這組的想法是可應用於農民可拍照上傳產品外包裝編號查看農藥用途之類的&lt;/p>
+&lt;p>實做起來遇到一些問題微調操作
+所以做個紀錄有了這篇筆記整理 📝&lt;/p>
+&lt;h2 id="安裝-tessract---語言包">安裝 Tessract / 語言包：&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">homebrew install tesseract-lang&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract-lang" target="_blank" rel="noopener"
+>https://formulae.brew.sh/formula/tesseract-lang&lt;/a>&lt;/p>
+&lt;p>語言包一次打包 / 需要的再匯入&lt;/p>
+&lt;p>&lt;code>/usr/local/Cellar/tesseract/4.x/share/tessdata&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">homebrew install tesseract&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract" target="_blank" rel="noopener"
+>https://formulae.brew.sh/formula/tesseract&lt;/a>&lt;/p>
+&lt;h2 id="編譯安裝問題">編譯安裝問題：&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Error: invalid option: --with-training-tools
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>要安裝訓練模型時，發現 tesseract
+最新4.x版本 homebrew 沒有訓練模型相關指令&lt;/p>
+&lt;p>撰寫文章當下根據網路文章
+找到了解決方法需自行編譯 build,make install&lt;/p>
+&lt;p>&lt;strong>參考下列文章（感謝文章作者）：&lt;/strong>&lt;/p>
+&lt;p>&lt;a class="link" href="https://juejin.im/post/6844904097863188487" target="_blank" rel="noopener"
+>https://juejin.im/post/6844904097863188487&lt;/a>&lt;/p>
+&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組：&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">pillow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">pytesseract&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://i.imgur.com/Jk2wQ7i.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>詳細教學：&lt;/p>
+&lt;p>&lt;a class="link" href="https://lufor129.medium.com/pytesseract-" target="_blank" rel="noopener"
+>https://lufor129.medium.com/pytesseract-&lt;/a>辨識圖片中的文字-b1024f678fac&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/huitailangyz/article/details/80390090" target="_blank" rel="noopener"
+>https://blog.csdn.net/huitailangyz/article/details/80390090&lt;/a>&lt;/p>
+&lt;h2 id="查看安裝版本">查看安裝版本：&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">tesseract&lt;/span> &lt;span class="mf">4.1.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">leptonica&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mf">1.80.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">libgif&lt;/span> &lt;span class="mf">5.2.1&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">libjpeg&lt;/span> &lt;span class="mi">9&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">libpng&lt;/span> &lt;span class="mf">1.6.37&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">:&lt;/span> &lt;span class="n">libtiff&lt;/span> &lt;span class="mf">4.1.0&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">zlib&lt;/span> &lt;span class="mf">1.2.11&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">libwebp&lt;/span> &lt;span class="mf">1.1.0&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">libopenjp2&lt;/span> &lt;span class="mf">2.3.1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Found&lt;/span> &lt;span class="n">AVX2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Found&lt;/span> &lt;span class="n">AVX&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Found&lt;/span> &lt;span class="n">FMA&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Found&lt;/span> &lt;span class="n">SSE&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://i.imgur.com/HVS8rMt.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="指令">指令：&lt;/h2>
+&lt;p>列出可使用的語言包&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">tesseract --list-langs&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p>chi_tra 繁體&lt;/p>
+&lt;p>chi_tra_vert 繁體，直排&lt;/p>
+&lt;h2 id="參數設定">參數設定：&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>-l :選擇輸入語言/ 預設是英文 default “eng”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&amp;ndash;oem ： OCR Engine modes, 演算法類型 / 目前沒了解這塊用預設&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>參考文章解釋:&lt;/p>
+&lt;p>为了识别包含单个字符的图像，我们通常使用卷积神经网络(CNN)。
+任意长度的文本是一系列字符，这类问题可以通过RNNs解决，LSTM是RNN的一种常用形式&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/TdxEkRl.png"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">tesseract --help-oem
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OCR Engine modes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Legacy engine only.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Neural nets LSTM engine only.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Legacy + LSTM engines.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Default, based on what is available.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>&amp;ndash;psm : 判別語句類型模式 / 大陸翻譯：自动页面分割模式&lt;/li>
+&lt;/ul>
+&lt;p>-psm 常用說明&lt;/p>
+&lt;ul>
+&lt;li>0：定向脚本监测（OSD）&lt;/li>
+&lt;li>1： 使用OSD自动分页&lt;/li>
+&lt;li>2 ：自动分页，但是不使用OSD或OCR&lt;/li>
+&lt;li>3 ：全自动分页，但是没有使用OSD（默认）&lt;/li>
+&lt;li>4 ：假设可变大小的一个文本列。&lt;/li>
+&lt;li>5 ：假设垂直对齐文本的单个统一块。&lt;/li>
+&lt;li>6 ：假设一个统一的文本块。&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 7 ：將圖片視為一行文字句子。&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 8 ：將圖片視為一個『單字』。&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 9 ：將圖像視為『環狀字』。&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> 10 ：將圖片視為一個『字母』。&lt;/li>
+&lt;/ul>
+&lt;p>參數不懂的沿用參考文章簡體中文翻譯&lt;/p>
+&lt;p>PSM 參數詳細說明：
+&lt;a class="link" href="https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/" target="_blank" rel="noopener"
+>https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/&lt;/a>&lt;/p>
+&lt;h2 id="測試">測試&lt;/h2>
+&lt;p>執行畫面：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/Us8mDqc.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/Q6Vdk25.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>簡易驗證碼：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/SVxpeYZ.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>較複雜驗證碼：
+登入系統驗證碼&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/ScpJvjH.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>線條干擾誤判斷成 - 符號&lt;/p>
+&lt;h3 id="預先處理圖片--提升辨識度">預先處理圖片 / 提升辨識度&lt;/h3>
+&lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
+&lt;p>官方文檔解釋：
+&lt;a class="link" href="https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing" target="_blank" rel="noopener"
+>https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing&lt;/a>&lt;/p>
+&lt;p>每個Image都有不同的標記，
+需要乾淨能夠辨識標記的物件&lt;/p>
+&lt;p>OpenCV 套件預先處理圖片&lt;/p>
+&lt;p>辨識原則：&lt;/p>
+&lt;ul>
+&lt;li>至少為300 DPI為最佳&lt;/li>
+&lt;li>白底黑字，字體清晰&lt;/li>
+&lt;li>去噪，灰度图二值化&lt;/li>
+&lt;/ul>
+&lt;p>轉灰度原理：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/z4wqhcP.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>mode 取值可為下列幾種&lt;/p>
+&lt;p>其中會用到的為 1 . L&lt;/p>
+&lt;p>imgry.mode
+binary.mode&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">black&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">white&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">stored&lt;/span> &lt;span class="k">with&lt;/span> &lt;span class="n">one&lt;/span> &lt;span class="n">pixel&lt;/span> &lt;span class="n">per&lt;/span> &lt;span class="n">byte&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">L&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">black&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">white&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">P&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">mapped&lt;/span> &lt;span class="n">to&lt;/span> &lt;span class="nb">any&lt;/span> &lt;span class="n">other&lt;/span> &lt;span class="n">mode&lt;/span> &lt;span class="n">using&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">colour&lt;/span> &lt;span class="n">palette&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">RGB&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="n">x8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">true&lt;/span> &lt;span class="n">colour&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">RGBA&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="n">x8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">true&lt;/span> &lt;span class="n">colour&lt;/span> &lt;span class="k">with&lt;/span> &lt;span class="n">transparency&lt;/span> &lt;span class="n">mask&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">CMYK&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="n">x8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span> &lt;span class="n">separation&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">YCbCr&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="n">x8&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">colour&lt;/span> &lt;span class="n">video&lt;/span> &lt;span class="nb">format&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">I&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">32&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">signed&lt;/span> &lt;span class="n">integer&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">·&lt;/span> &lt;span class="n">F&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">32&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">bit&lt;/span> &lt;span class="n">floating&lt;/span> &lt;span class="n">point&lt;/span> &lt;span class="n">pixels&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>opencv :&lt;/p>
+&lt;p>&lt;a class="link" href="https://lufor129.medium.com/pytesseract-" target="_blank" rel="noopener"
+>https://lufor129.medium.com/pytesseract-&lt;/a>辨識圖片中的文字-b1024f678fac&lt;/p>
+&lt;p>常見錯誤：
+&lt;a class="link" href="https://zhuanlan.zhihu.com/p/35590364" target="_blank" rel="noopener"
+>https://zhuanlan.zhihu.com/p/35590364&lt;/a>&lt;/p>
+&lt;p>套件記得載
+&lt;img src="https://i.imgur.com/Qr4oQwf.png"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># opencv 方式讀取圖檔轉灰度&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">imgcv&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">imread&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;CaptchaImage.jpg&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">IMREAD_GRAYSCALE&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">imgcv&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">imshow&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;CaptchaImage&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">imgcv&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">imwrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;output/gray05.tiff&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">imgcv&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">waitKey&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cv2&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">destroyAllWindows&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>cv2.threshold 常用參數&lt;/p>
+&lt;ol>
+&lt;li>cv2.THRESH_BINARY（黑白兩值）&lt;/li>
+&lt;li>cv2.THRESH_BINARY_INV（黑白二值反轉）&lt;/li>
+&lt;li>cv2.THRESH_TRUNC （得到的圖像為多像素值）
+尚待釐清 多像素值定義&lt;/li>
+&lt;/ol>
+&lt;p>灰度轉二值化(去噪):&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span> &lt;span class="s1">&amp;#39;binary mode: &amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">binary&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">mode&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span> &lt;span class="n">binary&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getpixel&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">co&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">binary&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">getcolors&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span> &lt;span class="n">co&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">#輸出&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">----------------------------------------&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">binary&lt;/span> &lt;span class="n">mode&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="c1">#左上角為黑色&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[(&lt;/span>&lt;span class="mi">503&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1993&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">)]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">共有幾個黑與白像素點&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>判斷文字位置：&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/6DjFscX4I_c?t=502" target="_blank" rel="noopener"
+>https://youtu.be/6DjFscX4I_c?t=502&lt;/a>&lt;/p>
+&lt;p>訓練文字辨識，手動標註&lt;/p>
+&lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5&lt;/h2>
+&lt;h3 id="安裝">安裝&lt;/h3>
+&lt;p>下載位置：&lt;/p>
+&lt;p>&lt;a class="link" href="https://sourceforge.net/projects/vietocr/" target="_blank" rel="noopener"
+>https://sourceforge.net/projects/vietocr/&lt;/a>&lt;/p>
+&lt;p>軟體資訊：&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/LcyLe83.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="使用語法總覽">使用語法總覽&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Usage:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tesseract --help | --help-extra | --version
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tesseract --list-langs
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> tesseract imagename outputbase [options...] [configfile...]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OCR options:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -l LANG[+LANG] Specify language(s) used for OCR.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">NOTE: These options must occur before any configfile.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Single options:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help Show this help message.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-extra Show extra help for advanced users.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --version Show version information.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --list-langs List available languages for tesseract engine.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Page segmentation modes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Orientation and script detection (OSD) only.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Automatic page segmentation with OSD.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Automatic page segmentation, but no OSD, or OCR. (not implemented)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Fully automatic page segmentation, but no OSD. (Default)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 4 Assume a single column of text of variable sizes.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 5 Assume a single uniform block of vertically aligned text.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 6 Assume a single uniform block of text.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 7 Treat the image as a single text line.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 8 Treat the image as a single word.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 9 Treat the image as a single word in a circle.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10 Treat the image as a single character.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 11 Sparse text. Find as much text as possible in no particular order.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 12 Sparse text with OSD.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 13 Raw line. Treat the image as a single text line,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bypassing hacks that are Tesseract-specific.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OCR Engine modes:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Legacy engine only.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Neural nets LSTM engine only.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Legacy + LSTM engines.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Default, based on what is available.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Single options:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h, --help Show minimal help message.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-extra Show extra help for advanced users.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-psm Show page segmentation modes.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-oem Show OCR Engine modes.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -v, --version Show version information.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --list-langs List available languages for tesseract engine.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --print-parameters Print tesseract parameters.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>未完待續，下方整理了一些相關文章，有興趣的同學可以參考。&lt;/p>
+&lt;h4 id="參考文章">參考文章：&lt;/h4>
+&lt;p>簡單的製作驗證碼範例：
+&lt;a class="link" href="https://ithelp.ithome.com.tw/articles/10159457" target="_blank" rel="noopener"
+>https://ithelp.ithome.com.tw/articles/10159457&lt;/a>&lt;/p>
+&lt;p>[ 實用心得 ] Tesseract-OCR&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://medium.com/@b98606021/%e5%af%a6%e7%94%a8%e5%bf%83%e5%be%97-tesseract-ocr-eef4fcd425f0" target="_blank" rel="noopener"
+>https://medium.com/@b98606021/實用心得-tesseract-ocr&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>mac上文字识别(Tesseract-OCR for mac )&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/u010670689/article/details/78374623" target="_blank" rel="noopener"
+>https://blog.csdn.net/u010670689/article/details/78374623&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Image Processing in OpenCV&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html#thresholding" target="_blank" rel="noopener"
+>Image Thresholding&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>使用Tesseract训练lang文件并OCR识别集装箱号&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://www.jianshu.com/p/5f847d8089ce" target="_blank" rel="noopener"
+>https://www.jianshu.com/p/5f847d8089ce&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Tesseract-OCR 實現光學漢字識別（語言包解釋）&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://www.itread01.com/content/1577329506.html" target="_blank" rel="noopener"
+>https://www.itread01.com/content/1577329506.html&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>python 读取、保存、二值化、灰度化图片+opencv处理图片的方法&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/JohinieLi/article/details/69389980" target="_blank" rel="noopener"
+>https://blog.csdn.net/JohinieLi/article/details/69389980&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>設置限定詞（會降低識別率）&lt;/p>
+&lt;p>tessdata/configs/digits 沒找到&lt;/p>
+&lt;p>&lt;a class="link" href="https://blog.csdn.net/ADebugMan/article/details/100592200" target="_blank" rel="noopener"
+>https://blog.csdn.net/ADebugMan/article/details/100592200&lt;/a>&lt;/p>
+&lt;h3 id="檔案放置區">檔案放置區:&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://medium.com/mr-wang/%e6%96%87%e5%ad%97%e8%be%a8%e8%ad%98%e5%af%a6%e4%bd%9c%e5%8f%8a%e9%80%86%e5%90%91%e8%a7%a3%e6%9e%90-e42078f50916" target="_blank" rel="noopener"
+>Tesseract-OCR 辨識＆ 驗證碼分析及實作&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="實際圖片辨識">實際圖片辨識：&lt;/h3>
+&lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/VZOmXhAzwrk" target="_blank" rel="noopener"
+>&lt;/a>&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VZOmXhAzwrk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>字元數：7,598
+擁有者：wa.__.wa&lt;/p>
+&lt;p>建立時間：2020/11/12
+更新時間：2023/10/27
+最後編輯者：wa.__.wa&lt;/p>
+&lt;p>此為大學專案進行的學習成果&lt;/p>
+&lt;p>如有發現任何參數錯誤，歡迎登入進行修正&lt;/p></description></item></channel></rss>
