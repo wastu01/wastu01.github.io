@@ -11,35 +11,49 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/ORSlEI8.png"
 loading="lazy"
 >&lt;/p>
-&lt;p>人工智慧課堂企劃報告後，老師說明有 OCR 這個目前由 Google 維護的識別引擎&lt;/p>
-&lt;p>用途為可辨識掃描的文件/圖片中的文字，提供實務上業界的需求，可應用在掃描健檢報告數據，存入資料庫。&lt;/p>
-&lt;p>我們這組的想法是可應用於農民可拍照上傳產品外包裝編號查看農藥用途之類的&lt;/p>
-&lt;p>實做起來遇到一些問題微調操作
-所以做個紀錄有了這篇筆記整理 📝&lt;/p>
-&lt;h2 id="安裝-tessract---語言包">安裝 Tessract / 語言包：&lt;/h2>
+&lt;p>&amp;mdash; 工商服務板塊 &amp;mdash;&lt;/p>
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9854600345673328"
+crossorigin="anonymous">&lt;/script>
+&lt;ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-9854600345673328"
+data-ad-slot="8624326011">&lt;/ins>
+&lt;script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script>
+&lt;hr>
+&lt;p>人工智慧課堂企劃報告，老師說明 OCR 這個目前由 Google 維護的識別引擎，用途為辨識掃描的文件/圖片中的文字，提供實務上業界的應用，掃描健檢報告數據，將數據存入資料庫。&lt;/p>
+&lt;p>我們這組的想法是應用於農民可拍照上傳產品外包裝編號查看農藥用途。&lt;/p>
+&lt;p>實做起來遇到一些問題微調操作&lt;/p>
+&lt;p>所以做個紀錄有了這篇筆記整理 📝&lt;/p>
+&lt;h2 id="安裝-tessract--語言包">安裝 Tessract / 語言包&lt;/h2>
+&lt;p>安裝環境： MacOS&lt;/p>
+&lt;p>Homebrew 安裝&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">homebrew install tesseract-lang&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">homebrew install tesseract
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
+&lt;/div>&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract" target="_blank" rel="noopener"
+>https://formulae.brew.sh/formula/tesseract&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">homebrew install tesseract-lang
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract-lang" target="_blank" rel="noopener"
+&lt;/div>&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract-lang" target="_blank" rel="noopener"
 >https://formulae.brew.sh/formula/tesseract-lang&lt;/a>&lt;/p>
 &lt;p>語言包一次打包 / 需要的再匯入&lt;/p>
-&lt;p>&lt;code>/usr/local/Cellar/tesseract/4.x/share/tessdata&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">homebrew install tesseract&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>
-&lt;p>&lt;a class="link" href="https://formulae.brew.sh/formula/tesseract" target="_blank" rel="noopener"
->https://formulae.brew.sh/formula/tesseract&lt;/a>&lt;/p>
-&lt;h2 id="編譯安裝問題">編譯安裝問題：&lt;/h2>
+&lt;p>位置大概是這邊：&lt;code>/usr/local/Cellar/tesseract/4.x/share/tessdata&lt;/code>&lt;/p>
+&lt;h2 id="編譯安裝問題">編譯安裝問題&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -52,10 +66,10 @@ loading="lazy"
 最新4.x版本 homebrew 沒有訓練模型相關指令&lt;/p>
 &lt;p>撰寫文章當下根據網路文章
 找到了解決方法需自行編譯 build,make install&lt;/p>
-&lt;p>&lt;strong>參考下列文章（感謝文章作者）：&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>參考下列文章（感謝文章作者）&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://juejin.im/post/6844904097863188487" target="_blank" rel="noopener"
 >https://juejin.im/post/6844904097863188487&lt;/a>&lt;/p>
-&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組：&lt;/h2>
+&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -76,7 +90,7 @@ loading="lazy"
 >https://lufor129.medium.com/pytesseract-&lt;/a>辨識圖片中的文字-b1024f678fac&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/huitailangyz/article/details/80390090" target="_blank" rel="noopener"
 >https://blog.csdn.net/huitailangyz/article/details/80390090&lt;/a>&lt;/p>
-&lt;h2 id="查看安裝版本">查看安裝版本：&lt;/h2>
+&lt;h2 id="查看安裝版本">查看安裝版本&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -102,33 +116,32 @@ loading="lazy"
 &lt;/div>&lt;p>&lt;img src="https://i.imgur.com/HVS8rMt.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="指令">指令：&lt;/h2>
+&lt;h2 id="參數設定">參數設定&lt;/h2>
 &lt;p>列出可使用的語言包&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">tesseract --list-langs&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">tesseract&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="nb">list&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">langs&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>
-&lt;p>chi_tra 繁體&lt;/p>
-&lt;p>chi_tra_vert 繁體，直排&lt;/p>
-&lt;h2 id="參數設定">參數設定：&lt;/h2>
-&lt;ul>
+&lt;/div>&lt;ul>
 &lt;li>
-&lt;p>-l :選擇輸入語言/ 預設是英文 default “eng”&lt;/p>
+&lt;p>chi_tra 繁體&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&amp;ndash;oem ： OCR Engine modes, 演算法類型 / 目前沒了解這塊用預設&lt;/p>
+&lt;p>chi_tra_vert 繁體，直排&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>-l 辨識語言 / 預設是英文 default &amp;ldquo;eng&amp;rdquo;&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>參考文章解釋:&lt;/p>
-&lt;p>为了识别包含单个字符的图像，我们通常使用卷积神经网络(CNN)。
-任意长度的文本是一系列字符，这类问题可以通过RNNs解决，LSTM是RNN的一种常用形式&lt;/p>
-&lt;p>&lt;img src="https://i.imgur.com/TdxEkRl.png"
-loading="lazy"
->&lt;/p>
+&lt;hr>
+&lt;p>設定圖片辨識引擎&lt;/p>
+&lt;ul>
+&lt;li>&amp;ndash;oem ： OCR Engine modes, 演算法類型 / 目前沒了解這塊用預設&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -149,10 +162,18 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Default, based on what is available.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;ul>
+&lt;/div>&lt;p>參考文章解釋:&lt;/p>
+&lt;p>为了识别包含单个字符的图像，我们通常使用卷积神经网络(CNN)。
+任意长度的文本是一系列字符，这类问题可以通过RNNs解决，LSTM是RNN的一种常用形式&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/TdxEkRl.png"
+loading="lazy"
+>&lt;/p>
+&lt;hr>
+&lt;h2 id="psm-判別語句類型模式">PSM 判別語句類型模式&lt;/h2>
+&lt;ul>
 &lt;li>&amp;ndash;psm : 判別語句類型模式 / 大陸翻譯：自动页面分割模式&lt;/li>
 &lt;/ul>
-&lt;p>-psm 常用說明&lt;/p>
+&lt;p>常用說明&lt;/p>
 &lt;ul>
 &lt;li>0：定向脚本监测（OSD）&lt;/li>
 &lt;li>1： 使用OSD自动分页&lt;/li>
@@ -172,7 +193,7 @@ loading="lazy"
 &lt;p>PSM 參數詳細說明：
 &lt;a class="link" href="https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/" target="_blank" rel="noopener"
 >https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/&lt;/a>&lt;/p>
-&lt;h2 id="測試">測試&lt;/h2>
+&lt;h2 id="辨識效果測試">辨識效果測試&lt;/h2>
 &lt;p>執行畫面：&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/Us8mDqc.png"
 loading="lazy"
@@ -190,7 +211,7 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;p>線條干擾誤判斷成 - 符號&lt;/p>
-&lt;h3 id="預先處理圖片--提升辨識度">預先處理圖片 / 提升辨識度&lt;/h3>
+&lt;h2 id="圖片預處理--提升辨識度">圖片預處理 / 提升辨識度&lt;/h2>
 &lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
 &lt;p>官方文檔解釋：
 &lt;a class="link" href="https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing" target="_blank" rel="noopener"
@@ -307,7 +328,7 @@ loading="lazy"
 >https://youtu.be/6DjFscX4I_c?t=502&lt;/a>&lt;/p>
 &lt;p>訓練文字辨識，手動標註&lt;/p>
 &lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5&lt;/h2>
-&lt;h3 id="安裝">安裝&lt;/h3>
+&lt;p>手動標記｜工人智慧&lt;/p>
 &lt;p>下載位置：&lt;/p>
 &lt;p>&lt;a class="link" href="https://sourceforge.net/projects/vietocr/" target="_blank" rel="noopener"
 >https://sourceforge.net/projects/vietocr/&lt;/a>&lt;/p>
@@ -420,7 +441,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>未完待續，下方整理了一些相關文章，有興趣的同學可以參考。&lt;/p>
-&lt;h4 id="參考文章">參考文章：&lt;/h4>
+&lt;h2 id="參考文章">參考文章&lt;/h2>
 &lt;p>簡單的製作驗證碼範例：
 &lt;a class="link" href="https://ithelp.ithome.com.tw/articles/10159457" target="_blank" rel="noopener"
 >https://ithelp.ithome.com.tw/articles/10159457&lt;/a>&lt;/p>
@@ -458,12 +479,12 @@ loading="lazy"
 &lt;p>tessdata/configs/digits 沒找到&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/ADebugMan/article/details/100592200" target="_blank" rel="noopener"
 >https://blog.csdn.net/ADebugMan/article/details/100592200&lt;/a>&lt;/p>
-&lt;h3 id="檔案放置區">檔案放置區:&lt;/h3>
+&lt;h2 id="檔案放置區">檔案放置區:&lt;/h2>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://medium.com/mr-wang/%e6%96%87%e5%ad%97%e8%be%a8%e8%ad%98%e5%af%a6%e4%bd%9c%e5%8f%8a%e9%80%86%e5%90%91%e8%a7%a3%e6%9e%90-e42078f50916" target="_blank" rel="noopener"
 >Tesseract-OCR 辨識＆ 驗證碼分析及實作&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h3 id="實際圖片辨識">實際圖片辨識：&lt;/h3>
+&lt;h2 id="圖片辨識結合自動回覆機器人">圖片辨識結合自動回覆機器人&lt;/h2>
 &lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
 loading="lazy"
 >&lt;/p>
@@ -477,10 +498,16 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;p>字元數：7,598
-擁有者：wa.__.wa&lt;/p>
-&lt;p>建立時間：2020/11/12
-更新時間：2023/10/27
-最後編輯者：wa.__.wa&lt;/p>
 &lt;p>此為大學專案進行的學習成果&lt;/p>
-&lt;p>如有發現任何參數錯誤，歡迎登入進行修正&lt;/p></description></item></channel></rss>
+&lt;p>如有發現任何參數錯誤，歡迎留言通知&lt;/p>
+&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9854600345673328"
+crossorigin="anonymous">&lt;/script>
+&lt;ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-9854600345673328"
+data-ad-slot="8083030845"
+data-ad-format="auto"
+data-full-width-responsive="true">&lt;/ins>
+&lt;script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+&lt;/script></description></item></channel></rss>
