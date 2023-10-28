@@ -181,7 +181,7 @@ class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 >&lt;/p>
-&lt;p>門口附有秘境地圖：(若想前往步行，須留意店家營業時間，大門會上鎖)&lt;/p>
+&lt;p>門口附有秘境地圖：&lt;/p>
 &lt;p>&lt;img src="https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/image.webp"
 width="2693"
 height="1943"
@@ -203,6 +203,7 @@ class="gallery-image"
 data-flex-grow="75"
 data-flex-basis="180px"
 >&lt;/p>
+&lt;p>中途的指示牌，若想繼續前往步行，須留意店家營業時間，大門會上鎖&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/HhRdDJgdjiw"
@@ -211,7 +212,14 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;p>降低亮度呈現燈泡，實際上並沒有那麼暗&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/5YsvuW5sMKw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
 &lt;p>&lt;img src="https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/img/2023-10-21-shibaloghouse-caffe-24-logo.jpg"
 width="1996"
 height="1900"
@@ -248,8 +256,10 @@ data-flex-basis="208px"
 >&lt;/p>
 &lt;p>營業時間為每日早上十點至下午五點，週二、週三為公休&lt;/p>
 &lt;p>付款方式：付現 / Line Pay 電子支付&lt;/p>
-&lt;p>官方網站：https://shibaloghouse.ego.tw&lt;/p>
-&lt;p>粉絲專頁：https://www.facebook.com/shibaloghouse&lt;/p>
+&lt;p>官方網站：&lt;a class="link" href="https://shibaloghouse.ego.tw" target="_blank" rel="noopener"
+>https://shibaloghouse.ego.tw&lt;/a>&lt;/p>
+&lt;p>粉絲專頁：&lt;a class="link" href="https://www.facebook.com/shibaloghouse" target="_blank" rel="noopener"
+>https://www.facebook.com/shibaloghouse&lt;/a>&lt;/p>
 &lt;p>最新資訊以官方為主。&lt;/p>
 &lt;iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d905.7195622871835!2d121.12260449096!3d24.765363232829806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468393810baa88f%3A0xcea95aed6c0b5050!2z5p-05pyo5bGL54-I55Cy77yN5a-154mp5Y-L5ZaEKOaftOacqOWxi-WSluWVoSk!5e0!3m2!1szh-TW!2stw!4v1697898351135!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">&lt;/iframe>
 &lt;h2 id="空拍畫面">空拍畫面&lt;/h2>
