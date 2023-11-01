@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adobe on Wang's Blog</title><link>https://wastu01.github.io/tags/adobe/</link><description>Recent content in Adobe on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Wed, 18 Oct 2023 09:47:30 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/adobe/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adobe on Wang's Blog</title><link>https://wastu01.github.io/tags/adobe/</link><description>Recent content in Adobe on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/adobe/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://picsum.photos/800/600.webp?random=0816e155" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;h1 id="adobe-firefly">Adobe Firefly&lt;/h1>
+&lt;p>文字生成圖像&lt;/p>
+&lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async>
+&lt;/script>
+&lt;h1 id="stable-diffusion">Stable Diffusion&lt;/h1>
+&lt;p>文字生成圖像&lt;/p>
+&lt;h1 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h1>
+&lt;p>文字生成影片&lt;/p>
+&lt;p>&lt;kbd>小註記&lt;/kbd>
+&lt;mark>重點！&lt;/mark>&lt;/p>
+&lt;h2 id="畫面展示">畫面展示&lt;/h2>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/HhRdDJgdjiw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h2 id="參考資料">參考資料&lt;/h2></description></item><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
 &lt;p>llllasd&lt;/p>
 &lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&amp;mdash;&lt;kbd>AI&lt;/kbd> 工具&lt;/p>
 &lt;p>動機：年初申請到 Adobe firefly 文字生成圖片的前期測試用戶，實測效果如何&lt;/p>
