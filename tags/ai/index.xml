@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Wang's Blog</title><link>https://wastu01.github.io/tags/ai/</link><description>Recent content in AI on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Wed, 18 Oct 2023 09:47:30 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
+&lt;p>llllasd&lt;/p>
+&lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&amp;mdash;&lt;kbd>AI&lt;/kbd> 工具&lt;/p>
+&lt;p>動機：年初申請到 Adobe firefly 文字生成圖片的前期測試用戶，實測效果如何&lt;/p>
+&lt;hr>
+&lt;p>最新 Adobe Firefly 官方消息： &lt;a class="link" href="https://helpx.adobe.com/firefly/using/whats-new.html" target="_blank" rel="noopener"
+>https://helpx.adobe.com/firefly/using/whats-new.html&lt;/a>&lt;/p>
+&lt;p>1014 更新： Firefly image 2.0 / 以及 Adobe Illustrator 內建 AI 向量圖形&lt;/p>
+&lt;p>0523 開放所有人使用 需登入&lt;/p>
+&lt;p>0512 firefly beta 1.3 版本更新
+可收藏生成圖片&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/S19EYlsE2.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>參數設定 2023.03.30有公開的 (目前已內建成選項)&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/XCS3hxB.png"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[outline-strength=80] 1-100 adjusts the creativity on text effects. Higher number will give you a tighter fit to the outline. Lower numbers will give you the more swirly effects.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[avoid=green, cars]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Adobe Firefly Discord 社群：https://discord.com/invite/adobefirefly&lt;/p>
+&lt;p>Adobe 03/29 更新內容：https://blog.adobe.com/en/publish/2023/03/29/adobe-firefly-beta-updates&lt;/p>
+&lt;h2 id="文字生成圖片">文字生成圖片&lt;/h2>
+&lt;p>Adobe Firefly Discord Hangout - April 28&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/p_RFxWgAc7s"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;img src="https://i.imgur.com/XCS3hxB.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>Prompt 小技巧：增加多一點細節&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/qIxWskj.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://youtu.be/baajPSkoBY8" target="_blank" rel="noopener"
+>AI影片生成&lt;/a>參考圖片&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/b2QX0ve.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="畫面展示">畫面展示&lt;/h2>
+&lt;h2 id="中國特色">中國特色&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/H2p4LJB.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/xgX9Mo6.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="街景">街景&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/zlCSfNP.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="台灣演員街拍">台灣演員街拍&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/PcvjKIa.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="貓咪開太空船">貓咪開太空船&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/PWxvp8t.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="室內植栽">室內植栽&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/tlzkYZ4.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="大棕熊送蘋果">大棕熊送蘋果&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/1WMIGic.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>圖片構想參考自：&lt;a class="link" href="https://www.facebook.com/media/set/?set=a.547371650343390&amp;amp;type=3" target="_blank" rel="noopener"
+>用AI做繪本: 大棕熊送蘋果&lt;/a>&lt;/p>
+&lt;h2 id="狗狗太空人">狗狗太空人&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>a cute shiba inu astronaut in a red and white space suit, yellow background, digital art&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="貓貓開車">貓貓開車&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>a cat driving
+橘貓
+貓爪握方向盤
+鏡頭：經過
+側臉&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://i.imgur.com/Wp62sc7.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="華人彈古箏">華人彈古箏&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>a Chinese man play Guzheng&lt;/p>
+&lt;/blockquote>
+&lt;p>DALL・E 有正確顯示樂器
+adobe firefly 顯示的是吉他&lt;/p>
+&lt;h2 id="螢火蟲森林">螢火蟲森林&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>Digital painting of a beautiful forest with shining lights, a calm pond and mist and fireflies in studio ghibli style&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://i.imgur.com/MfCvgGA.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/IVtT08n.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="室內植栽-1">室內植栽&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>Digital painting of a beautiful forest with shining lights, a calm pond and mist and fireflies in studio ghibli style&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://i.imgur.com/4rXGV5s.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="未來感城市">未來感城市&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>a future cyberpunk city art&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://i.imgur.com/1Hf5Pcb.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="在咖啡廳寫文章的女記者">在咖啡廳寫文章的女記者&lt;/h2>
+&lt;p>Prompt :&lt;/p>
+&lt;blockquote>
+&lt;p>A female journalist writing articles typing on a computer in a coffee shop
+surrounded by other people working&lt;/p>
+&lt;/blockquote>
+&lt;p>prompt 來自 &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>Midjourney&lt;/a> 製作好的封面圖&lt;/p>
+&lt;p>&lt;img src="https://i.imgur.com/zHh6tJk.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="adobe-firefly-文字效果">Adobe Firefly 文字效果：&lt;/h2>
+&lt;p>&lt;img src="https://i.imgur.com/kc4sGuS.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;!-- > [文字設計風格詠咒｜ChatGPT 咒語庫](/O4hgyaZUTOq34NtCq1K8fg) -->
+&lt;!-- 結合 [Runway GEN1]() 的效果 -->
+&lt;p>OpenAI ChatGPT 生成提示詞&lt;/p>
+&lt;p>Adobe Firefly 生成圖片&lt;/p>
+&lt;p>Runwayml Gen1 生成影片&lt;/p>
+&lt;p>結合三種不同的 AI 生成工具製作的效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/9OqCZQdpceo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;p>歡迎點擊前往觀看更多&lt;/p>
+&lt;p>My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+>https://hackmd.io/@DCT&lt;/a>&lt;/p>
+&lt;p>My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+>https://medium.com/mr-wang&lt;/a>&lt;/p>
+&lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+>https://wastu01.github.io/&lt;/a>&lt;/p>
+&lt;hr></description></item></channel></rss>
