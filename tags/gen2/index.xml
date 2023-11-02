@@ -1,74 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gen2 on Wang's Blog</title><link>https://wastu01.github.io/tags/gen2/</link><description>Recent content in Gen2 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/gen2/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;h1 id="adobe-firefly">Adobe Firefly&lt;/h1>
-&lt;h2 id="文字提示詞">文字提示詞&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gen2 on Wang's Blog</title><link>https://wastu01.github.io/tags/gen2/</link><description>Recent content in Gen2 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/gen2/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;p>AI 生成提示詞彙整｜咒語關鍵字&lt;/p>
+&lt;p>若有喜歡的圖片歡迎點擊 emoji 讓我知道&lt;/p>
+&lt;h2 id="adobe-firefly">Adobe Firefly&lt;/h2>
+&lt;h3 id="文字材質提示詞">文字材質提示詞&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">打鬥街景
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-text" data-lang="text">&lt;span class="line">&lt;span class="cl">文字+在白色背景上用黑色無襯線字型製作，中間有一個小貓的輪廓
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Text+made with black sans-serif font on a white background, with a small cat silhouette in the center
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">汽車
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="畫面展示">畫面展示&lt;/h2>
-&lt;p>文字生成圖像&lt;/p>
+&lt;/div>&lt;script src="https://giscus.app/client.js"
+data-repo="wastu01/github-imgur"
+data-repo-id="R_kgDOKmLOJg"
+data-mapping="number"
+data-term="12"
+data-reactions-enabled="1"
+data-emit-metadata="0"
+data-input-position="bottom"
+data-theme="preferred_color_scheme"
+data-lang="zh-TW"
+data-loading="lazy"
+crossorigin="anonymous"
+async>
+&lt;/script>
+&lt;details> &lt;summary>點我看更多貓咪&lt;/summary>
 &lt;script src="https://utteranc.es/client.js"
 repo="wastu01/github-imgur"
-issue-term="pathname"
+issue-number="10"
+label="Firefly"
 theme="github-dark"
 crossorigin="anonymous"
 async>
 &lt;/script>
-&lt;h1 id="midjourney">Midjourney&lt;/h1>
-&lt;h1 id="stable-diffusion">Stable Diffusion&lt;/h1>
+&lt;/details>
+&lt;hr>
+&lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞&lt;/h3>
+&lt;p>一個未來的賽博朋克城市_藝術
+&lt;code>賽博龐克的城市&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a+future cyberpunk city_art
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div> &lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="13"
+label="Firefly"
+theme="github-dark"
+crossorigin="anonymous"
+async>
+&lt;/script>
+&lt;hr>
+&lt;p>&lt;code>城市街景&lt;/code>&lt;/p>
+&lt;p>各國風格街景概念圖&lt;/p>
+&lt;h2 id="httpstwittercomcigulevahttpstwittercomciguleva">copy from 推特上熱愛分享 AI Prompt 的設計師：
+&lt;a class="link" href="https://twitter.com/ciguleva" target="_blank" rel="noopener"
+>https://twitter.com/ciguleva&lt;/a>&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Firefly_future+street, robot architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog_photo,wide_angle,concept_art_24964
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Midjourney&lt;/p>
+&lt;p>Stable Diffusion&lt;/p>
 &lt;p>文字生成圖像&lt;/p>
-&lt;h1 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h1>
+&lt;p>Runwayml Gen1 / Gen2&lt;/p>
 &lt;p>文字生成影片&lt;/p>
-&lt;p>&lt;kbd>小註記&lt;/kbd>&lt;/p>
-&lt;p>&lt;mark>重點！&lt;/mark>&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/yDY-bT7xPF8"
