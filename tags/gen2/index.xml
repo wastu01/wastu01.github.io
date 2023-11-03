@@ -40,17 +40,34 @@ async>
 &lt;/details>
 &lt;hr>
 &lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞&lt;/h3>
-&lt;p>一個未來的賽博朋克城市_藝術
-&lt;code>賽博龐克的城市&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">a+future cyberpunk city_art
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Firefly_future+street, robot architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog_photo,wide_angle,concept_art_24964
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Firefly_Asia,+Taiwan, street, motorcycle, architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog, blue and grey, 4k_art,low_lighting,hyper_realistic,3d_36809
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">prompt 參考來源：
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[https://twitter.com/ciguleva](https://twitter.com/ciguleva)
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div> &lt;script src="https://utteranc.es/client.js"
+&lt;/div>&lt;hr>
+&lt;p>&lt;code>城市街景&lt;/code> &lt;code>台灣&lt;/code> &lt;code>日本&lt;/code> &lt;code>機器人&lt;/code>&lt;/p>
+&lt;p>各國風格街景概念圖&lt;/p>
+&lt;script src="https://utteranc.es/client.js"
 repo="wastu01/github-imgur"
 issue-number="13"
 label="Firefly"
@@ -59,29 +76,24 @@ crossorigin="anonymous"
 async>
 &lt;/script>
 &lt;hr>
-&lt;p>&lt;code>城市街景&lt;/code>&lt;/p>
-&lt;p>各國風格街景概念圖&lt;/p>
-&lt;h2 id="httpstwittercomcigulevahttpstwittercomciguleva">copy from 推特上熱愛分享 AI Prompt 的設計師：
-&lt;a class="link" href="https://twitter.com/ciguleva" target="_blank" rel="noopener"
->https://twitter.com/ciguleva&lt;/a>&lt;/h2>
+&lt;p>&lt;code>汽車&lt;/code> &lt;code>電影鏡頭&lt;/code> &lt;code>調色&lt;/code> &lt;code>城市&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Firefly_future+street, robot architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog_photo,wide_angle,concept_art_24964
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Firefly_explosions,+fire, intense action city scene, haze, professional teal, color grading, epic cinematic lighting, nighttime, Shot on Audi race car, Cookie S4_I, Fast Cinematic Tracking shot of a fast driving gray vintage ford mustang driving
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> 賽博龐克
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Midjourney&lt;/p>
+&lt;/div>&lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="14"
+label="Firefly"
+theme="github-dark"
+crossorigin="anonymous"
+async>
+&lt;/script>
+&lt;h2 id="midjourney">Midjourney&lt;/h2>
 &lt;p>Stable Diffusion&lt;/p>
 &lt;p>文字生成圖像&lt;/p>
 &lt;p>Runwayml Gen1 / Gen2&lt;/p>
