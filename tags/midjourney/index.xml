@@ -162,7 +162,7 @@ async>
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;hr>
+&lt;/div>&lt;p>影片效果：&lt;/p>
 &lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/yDY-bT7xPF8"
@@ -180,7 +180,8 @@ title="YouTube Video"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Talking to camera, man, American style, --upscale
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;div class="video-wrapper">
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/VGP6P_QYe8w"
 allowfullscreen
@@ -197,7 +198,8 @@ title="YouTube Video"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">space suit walking on mars, university background, chaos, lava
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;div class="video-wrapper">
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/TtyaT4CykRk"
 allowfullscreen
@@ -214,7 +216,8 @@ title="YouTube Video"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;div class="video-wrapper">
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/_vHOSyIENmM"
 allowfullscreen
