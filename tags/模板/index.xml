@@ -17,12 +17,12 @@
 &lt;p>&lt;a class="link" href="https://codepen.io/mrwang01/" target="_blank" rel="noopener"
 >https://codepen.io/mrwang01/&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h1 id="假圖假字圖片">假圖假字圖片&lt;/h1>
+&lt;h2 id="假圖假字圖片">假圖假字圖片&lt;/h2>
 &lt;p>&lt;a class="link" href="https://hackmd.io/@chupai/SJOEPUpSE" target="_blank" rel="noopener"
 >假字、假圖產生器整理&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://fakeimg.pl/" target="_blank" rel="noopener"
 >https://fakeimg.pl/&lt;/a>&lt;/p>
-&lt;p>補上參數中文解釋：&lt;/p>
+&lt;!-- &lt;img src="https://fakeimg.pl/350x200/ff0000,128/000,255"> -->
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -33,14 +33,13 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;img src=&amp;#34;https://fakeimg.pl/寬x高/顏色（HEX 色碼）,亮度/黑字,255&amp;#34;&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;img src="https://fakeimg.pl/350x200/ff0000,128/000,255">
-&lt;hr>
+&lt;/div>&lt;hr>
 &lt;p>實際應用：&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/rzOST1o.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>模板的部分，可自行搜尋相關 Vscode 擴充套件&lt;/p>
-&lt;h1 id="html-模板">HTML 模板&lt;/h1>
+&lt;h2 id="html-模板">HTML 模板&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -87,7 +86,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/html&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="css模板">CSS模板&lt;/h1>
+&lt;/div>&lt;h2 id="css模板">CSS模板&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -126,16 +125,16 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="字體單位設定">字體單位設定&lt;/h1>
+&lt;/div>&lt;h2 id="字體單位設定">字體單位設定&lt;/h2>
 &lt;p>參考文章：&lt;a class="link" href="https://www.oxxostudio.tw/articles/201809/css-font-size.html" target="_blank" rel="noopener"
 >一次搞懂 CSS 字體單位：px、em、rem 和 %&lt;/a>&lt;/p>
-&lt;p>//作者還有很多實用前端技術文章&lt;/p>
+&lt;p>（ 作者還有很多實用前端技術文章 ）&lt;/p>
 &lt;ul>
 &lt;li>px : 絕對單位 固定 pixel&lt;/li>
 &lt;li>em : 相對單位 只跟根元素相乘 自己x祖先(或預設)&lt;/li>
 &lt;li>rem: 相對單位 與該父元素相乘 自己x老爸x老爸的老爸&lt;/li>
 &lt;/ul>
-&lt;h1 id="overflow">overflow&lt;/h1>
+&lt;h2 id="overflow">overflow&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -168,17 +167,17 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="border-radius">border-radius:&lt;/h1>
+&lt;/div>&lt;h2 id="border-radius">border-radius:&lt;/h2>
 &lt;p>border-radius: 左上 右上 右下 左下 ;&lt;/p>
-&lt;h1 id="html-iframe">Html iframe&lt;/h1>
+&lt;h2 id="html-iframe">Html iframe&lt;/h2>
 &lt;p>frameborder=&amp;ldquo;0&amp;rdquo; ──不顯示邊框
 frameborder=&amp;ldquo;1&amp;rdquo; ──要顯示邊框&lt;/p>
 &lt;p>scrolling=&amp;ldquo;no&amp;rdquo; ──代表不顯示
 scrolling=&amp;ldquo;auto&amp;rdquo; ──則代表根據網頁大小自動顯示。&lt;/p>
-&lt;h1 id="svg-icons">SVG Icons&lt;/h1>
+&lt;h2 id="svg-icons">SVG Icons&lt;/h2>
 &lt;p>編輯模式可查看原始程式碼&lt;/p>
 &lt;p>Open source free SVG icons&lt;/p>
-&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-type-css" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+&lt;svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-type-css" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="##6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
 &lt;path stroke="none" d="M0 0h24v24H0z" fill="none"/>
 &lt;path d="M14 3v4a1 1 0 0 0 1 1h4" />
 &lt;path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
@@ -225,11 +224,11 @@ scrolling=&amp;ldquo;auto&amp;rdquo; ──則代表根據網頁大小自動顯�
 &lt;path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" />
 &lt;path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" />
 &lt;/svg>
-&lt;h1 id="icon-to-font">Icon to Font&lt;/h1>
+&lt;h2 id="icon-to-font">Icon to Font&lt;/h2>
 &lt;p>IcoMoon──將icon轉成Font的平台&lt;/p>
 &lt;p>&lt;a class="link" href="https://icomoon.io/app/#/select" target="_blank" rel="noopener"
 >https://icomoon.io/app/#/select&lt;/a>&lt;/p>
-&lt;h1 id="button">Button&lt;/h1>
+&lt;h2 id="button">Button&lt;/h2>
 &lt;p>1.基本按鈕樣式&lt;/p>
 &lt;iframe height="265" style="width: 100%;" scrolling="no" title="CSS-Button樣式" src="https://codepen.io/mrwang01/embed/preview/jObLLvR?height=265&amp;theme-id=light&amp;default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 See the Pen &lt;a href='https://codepen.io/mrwang01/pen/jObLLvR'>CSS-Button樣式&lt;/a> by mrwang01
@@ -241,7 +240,7 @@ See the Pen &lt;a href="https://codepen.io/noelpena/pen/dlovG">
 CSS Tricks button style&lt;/a> by Noel Peña (&lt;a href="https://codepen.io/noelpena">@noelpena&lt;/a>)
 on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/iframe>
-&lt;h3 id="button單純按鈕reset清空表單submit送出表單">button（單純按鈕）、reset（清空表單）、submit（送出表單）&lt;/h3>
+&lt;p>button（單純按鈕）、reset（清空表單）、submit（送出表單）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -262,7 +261,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">border-radius:10px;}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="大小寫轉換">大小寫轉換&lt;/h1>
+&lt;/div>&lt;h2 id="大小寫轉換">大小寫轉換&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -275,7 +274,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;p style=&amp;#34;text-transform:capitalize;&amp;#34;&amp;gt;ework design&amp;lt;/p&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="-dl---dt---dd-">&amp;lt; dl &amp;gt; &amp;lt; dt &amp;gt; &amp;lt; dd &amp;gt;&lt;/h1>
+&lt;/div>&lt;h2 id="-dl---dt---dd-">&amp;lt; dl &amp;gt; &amp;lt; dt &amp;gt; &amp;lt; dd &amp;gt;&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -294,7 +293,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/dl&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="垂直置中">垂直置中&lt;/h1>
+&lt;/div>&lt;h2 id="垂直置中">垂直置中&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -346,7 +345,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 >https://www.oxxostudio.tw/articles/201408/css-vertical-align.html&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html" target="_blank" rel="noopener"
 >https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html&lt;/a>&lt;/p>
-&lt;h1 id="input-美化">Input 美化&lt;/h1>
+&lt;h2 id="input-美化">Input 美化&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -376,40 +375,27 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/div>&lt;p>&lt;img src="https://i.imgur.com/5bN2kvp.png"
 loading="lazy"
 >&lt;/p>
-&lt;h1 id="flexbox">flexbox&lt;/h1>
+&lt;h2 id="flexbox">flexbox&lt;/h2>
 &lt;p>詳細原理：&lt;a class="link" href="https://wcc723.github.io/css/2017/07/21/css-flex/" target="_blank" rel="noopener"
 >圖解：CSS Flex 屬性一點也不難&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>justify-content 主軸對齊 主軸線預設左到右&lt;/p>
 &lt;/blockquote>
-&lt;p>圖片來源：
-&lt;a class="link" href="https://www.webdesigns.com.tw/flexbox_flex-container.asp" target="_blank" rel="noopener"
+&lt;p>圖片參考：&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.webdesigns.com.tw/flexbox_flex-container.asp" target="_blank" rel="noopener"
 >CSS3的flexbox版面配置－flex container(容器)可用的屬性&lt;/a>&lt;/p>
-&lt;p>display:flex&lt;/p>
-&lt;p>&lt;img src="https://i.imgur.com/nyRA0A1.gif"
-loading="lazy"
->
+&lt;!-- display:flex
+![](https://i.imgur.com/nyRA0A1.gif)
 水平/空格間格
-&lt;img src="https://i.imgur.com/pSI9zAR.gif"
-loading="lazy"
->
-垂直/拉伸/ baseline ?
-&lt;img src="https://i.imgur.com/t2eHPzE.gif"
-loading="lazy"
->
+![](https://i.imgur.com/pSI9zAR.gif)
+垂直/拉伸/ baseline
+![](https://i.imgur.com/t2eHPzE.gif)
 直橫排列
-&lt;img src="https://i.imgur.com/azBpjcn.gif"
-loading="lazy"
->
+![](https://i.imgur.com/azBpjcn.gif)
 不換行/換行
-&lt;img src="https://i.imgur.com/QF51Nyx.gif"
-loading="lazy"
->&lt;/p>
-&lt;h1 id="偽類">偽類&lt;/h1>
-&lt;p>以:為開頭，方便精準控制&lt;/p>
-&lt;blockquote>
+![](https://i.imgur.com/QF51Nyx.gif) -->
 &lt;h2 id="錨點偽類">錨點偽類&lt;/h2>
-&lt;/blockquote>
+&lt;p>以:為開頭，方便精準控制&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/HnN4DIU.gif"
 loading="lazy"
 >&lt;/p>
@@ -440,7 +426,7 @@ loading="lazy"
 &lt;p>其他變化一樣規則&lt;/p>
 &lt;p>學習資源: &lt;a class="link" href="https://ithelp.ithome.com.tw/articles/10265504" target="_blank" rel="noopener"
 >Day 02 HTML/CSS 點擊超連結會經歷的偽類選取器(Pseudo-classes)&lt;/a>&lt;/p>
-&lt;h1 id="偽元素-pseudo-elements">偽元素 Pseudo-elements&lt;/h1>
+&lt;h2 id="偽元素-pseudo-elements">偽元素 Pseudo-elements&lt;/h2>
 &lt;ul>
 &lt;li>::before ::after&lt;/li>
 &lt;/ul>
@@ -468,7 +454,7 @@ data-flex-basis="1175px"
 >&lt;/p>
 &lt;p>詳細參數設定： &lt;a class="link" href="https://www.oxxostudio.tw/articles/201706/pseudo-element-1.html" target="_blank" rel="noopener"
 >CSS 偽元素 ( before 與 after )&lt;/a>&lt;/p>
-&lt;h1 id="hover">Hover&lt;/h1>
+&lt;h2 id="hover">Hover&lt;/h2>
 &lt;p>&lt;del>圖床不見了 imgur 上傳的 mp4&lt;/del>&lt;/p>
 &lt;p>&lt;del>&lt;a class="link" href="https://i.imgur.com/CRfi2St.mp4" target="_blank" rel="noopener"
 >https://i.imgur.com/CRfi2St.mp4&lt;/a>&lt;/del>&lt;/p>
@@ -484,7 +470,7 @@ See the Pen &lt;a href="https://codepen.io/argyleink/pen/poEjvpd">
 CSS mouse-out transition effect&lt;/a> by Adam Argyle (&lt;a href="https://codepen.io/argyleink">@argyleink&lt;/a>)
 on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/iframe>
-&lt;h1 id="calc-數值運算">calc() 數值運算&lt;/h1>
+&lt;h2 id="calc-數值運算">calc() 數值運算&lt;/h2>
 &lt;p>calc() 用來定位該元素&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -512,7 +498,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>但是記得要加上或扣除 border、padding 的部分 &lt;del>算數學&lt;/del>&lt;/p>
-&lt;h1 id="rwd-tablet">RWD-Tablet&lt;/h1>
+&lt;h2 id="rwd-tablet">RWD-Tablet&lt;/h2>
 &lt;ul>
 &lt;li>後台電商購物清單
 簡潔的表單設計
@@ -522,13 +508,13 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;a class="link" href="https://codepen.io/pumii/pen/WNxvNGg" target="_blank" rel="noopener"
 >https://codepen.io/pumii/pen/WNxvNGg&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h1 id="客製化-web-fonts-icon">客製化 web fonts icon&lt;/h1>
+&lt;h2 id="客製化-web-fonts-icon">客製化 web fonts icon&lt;/h2>
 &lt;p>實習期間修改 &lt;code>bootstrap&lt;/code> 模版發現到的東西
 &lt;a class="link" href="https://icomoon.io/app/#/select" target="_blank" rel="noopener"
 >https://icomoon.io/app/#/select&lt;/a>
 資料來源：&lt;a class="link" href="https://wcc723.github.io/css/2013/10/05/web-fonts-2/" target="_blank" rel="noopener"
 >自己做web fonts icons&lt;/a>&lt;/p>
-&lt;h1 id="圖片輪播-carousel">圖片輪播 Carousel&lt;/h1>
+&lt;h2 id="圖片輪播-carousel">圖片輪播 Carousel&lt;/h2>
 &lt;h2 id="bootstrap-元件">bootstrap 元件&lt;/h2>
 &lt;p>&lt;a class="link" href="https://bootstrap5.hexschool.com/docs/5.0/components/carousel/" target="_blank" rel="noopener"
 >https://bootstrap5.hexschool.com/docs/5.0/components/carousel/&lt;/a>&lt;/p>
@@ -578,7 +564,7 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="陰影-box-shadow">陰影 box-shadow&lt;/h1>
+&lt;/div>&lt;h2 id="陰影-box-shadow">陰影 box-shadow&lt;/h2>
 &lt;p>好看的陰影&lt;/p>
 &lt;iframe height="900" style="width: 100%;" scrolling="no" title="Material Design Box Shadows" src="https://codepen.io/sdthornton/embed/wBZdXq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 See the Pen &lt;a href="https://codepen.io/sdthornton/pen/wBZdXq">
