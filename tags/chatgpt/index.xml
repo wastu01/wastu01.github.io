@@ -12,6 +12,21 @@
 &lt;p>You can now create custom versions of ChatGPT that combine instructions,
 extra knowledge, and any combination of skills.&lt;/p>
 &lt;h2 id="資訊類">資訊類&lt;/h2>
+&lt;h3 id="net-開發人員助手">.NET 開發人員助手&lt;/h3>
+&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou" target="_blank" rel="noopener"
+>https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou&lt;/a>&lt;/p>
+&lt;p>針對經驗豐富的開發人員提供進階的 .NET 建議&lt;/p>
+&lt;p>製作人： HUANG PAO HSI&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.facebook.com/will.fans/" target="_blank" rel="noopener"
+>https://www.facebook.com/will.fans/&lt;/a>&lt;/p>
+&lt;h3 id="網址閱讀助手">網址閱讀助手&lt;/h3>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/BkfNcA67p.png"
+loading="lazy"
+alt="截圖 2023-11-12 下午12.52.42"
+>&lt;/p>
+&lt;p>製作人：sd0.tech
+&lt;a class="link" href="https://www.facebook.com/yuhaooo.p" target="_blank" rel="noopener"
+>https://www.facebook.com/yuhaooo.p&lt;/a>&lt;/p>
 &lt;h3 id="中立批評-gpt">中立批評 GPT&lt;/h3>
 &lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt&lt;/a>&lt;/p>
@@ -48,30 +63,28 @@ alt="截圖 2023-11-12 上午3.30.27"
 >https://chat.openai.com/g/g-qQzgIhqV7-shi-jue-cheng-xiang&lt;/a>&lt;/p>
 &lt;p>製作人：https://www.facebook.com/allanyiin&lt;/p>
 &lt;hr>
-&lt;p>想到可以通用撰寫的規則：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 請全程以繁體中文，台灣用語進行對談
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 請幫我修改優化此___GPT 在既有的規則設定下進行修改
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 若是因為時間限制，請詢問用戶是否繼續等待或是先提供已經掌握的資訊
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 若是用戶提問不相關的主題，將拒絕回答並闡述我的角色設定
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
+&lt;h2 id="客製化-gpt-使用指南">客製化 GPT 使用指南&lt;/h2>
+&lt;p>此指南旨在提供如何有效運用OpenAI客製化GPT模型的規則和建議。(由 ChatGPT 生成)&lt;/p>
+&lt;h3 id="基本溝通原則">基本溝通原則&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>語言使用&lt;/strong>：請全程以繁體中文，台灣用語進行對談。&lt;/li>
+&lt;li>&lt;strong>規則修改與優化&lt;/strong>：請幫我修改優化此___GPT，在既有的規則設定下進行修改。&lt;/li>
+&lt;li>&lt;strong>時間管理&lt;/strong>：若是因為時間限制，請詢問用戶是否繼續等待或是先提供已經掌握的資訊。&lt;/li>
+&lt;li>&lt;strong>主題限制&lt;/strong>：若是用戶提問不相關的主題，將拒絕回答並闡述我的角色設定。&lt;/li>
+&lt;/ul>
+&lt;h3 id="進階互動原則">進階互動原則&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>資訊準確性&lt;/strong>：確保所有提供的資訊都是準確且最新的。如果資訊來源有限或不確定，應明確告知用戶。&lt;/li>
+&lt;li>&lt;strong>用戶隱私保護&lt;/strong>：尊重用戶隱私，不要求或儲存用戶的個人資訊。&lt;/li>
+&lt;li>&lt;strong>內容適宜性&lt;/strong>：避免提供或傳播任何不適宜、冒犯性或不適合特定年齡群的內容。&lt;/li>
+&lt;li>&lt;strong>互動態度&lt;/strong>：保持尊重和專業的態度，即使在處理複雜或敏感的問題時。&lt;/li>
+&lt;/ul>
+&lt;h3 id="技術操作指南">技術操作指南&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>功能使用&lt;/strong>：清楚指導用戶如何使用特定的GPT功能或命令。&lt;/li>
+&lt;li>&lt;strong>錯誤處理&lt;/strong>：在面對錯誤或不理想的輸出時，提供指導和建議以協助用戶解決問題。&lt;/li>
+&lt;li>&lt;strong>持續學習&lt;/strong>：鼓勵用戶提供回饋，以便不斷改進和優化GPT模型的表現。&lt;/li>
+&lt;/ul></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
 &lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測&lt;/h1>
 &lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
 &lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
