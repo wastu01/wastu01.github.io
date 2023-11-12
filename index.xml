@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wang's Blog</title><link>https://wastu01.github.io/</link><description>Recent content on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS 樣式彙整-前端筆記</title><link>https://wastu01.github.io/article/html-css-style-template/</link><pubDate>Tue, 07 Nov 2023 08:04:28 +0800</pubDate><guid>https://wastu01.github.io/article/html-css-style-template/</guid><description>&lt;img src="https://wastu01.github.io/article/html-css-style-template/css-style-html.png" alt="Featured image of post CSS 樣式彙整-前端筆記" />&lt;p>&lt;kbd>前端&lt;/kbd> + &lt;kbd> CSS 樣式&lt;/kbd> + &lt;kbd>模板&lt;/kbd> +&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wang's Blog</title><link>https://wastu01.github.io/</link><description>Recent content on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 客製化聊天機器人 GPTs</title><link>https://wastu01.github.io/article/openai-custom-gpts-collection/</link><pubDate>Sun, 12 Nov 2023 03:33:42 +0800</pubDate><guid>https://wastu01.github.io/article/openai-custom-gpts-collection/</guid><description>&lt;img src="https://wastu01.github.io/custome-chatgpt-gpts.png" alt="Featured image of post OpenAI ChatGPT 客製化聊天機器人 GPTs" />&lt;p>&lt;kbd>openai&lt;/kbd> + &lt;kbd>chatgpt&lt;/kbd> + &lt;kbd>gpts&lt;/kbd>&lt;/p>
+&lt;h1 id="openai-chatgpt-客製化聊天機器人--gpts">OpenAI ChatGPT 客製化聊天機器人 | GPTs&lt;/h1>
+&lt;p>&lt;code>GPT = Good Personal Tool&lt;/code>&lt;/p>
+&lt;p>前情提要：&lt;/p>
+&lt;p>OpenAI 最近推出了一項新功能 GPTs&lt;/p>
+&lt;p>允許用戶根據自己的需求客製化 GPT 模型。&lt;/p>
+&lt;p>這項功能目前(11/12)僅提供付費用戶開放使用&lt;/p>
+&lt;p>此篇蒐集網路上製作好的各種主題 GPTs&lt;/p>
+&lt;p>OpenAI GPTs 官方簡介：
+&lt;a class="link" href="https://openai.com/blog/introducing-gpts" target="_blank" rel="noopener"
+>https://openai.com/blog/introducing-gpts&lt;/a>&lt;/p>
+&lt;p>You can now create custom versions of ChatGPT that combine instructions,
+extra knowledge, and any combination of skills.&lt;/p>
+&lt;h2 id="資訊類">資訊類&lt;/h2>
+&lt;h3 id="中立批評-gpt">中立批評 GPT&lt;/h3>
+&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt" target="_blank" rel="noopener"
+>https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt&lt;/a>&lt;/p>
+&lt;p>製作人：LU CHE YU
+&lt;a class="link" href="https://www.facebook.com/joeylu0627" target="_blank" rel="noopener"
+>https://www.facebook.com/joeylu0627&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/ByRyLUama.png"
+loading="lazy"
+alt="截圖 2023-11-12 上午3.28.23"
+>&lt;/p>
+&lt;h3 id="新聞報導-gpt">新聞報導 GPT&lt;/h3>
+&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt" target="_blank" rel="noopener"
+>https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt&lt;/a>&lt;/p>
+&lt;p>製作人：TaiwanBTS&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/SJDGLU67T.png"
+loading="lazy"
+alt="截圖 2023-11-12 上午3.29.10"
+>&lt;/p>
+&lt;h2 id="娛樂類">娛樂類&lt;/h2>
+&lt;h3 id="rpg-gpt">RPG GPT&lt;/h3>
+&lt;p>悲慘世界 RPG&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/r1FqIIpmT.png"
+loading="lazy"
+alt="截圖 2023-11-12 上午3.30.27"
+>&lt;/p>
+&lt;p>製作人：By LU CHE YU
+&lt;a class="link" href="https://www.facebook.com/joeylu0627" target="_blank" rel="noopener"
+>https://www.facebook.com/joeylu0627&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="圖像創作類">圖像創作類&lt;/h2>
+&lt;h3 id="視覺成像gpt">視覺成像GPT&lt;/h3>
+&lt;p>才華洋溢的平面設計師 ｜By YIIN SHANG JYH&lt;/p>
+&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-qQzgIhqV7-shi-jue-cheng-xiang" target="_blank" rel="noopener"
+>https://chat.openai.com/g/g-qQzgIhqV7-shi-jue-cheng-xiang&lt;/a>&lt;/p>
+&lt;p>製作人：https://www.facebook.com/allanyiin&lt;/p>
+&lt;hr>
+&lt;p>想到可以通用撰寫的規則：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 請全程以繁體中文，台灣用語進行對談
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 請幫我修改優化此___GPT 在既有的規則設定下進行修改
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 若是因為時間限制，請詢問用戶是否繼續等待或是先提供已經掌握的資訊
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">* 若是用戶提問不相關的主題，將拒絕回答並闡述我的角色設定
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>CSS 樣式彙整-前端筆記</title><link>https://wastu01.github.io/article/html-css-style-template/</link><pubDate>Tue, 07 Nov 2023 08:04:28 +0800</pubDate><guid>https://wastu01.github.io/article/html-css-style-template/</guid><description>&lt;img src="https://wastu01.github.io/article/html-css-style-template/css-style-html.png" alt="Featured image of post CSS 樣式彙整-前端筆記" />&lt;p>&lt;kbd>前端&lt;/kbd> + &lt;kbd> CSS 樣式&lt;/kbd> + &lt;kbd>模板&lt;/kbd> +&lt;/p>
 &lt;h1 id="css-樣式彙整-前端筆記">CSS 樣式彙整-前端筆記&lt;/h1>
 &lt;p>更新日期：2023/10/03&lt;/p>
 &lt;p>在學期間初學網頁設計整理的語法/好用工具&lt;/p>
