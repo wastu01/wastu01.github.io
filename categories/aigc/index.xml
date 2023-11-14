@@ -358,15 +358,6 @@ loading="lazy"
 &lt;/div>&lt;p>Adobe Firefly Discord 社群：https://discord.com/invite/adobefirefly&lt;/p>
 &lt;p>Adobe 03/29 更新內容：https://blog.adobe.com/en/publish/2023/03/29/adobe-firefly-beta-updates&lt;/p>
 &lt;h2 id="文字生成圖片">文字生成圖片&lt;/h2>
-&lt;p>Adobe Firefly Discord Hangout - April 28&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/p_RFxWgAc7s"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
 &lt;p>&lt;img src="https://i.imgur.com/XCS3hxB.png"
 loading="lazy"
 >&lt;/p>
@@ -476,7 +467,6 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;!-- > [文字設計風格詠咒｜ChatGPT 咒語庫](/O4hgyaZUTOq34NtCq1K8fg) -->
-&lt;!-- 結合 [Runway GEN1]() 的效果 -->
 &lt;p>OpenAI ChatGPT 生成提示詞&lt;/p>
 &lt;p>Adobe Firefly 生成圖片&lt;/p>
 &lt;p>Runwayml Gen1 生成影片&lt;/p>
