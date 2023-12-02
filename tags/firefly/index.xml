@@ -1,4 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firefly on Wang's Blog</title><link>https://wastu01.github.io/tags/firefly/</link><description>Recent content in Firefly on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/firefly/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;p>AI 生成提示詞彙整｜咒語關鍵字&lt;/p>
+&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
+&lt;p>文字/圖片生成影片&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/yDY-bT7xPF8"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Talking to camera, man, American style, --upscale
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VGP6P_QYe8w"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">space suit walking on mars, university background, chaos, lava
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/TtyaT4CykRk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_vHOSyIENmM"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
 &lt;h2 id="adobe-firefly">Adobe Firefly&lt;/h2>
 &lt;h3 id="文字材質提示詞">文字材質提示詞&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -151,80 +224,7 @@ label="Firefly"
 theme="github-dark"
 crossorigin="anonymous"
 async>
-&lt;/script>
-&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
-&lt;p>文字/圖片生成影片&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/yDY-bT7xPF8"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Talking to camera, man, American style, --upscale
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/VGP6P_QYe8w"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">space suit walking on mars, university background, chaos, lava
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/TtyaT4CykRk"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/_vHOSyIENmM"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
+&lt;/script></description></item><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
 &lt;p>llllasd&lt;/p>
 &lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&amp;mdash;&lt;kbd>AI&lt;/kbd> 工具&lt;/p>
 &lt;p>動機：年初申請到 Adobe firefly 文字生成圖片的前期測試用戶，實測效果如何&lt;/p>

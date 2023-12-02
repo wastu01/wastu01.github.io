@@ -763,6 +763,79 @@ See the Pen &lt;a href="https://codepen.io/yachen/pen/gOYEMoM">
 demo-box-shadow&lt;/a> by yachen (&lt;a href="https://codepen.io/yachen">@yachen&lt;/a>)
 on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 &lt;/iframe></description></item><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;p>AI 生成提示詞彙整｜咒語關鍵字&lt;/p>
+&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
+&lt;p>文字/圖片生成影片&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/yDY-bT7xPF8"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Talking to camera, man, American style, --upscale
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VGP6P_QYe8w"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">space suit walking on mars, university background, chaos, lava
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/TtyaT4CykRk"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>影片效果：&lt;/p>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_vHOSyIENmM"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
 &lt;h2 id="adobe-firefly">Adobe Firefly&lt;/h2>
 &lt;h3 id="文字材質提示詞">文字材質提示詞&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -915,80 +988,7 @@ label="Firefly"
 theme="github-dark"
 crossorigin="anonymous"
 async>
-&lt;/script>
-&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
-&lt;p>文字/圖片生成影片&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/yDY-bT7xPF8"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Talking to camera, man, American style, --upscale
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/VGP6P_QYe8w"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">space suit walking on mars, university background, chaos, lava
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/TtyaT4CykRk"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;hr>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>影片效果：&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/_vHOSyIENmM"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
+&lt;/script></description></item><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
 &lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練&lt;/h1>
 &lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化&lt;/h2>
 &lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
@@ -1502,6 +1502,22 @@ data-full-width-responsive="true">&lt;/ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script></description></item><item><title>新竹縣芎林柴木屋咖啡 寵物友善/景觀餐廳</title><link>https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/</link><pubDate>Sat, 21 Oct 2023 15:53:06 +0800</pubDate><guid>https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/</guid><description>&lt;img src="https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/shibaloghouse-caffe-cover.jpg" alt="Featured image of post 新竹縣芎林柴木屋咖啡 寵物友善/景觀餐廳" />&lt;p>&lt;kbd>新竹縣&lt;/kbd> &lt;kbd>芎林&lt;/kbd> &lt;kbd>木屋&lt;/kbd> &lt;kbd>寵物友善&lt;/kbd>&lt;/p>
 &lt;h1 id="新竹縣芎林柴木屋咖啡-寵物友善景觀餐廳">新竹縣芎林柴木屋咖啡 寵物友善/景觀餐廳&lt;/h1>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/HhRdDJgdjiw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/5YsvuW5sMKw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
 &lt;p>地理位置位處飛鳳山旁邊的一個小山丘上，徒中會經過一家餐廳橘子碰&lt;/p>
 &lt;p>入口處會看到明顯的標誌，下坡後有個小小停車場可停放車輛&lt;/p>
 &lt;p>&lt;img src="https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/img/2023-10-21-shibaloghouse-caffe-26.jpeg"
@@ -1706,22 +1722,6 @@ data-flex-grow="75"
 data-flex-basis="180px"
 >&lt;/p>
 &lt;p>中途的指示牌，若想繼續前往步行，須留意店家營業時間，大門會上鎖&lt;/p>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/HhRdDJgdjiw"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/5YsvuW5sMKw"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
 &lt;p>&lt;img src="https://wastu01.github.io/article/shibaloghouse-caffe-hsinchucity/img/2023-10-21-shibaloghouse-caffe-24-logo.jpg"
 width="1996"
 height="1900"
@@ -2038,9 +2038,26 @@ alt="網頁版計算機 Caculator"
 &lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
 >https://wastu01.github.io/&lt;/a>&lt;/p>
 &lt;hr></description></item><item><title>2023-10-06-新竹湖口後山祕境-茶香步道</title><link>https://wastu01.github.io/article/aerial-photography-hsinchucity/</link><pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/aerial-photography-hsinchucity/</guid><description>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_8.jpg" alt="Featured image of post 2023-10-06-新竹湖口後山祕境-茶香步道" />&lt;h1 id="地點">地點&lt;/h1>
-&lt;p>湖口&lt;/p>
-&lt;h1 id="簡介">簡介&lt;/h1>
-&lt;p>綠區 綠油油 茶&lt;/p>
+&lt;p>303新竹縣湖口鄉綠藻 - 茶香步道&lt;/p>
+&lt;h1 id="新聞報導">新聞報導&lt;/h1>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/LEDyCTEHpq4"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h1 id="空拍畫面">空拍畫面&lt;/h1>
+&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/CMYWzP75q_s"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;h1 id="湖口茶香步道">湖口茶香步道&lt;/h1>
 &lt;p>&lt;img src="https://wastu01.github.io/article/aerial-photography-hsinchucity/img/LINE_ALBUM_%E6%B9%96%E5%8F%A3%E8%8C%B6%E9%A6%99%E6%AD%A5%E9%81%93_231006_1.jpg"
 width="1479"
 height="1109"
@@ -2085,25 +2102,7 @@ loading="lazy"
 class="gallery-image"
 data-flex-grow="74"
 data-flex-basis="179px"
->&lt;/p>
-&lt;h1 id="新聞報導">新聞報導&lt;/h1>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/LEDyCTEHpq4"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
-&lt;h1 id="空拍畫面">空拍畫面&lt;/h1>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/CMYWzP75q_s"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div></description></item><item><title>多媒體創作區</title><link>https://wastu01.github.io/article/my-digital-works-in-youtube/</link><pubDate>Tue, 03 Oct 2023 08:50:29 +0800</pubDate><guid>https://wastu01.github.io/article/my-digital-works-in-youtube/</guid><description>&lt;img src="https://wastu01.github.io/article/my-digital-works-in-youtube/youtube-channel.png" alt="Featured image of post 多媒體創作區" />&lt;p>
+>&lt;/p></description></item><item><title>多媒體創作區</title><link>https://wastu01.github.io/article/my-digital-works-in-youtube/</link><pubDate>Tue, 03 Oct 2023 08:50:29 +0800</pubDate><guid>https://wastu01.github.io/article/my-digital-works-in-youtube/</guid><description>&lt;img src="https://wastu01.github.io/article/my-digital-works-in-youtube/youtube-channel.png" alt="Featured image of post 多媒體創作區" />&lt;p>
 &lt;span class="nowrap">
 &lt;span class="emojify">🔝&lt;/span>
 &lt;/span>
