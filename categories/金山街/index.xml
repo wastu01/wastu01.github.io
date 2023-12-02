@@ -75,13 +75,4 @@
 &lt;h2 id="金山東二街">金山東二街&lt;/h2>
 &lt;h2 id="金山東三街">金山東三街&lt;/h2>
 &lt;h2 id="金山東街">金山東街&lt;/h2>
-&lt;h1 id="畫面展示">畫面展示&lt;/h1>
-&lt;div class="video-wrapper">
-&lt;iframe loading="lazy"
-src="https://www.youtube.com/embed/HhRdDJgdjiw"
-allowfullscreen
-title="YouTube Video"
->
-&lt;/iframe>
-&lt;/div>
 &lt;h1 id="參考資料">參考資料&lt;/h1></description></item></channel></rss>
