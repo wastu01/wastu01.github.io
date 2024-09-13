@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stablediffusion on Wang's Blog</title><link>https://wastu01.github.io/tags/stablediffusion/</link><description>Recent content in Stablediffusion on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/stablediffusion/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;p>AI 生成提示詞彙整｜咒語關鍵字&lt;/p>
-&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
-&lt;p>文字/圖片生成影片&lt;/p>
+&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2
+&lt;/h2>&lt;p>文字/圖片生成影片&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -72,9 +72,9 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;h2 id="adobe-firefly">Adobe Firefly&lt;/h2>
-&lt;h3 id="文字材質提示詞">文字材質提示詞&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="adobe-firefly">Adobe Firefly
+&lt;/h2>&lt;h3 id="文字材質提示詞">文字材質提示詞
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -110,8 +110,8 @@ async>
 &lt;/script>
 &lt;/details>
 &lt;hr>
-&lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -164,11 +164,11 @@ theme="github-dark"
 crossorigin="anonymous"
 async>
 &lt;/script>
-&lt;h2 id="midjourney">Midjourney&lt;/h2>
-&lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny.png"
+&lt;h2 id="midjourney">Midjourney
+&lt;/h2>&lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny.png"
 width="1024"
 height="1024"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hua69ab783c29e5b24348bb90f48a36493_1089566_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hua69ab783c29e5b24348bb90f48a36493_1089566_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu14958664306447098070.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu2907227277357987771.png 1024w"
 loading="lazy"
 alt="A_purple_dog_typing_like_man_to_use_a_computer_on_a_red_chair"
 class="gallery-image"
@@ -178,7 +178,7 @@ data-flex-basis="240px"
 &lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2.png"
 width="896"
 height="512"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu6194ecf9353d05cb66d67fe5804e46bc_776678_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu6194ecf9353d05cb66d67fe5804e46bc_776678_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu14053169829579256426.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu16433596825648330239.png 1024w"
 loading="lazy"
 alt="Ernest_Hemingways_The_Old_Man_and_the_Sea_depicts_an_elderl"
 class="gallery-image"
@@ -188,15 +188,15 @@ data-flex-basis="420px"
 &lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3.png"
 width="2048"
 height="1152"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu53d554c17db4c3e76cbdeb6876a1dfbc_292230_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu53d554c17db4c3e76cbdeb6876a1dfbc_292230_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu14381108785218835970.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu92388707955717102.png 1024w"
 loading="lazy"
 alt="a_cozy_indoor_scene_with_intricate_lighting_and_attention"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
 >&lt;/p>
-&lt;h2 id="stable-diffusion">Stable Diffusion&lt;/h2>
-&lt;p>文字生成圖像&lt;/p>
+&lt;h2 id="stable-diffusion">Stable Diffusion
+&lt;/h2>&lt;p>文字生成圖像&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1

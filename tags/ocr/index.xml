@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OCR on Wang's Blog</title><link>https://wastu01.github.io/tags/ocr/</link><description>Recent content in OCR on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Fri, 27 Oct 2023 10:37:31 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/ocr/index.xml" rel="self" type="application/rss+xml"/><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
-&lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練&lt;/h1>
-&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化&lt;/h2>
-&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
+&lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練
+&lt;/h1>&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化
+&lt;/h2>&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/xBEiIlt.png"
 loading="lazy"
 >&lt;/p>
@@ -28,8 +28,8 @@ data-ad-slot="8624326011">&lt;/ins>
 &lt;p>我們這組的想法是應用於農民可拍照上傳產品外包裝編號查看農藥用途。&lt;/p>
 &lt;p>實做起來遇到一些問題微調操作&lt;/p>
 &lt;p>所以做個紀錄有了這篇筆記整理 📝&lt;/p>
-&lt;h2 id="安裝-tessract--語言包">安裝 Tessract / 語言包&lt;/h2>
-&lt;p>安裝環境： MacOS&lt;/p>
+&lt;h2 id="安裝-tessract--語言包">安裝 Tessract / 語言包
+&lt;/h2>&lt;p>安裝環境： MacOS&lt;/p>
 &lt;p>Homebrew 安裝&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -53,13 +53,13 @@ data-ad-slot="8624326011">&lt;/ins>
 >https://formulae.brew.sh/formula/tesseract-lang&lt;/a>&lt;/p>
 &lt;p>語言包一次打包 / 需要的再匯入&lt;/p>
 &lt;p>位置大概是這邊：&lt;code>/usr/local/Cellar/tesseract/4.x/share/tessdata&lt;/code>&lt;/p>
-&lt;h2 id="編譯安裝問題">編譯安裝問題&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="編譯安裝問題">編譯安裝問題
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Error: invalid option: --with-training-tools
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">option&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">with&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">training&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">tools&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>要安裝訓練模型時，發現 tesseract
@@ -69,8 +69,8 @@ data-ad-slot="8624326011">&lt;/ins>
 &lt;p>&lt;strong>參考下列文章（感謝文章作者）&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://juejin.im/post/6844904097863188487" target="_blank" rel="noopener"
 >https://juejin.im/post/6844904097863188487&lt;/a>&lt;/p>
-&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -90,8 +90,8 @@ loading="lazy"
 >https://lufor129.medium.com/pytesseract-&lt;/a>辨識圖片中的文字-b1024f678fac&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/huitailangyz/article/details/80390090" target="_blank" rel="noopener"
 >https://blog.csdn.net/huitailangyz/article/details/80390090&lt;/a>&lt;/p>
-&lt;h2 id="查看安裝版本">查看安裝版本&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="查看安裝版本">查看安裝版本
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -116,8 +116,8 @@ loading="lazy"
 &lt;/div>&lt;p>&lt;img src="https://i.imgur.com/HVS8rMt.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="參數設定">參數設定&lt;/h2>
-&lt;p>列出可使用的語言包&lt;/p>
+&lt;h2 id="參數設定">參數設定
+&lt;/h2>&lt;p>列出可使用的語言包&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -169,8 +169,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;hr>
-&lt;h2 id="psm-判別語句類型模式">PSM 判別語句類型模式&lt;/h2>
-&lt;ul>
+&lt;h2 id="psm-判別語句類型模式">PSM 判別語句類型模式
+&lt;/h2>&lt;ul>
 &lt;li>&amp;ndash;psm : 判別語句類型模式 / 大陸翻譯：自动页面分割模式&lt;/li>
 &lt;/ul>
 &lt;p>常用說明&lt;/p>
@@ -193,8 +193,8 @@ loading="lazy"
 &lt;p>PSM 參數詳細說明：
 &lt;a class="link" href="https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/" target="_blank" rel="noopener"
 >https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/&lt;/a>&lt;/p>
-&lt;h2 id="辨識效果測試">辨識效果測試&lt;/h2>
-&lt;p>執行畫面：&lt;/p>
+&lt;h2 id="辨識效果測試">辨識效果測試
+&lt;/h2>&lt;p>執行畫面：&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/Us8mDqc.png"
 loading="lazy"
 >&lt;/p>
@@ -211,8 +211,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;p>線條干擾誤判斷成 - 符號&lt;/p>
-&lt;h2 id="圖片預處理--提升辨識度">圖片預處理 / 提升辨識度&lt;/h2>
-&lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
+&lt;h2 id="圖片預處理--提升辨識度">圖片預處理 / 提升辨識度
+&lt;/h2>&lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
 &lt;p>官方文檔解釋：
 &lt;a class="link" href="https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing" target="_blank" rel="noopener"
 >https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing&lt;/a>&lt;/p>
@@ -327,8 +327,8 @@ loading="lazy"
 &lt;p>&lt;a class="link" href="https://youtu.be/6DjFscX4I_c?t=502" target="_blank" rel="noopener"
 >https://youtu.be/6DjFscX4I_c?t=502&lt;/a>&lt;/p>
 &lt;p>訓練文字辨識，手動標註&lt;/p>
-&lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5&lt;/h2>
-&lt;p>手動標記｜工人智慧&lt;/p>
+&lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5
+&lt;/h2>&lt;p>手動標記｜工人智慧&lt;/p>
 &lt;p>下載位置：&lt;/p>
 &lt;p>&lt;a class="link" href="https://sourceforge.net/projects/vietocr/" target="_blank" rel="noopener"
 >https://sourceforge.net/projects/vietocr/&lt;/a>&lt;/p>
@@ -336,8 +336,8 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/LcyLe83.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="使用語法總覽">使用語法總覽&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="使用語法總覽">使用語法總覽
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -407,42 +407,42 @@ loading="lazy"
 &lt;/span>&lt;span class="lnt">31
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Page segmentation modes:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Orientation and script detection (OSD) only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Automatic page segmentation with OSD.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Automatic page segmentation, but no OSD, or OCR. (not implemented)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Fully automatic page segmentation, but no OSD. (Default)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 4 Assume a single column of text of variable sizes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 5 Assume a single uniform block of vertically aligned text.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 6 Assume a single uniform block of text.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 7 Treat the image as a single text line.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 8 Treat the image as a single word.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 9 Treat the image as a single word in a circle.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10 Treat the image as a single character.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 11 Sparse text. Find as much text as possible in no particular order.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 12 Sparse text with OSD.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 13 Raw line. Treat the image as a single text line,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bypassing hacks that are Tesseract-specific.
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="n">Orientation&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">script&lt;/span> &lt;span class="n">detection&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">OSD&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">1&lt;/span> &lt;span class="n">Automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">2&lt;/span> &lt;span class="n">Automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">but&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">OCR&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="ow">not&lt;/span> &lt;span class="n">implemented&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">3&lt;/span> &lt;span class="n">Fully&lt;/span> &lt;span class="n">automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">but&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">Default&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">4&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">column&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">variable&lt;/span> &lt;span class="n">sizes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">5&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">uniform&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">vertically&lt;/span> &lt;span class="n">aligned&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">6&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">uniform&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">7&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">8&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">word&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">9&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">word&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">circle&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">10&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">character&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">11&lt;/span> &lt;span class="n">Sparse&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="n">Find&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">much&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">possible&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">particular&lt;/span> &lt;span class="n">order&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">12&lt;/span> &lt;span class="n">Sparse&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">13&lt;/span> &lt;span class="n">Raw&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">bypassing&lt;/span> &lt;span class="n">hacks&lt;/span> &lt;span class="n">that&lt;/span> &lt;span class="n">are&lt;/span> &lt;span class="n">Tesseract&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">specific&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OCR Engine modes:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Legacy engine only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Neural nets LSTM engine only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Legacy + LSTM engines.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Default, based on what is available.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">OCR&lt;/span> &lt;span class="n">Engine&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="n">Legacy&lt;/span> &lt;span class="n">engine&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">1&lt;/span> &lt;span class="n">Neural&lt;/span> &lt;span class="n">nets&lt;/span> &lt;span class="n">LSTM&lt;/span> &lt;span class="n">engine&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">2&lt;/span> &lt;span class="n">Legacy&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">LSTM&lt;/span> &lt;span class="n">engines&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">3&lt;/span> &lt;span class="n">Default&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">based&lt;/span> &lt;span class="n">on&lt;/span> &lt;span class="n">what&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">available&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Single options:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h, --help Show minimal help message.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-extra Show extra help for advanced users.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-psm Show page segmentation modes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-oem Show OCR Engine modes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -v, --version Show version information.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --list-langs List available languages for tesseract engine.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --print-parameters Print tesseract parameters.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Single&lt;/span> &lt;span class="n">options&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">minimal&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="n">message&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">extra&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">extra&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">advanced&lt;/span> &lt;span class="n">users&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">psm&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">oem&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">OCR&lt;/span> &lt;span class="n">Engine&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">version&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">version&lt;/span> &lt;span class="n">information&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">list&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">langs&lt;/span> &lt;span class="n">List&lt;/span> &lt;span class="n">available&lt;/span> &lt;span class="n">languages&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">tesseract&lt;/span> &lt;span class="n">engine&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nb">print&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">parameters&lt;/span> &lt;span class="n">Print&lt;/span> &lt;span class="n">tesseract&lt;/span> &lt;span class="n">parameters&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>未完待續，下方整理了一些相關文章，有興趣的同學可以參考。&lt;/p>
-&lt;h2 id="參考文章">參考文章&lt;/h2>
-&lt;p>簡單的製作驗證碼範例：
+&lt;h2 id="參考文章">參考文章
+&lt;/h2>&lt;p>簡單的製作驗證碼範例：
 &lt;a class="link" href="https://ithelp.ithome.com.tw/articles/10159457" target="_blank" rel="noopener"
 >https://ithelp.ithome.com.tw/articles/10159457&lt;/a>&lt;/p>
 &lt;p>[ 實用心得 ] Tesseract-OCR&lt;/p>
@@ -479,13 +479,13 @@ loading="lazy"
 &lt;p>tessdata/configs/digits 沒找到&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/ADebugMan/article/details/100592200" target="_blank" rel="noopener"
 >https://blog.csdn.net/ADebugMan/article/details/100592200&lt;/a>&lt;/p>
-&lt;h2 id="檔案放置區">檔案放置區:&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="檔案放置區">檔案放置區:
+&lt;/h2>&lt;blockquote>
 &lt;p>&lt;a class="link" href="https://medium.com/mr-wang/%e6%96%87%e5%ad%97%e8%be%a8%e8%ad%98%e5%af%a6%e4%bd%9c%e5%8f%8a%e9%80%86%e5%90%91%e8%a7%a3%e6%9e%90-e42078f50916" target="_blank" rel="noopener"
 >Tesseract-OCR 辨識＆ 驗證碼分析及實作&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="圖片辨識結合自動回覆機器人">圖片辨識結合自動回覆機器人&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
+&lt;h2 id="圖片辨識結合自動回覆機器人">圖片辨識結合自動回覆機器人
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>&lt;a class="link" href="https://youtu.be/VZOmXhAzwrk" target="_blank" rel="noopener"

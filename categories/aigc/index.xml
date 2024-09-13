@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AIGC on Wang's Blog</title><link>https://wastu01.github.io/categories/aigc/</link><description>Recent content in AIGC on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sun, 12 Nov 2023 03:33:42 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/categories/aigc/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 客製化聊天機器人 GPTs</title><link>https://wastu01.github.io/article/openai-custom-gpts-collection/</link><pubDate>Sun, 12 Nov 2023 03:33:42 +0800</pubDate><guid>https://wastu01.github.io/article/openai-custom-gpts-collection/</guid><description>&lt;img src="https://wastu01.github.io/article/openai-custom-gpts-collection/custome-chatgpt-gpts.png" alt="Featured image of post OpenAI ChatGPT 客製化聊天機器人 GPTs" />&lt;p>&lt;kbd>openai&lt;/kbd> + &lt;kbd>chatgpt&lt;/kbd> + &lt;kbd>gpts&lt;/kbd>&lt;/p>
-&lt;h1 id="openai-chatgpt-客製化聊天機器人--gpts">OpenAI ChatGPT 客製化聊天機器人 | GPTs&lt;/h1>
-&lt;p>&lt;code>GPT = Good Personal Tool&lt;/code>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AIGC on Wang's Blog</title><link>https://wastu01.github.io/categories/aigc/</link><description>Recent content in AIGC on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/categories/aigc/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 客製化聊天機器人 GPTs</title><link>https://wastu01.github.io/article/openai-custom-gpts-collection/</link><pubDate>Sun, 12 Nov 2023 03:33:42 +0800</pubDate><guid>https://wastu01.github.io/article/openai-custom-gpts-collection/</guid><description>&lt;img src="https://wastu01.github.io/article/openai-custom-gpts-collection/custome-chatgpt-gpts.png" alt="Featured image of post OpenAI ChatGPT 客製化聊天機器人 GPTs" />&lt;p>&lt;kbd>openai&lt;/kbd> + &lt;kbd>chatgpt&lt;/kbd> + &lt;kbd>gpts&lt;/kbd>&lt;/p>
+&lt;h1 id="openai-chatgpt-客製化聊天機器人--gpts">OpenAI ChatGPT 客製化聊天機器人 | GPTs
+&lt;/h1>&lt;p>&lt;code>GPT = Good Personal Tool&lt;/code>&lt;/p>
 &lt;p>前情提要：&lt;/p>
 &lt;p>OpenAI 最近推出了一項新功能 GPTs&lt;/p>
 &lt;p>允許用戶根據自己的需求客製化 GPT 模型。&lt;/p>
@@ -11,16 +11,16 @@
 >https://openai.com/blog/introducing-gpts&lt;/a>&lt;/p>
 &lt;p>You can now create custom versions of ChatGPT that combine instructions,
 extra knowledge, and any combination of skills.&lt;/p>
-&lt;h2 id="資訊主題">資訊主題&lt;/h2>
-&lt;h3 id="net-開發人員助手">.NET 開發人員助手&lt;/h3>
-&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou" target="_blank" rel="noopener"
+&lt;h2 id="資訊主題">資訊主題
+&lt;/h2>&lt;h3 id="net-開發人員助手">.NET 開發人員助手
+&lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou&lt;/a>&lt;/p>
 &lt;p>針對經驗豐富的開發人員提供進階的 .NET 建議&lt;/p>
 &lt;p>製作人： HUANG PAO HSI&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.facebook.com/will.fans/" target="_blank" rel="noopener"
 >https://www.facebook.com/will.fans/&lt;/a>&lt;/p>
-&lt;h3 id="網址閱讀助手">網址閱讀助手&lt;/h3>
-&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-Rwn8vtRF2-wang-zhi-wen-jian-yue-du-zhu-shou" target="_blank" rel="noopener"
+&lt;h3 id="網址閱讀助手">網址閱讀助手
+&lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-Rwn8vtRF2-wang-zhi-wen-jian-yue-du-zhu-shou" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-Rwn8vtRF2-wang-zhi-wen-jian-yue-du-zhu-shou&lt;/a>&lt;/p>
 &lt;p>製作人：sd0.tech
 &lt;a class="link" href="https://www.facebook.com/yuhaooo.p" target="_blank" rel="noopener"
@@ -29,8 +29,8 @@ extra knowledge, and any combination of skills.&lt;/p>
 loading="lazy"
 alt="截圖 2023-11-12 下午12.52.42"
 >&lt;/p>
-&lt;h3 id="中立批評-gpt">中立批評 GPT&lt;/h3>
-&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt" target="_blank" rel="noopener"
+&lt;h3 id="中立批評-gpt">中立批評 GPT
+&lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-S3rIhfQkr-zhong-li-pi-pan-gpt&lt;/a>&lt;/p>
 &lt;p>製作人：LU CHE YU
 &lt;a class="link" href="https://www.facebook.com/joeylu0627" target="_blank" rel="noopener"
@@ -39,17 +39,17 @@ alt="截圖 2023-11-12 下午12.52.42"
 loading="lazy"
 alt="截圖 2023-11-12 上午3.28.23"
 >&lt;/p>
-&lt;h3 id="新聞報導-gpt">新聞報導 GPT&lt;/h3>
-&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt" target="_blank" rel="noopener"
+&lt;h3 id="新聞報導-gpt">新聞報導 GPT
+&lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt&lt;/a>&lt;/p>
 &lt;p>製作人：TaiwanBTS&lt;/p>
 &lt;p>&lt;img src="https://hackmd.io/_uploads/SJDGLU67T.png"
 loading="lazy"
 alt="截圖 2023-11-12 上午3.29.10"
 >&lt;/p>
-&lt;h2 id="娛樂主題">娛樂主題&lt;/h2>
-&lt;h3 id="rpg-gpt">RPG GPT&lt;/h3>
-&lt;p>悲慘世界 RPG
+&lt;h2 id="娛樂主題">娛樂主題
+&lt;/h2>&lt;h3 id="rpg-gpt">RPG GPT
+&lt;/h3>&lt;p>悲慘世界 RPG
 &lt;a class="link" href="https://chat.openai.com/g/g-OSVW9rZqu-bei-can-shi-jie-rpg" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-OSVW9rZqu-bei-can-shi-jie-rpg&lt;/a>&lt;/p>
 &lt;p>製作人：LU CHE YU
@@ -60,9 +60,9 @@ loading="lazy"
 alt="截圖 2023-11-12 上午3.30.27"
 >&lt;/p>
 &lt;hr>
-&lt;h2 id="設計主題">設計主題&lt;/h2>
-&lt;h3 id="視覺成像gpt">視覺成像GPT&lt;/h3>
-&lt;p>才華洋溢的平面設計師 ｜By YIIN SHANG JYH&lt;/p>
+&lt;h2 id="設計主題">設計主題
+&lt;/h2>&lt;h3 id="視覺成像gpt">視覺成像GPT
+&lt;/h3>&lt;p>才華洋溢的平面設計師 ｜By YIIN SHANG JYH&lt;/p>
 &lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-qQzgIhqV7-shi-jue-cheng-xiang" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-qQzgIhqV7-shi-jue-cheng-xiang&lt;/a>&lt;/p>
 &lt;p>製作人：https://www.facebook.com/allanyiin&lt;/p>
@@ -71,8 +71,8 @@ loading="lazy"
 alt="截圖 2023-11-13 下午8.41.53"
 >&lt;/p>
 &lt;hr>
-&lt;h3 id="設計靈感gpt">設計靈感GPT&lt;/h3>
-&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-2t4pST9p0-she-ji-ling-gan-gpt" target="_blank" rel="noopener"
+&lt;h3 id="設計靈感gpt">設計靈感GPT
+&lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-2t4pST9p0-she-ji-ling-gan-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-2t4pST9p0-she-ji-ling-gan-gpt&lt;/a>&lt;/p>
 &lt;p>製作人：TaiwanBTS&lt;/p>
 &lt;p>&lt;img src="https://hackmd.io/_uploads/SJmDFcJ4a.png"
@@ -82,30 +82,30 @@ alt="截圖 2023-11-13 下午8.40.43"
 &lt;hr>
 &lt;p>OpenAI 客製化GPT使用指南&lt;/p>
 &lt;hr>
-&lt;h2 id="客製化gpt-使用指南">客製化GPT 使用指南&lt;/h2>
-&lt;p>此指南旨在提供如何有效運用OpenAI客製化GPT模型的規則和建議。(由 ChatGPT 生成)&lt;/p>
-&lt;h3 id="基本溝通原則">基本溝通原則&lt;/h3>
-&lt;ul>
+&lt;h2 id="客製化gpt-使用指南">客製化GPT 使用指南
+&lt;/h2>&lt;p>此指南旨在提供如何有效運用OpenAI客製化GPT模型的規則和建議。(由 ChatGPT 生成)&lt;/p>
+&lt;h3 id="基本溝通原則">基本溝通原則
+&lt;/h3>&lt;ul>
 &lt;li>&lt;strong>語言使用&lt;/strong>：請全程以繁體中文，台灣用語進行對談。&lt;/li>
 &lt;li>&lt;strong>規則修改與優化&lt;/strong>：請幫我修改優化此___GPT，在既有的規則設定下進行修改。&lt;/li>
 &lt;li>&lt;strong>時間管理&lt;/strong>：若是因為時間限制，請詢問用戶是否繼續等待或是先提供已經掌握的資訊。&lt;/li>
 &lt;li>&lt;strong>主題限制&lt;/strong>：若是用戶提問不相關的主題，將拒絕回答並闡述我的角色設定。&lt;/li>
 &lt;/ul>
-&lt;h3 id="進階互動原則">進階互動原則&lt;/h3>
-&lt;ul>
+&lt;h3 id="進階互動原則">進階互動原則
+&lt;/h3>&lt;ul>
 &lt;li>&lt;strong>資訊準確性&lt;/strong>：確保所有提供的資訊都是準確且最新的。如果資訊來源有限或不確定，應明確告知用戶。&lt;/li>
 &lt;li>&lt;strong>用戶隱私保護&lt;/strong>：尊重用戶隱私，不要求或儲存用戶的個人資訊。&lt;/li>
 &lt;li>&lt;strong>內容適宜性&lt;/strong>：避免提供或傳播任何不適宜、冒犯性或不適合特定年齡群的內容。&lt;/li>
 &lt;li>&lt;strong>互動態度&lt;/strong>：保持尊重和專業的態度，即使在處理複雜或敏感的問題時。&lt;/li>
 &lt;/ul>
-&lt;h3 id="技術操作指南">技術操作指南&lt;/h3>
-&lt;ul>
+&lt;h3 id="技術操作指南">技術操作指南
+&lt;/h3>&lt;ul>
 &lt;li>&lt;strong>功能使用&lt;/strong>：清楚指導用戶如何使用特定的GPT功能或命令。&lt;/li>
 &lt;li>&lt;strong>錯誤處理&lt;/strong>：在面對錯誤或不理想的輸出時，提供指導和建議以協助用戶解決問題。&lt;/li>
 &lt;li>&lt;strong>持續學習&lt;/strong>：鼓勵用戶提供回饋，以便不斷改進和優化GPT模型的表現。&lt;/li>
 &lt;/ul></description></item><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" />&lt;p>AI 生成提示詞彙整｜咒語關鍵字&lt;/p>
-&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2&lt;/h2>
-&lt;p>文字/圖片生成影片&lt;/p>
+&lt;h2 id="runwayml-gen1--gen2">Runwayml Gen1 / Gen2
+&lt;/h2>&lt;p>文字/圖片生成影片&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -177,9 +177,9 @@ title="YouTube Video"
 >
 &lt;/iframe>
 &lt;/div>
-&lt;h2 id="adobe-firefly">Adobe Firefly&lt;/h2>
-&lt;h3 id="文字材質提示詞">文字材質提示詞&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="adobe-firefly">Adobe Firefly
+&lt;/h2>&lt;h3 id="文字材質提示詞">文字材質提示詞
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -215,8 +215,8 @@ async>
 &lt;/script>
 &lt;/details>
 &lt;hr>
-&lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h3 id="文字生成圖片提示詞">文字生成圖片提示詞
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -269,11 +269,11 @@ theme="github-dark"
 crossorigin="anonymous"
 async>
 &lt;/script>
-&lt;h2 id="midjourney">Midjourney&lt;/h2>
-&lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny.png"
+&lt;h2 id="midjourney">Midjourney
+&lt;/h2>&lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny.png"
 width="1024"
 height="1024"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hua69ab783c29e5b24348bb90f48a36493_1089566_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hua69ab783c29e5b24348bb90f48a36493_1089566_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu14958664306447098070.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu2907227277357987771.png 1024w"
 loading="lazy"
 alt="A_purple_dog_typing_like_man_to_use_a_computer_on_a_red_chair"
 class="gallery-image"
@@ -283,7 +283,7 @@ data-flex-basis="240px"
 &lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2.png"
 width="896"
 height="512"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu6194ecf9353d05cb66d67fe5804e46bc_776678_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu6194ecf9353d05cb66d67fe5804e46bc_776678_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu14053169829579256426.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu16433596825648330239.png 1024w"
 loading="lazy"
 alt="Ernest_Hemingways_The_Old_Man_and_the_Sea_depicts_an_elderl"
 class="gallery-image"
@@ -293,15 +293,15 @@ data-flex-basis="420px"
 &lt;p>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3.png"
 width="2048"
 height="1152"
-srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu53d554c17db4c3e76cbdeb6876a1dfbc_292230_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu53d554c17db4c3e76cbdeb6876a1dfbc_292230_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu14381108785218835970.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu92388707955717102.png 1024w"
 loading="lazy"
 alt="a_cozy_indoor_scene_with_intricate_lighting_and_attention"
 class="gallery-image"
 data-flex-grow="177"
 data-flex-basis="426px"
 >&lt;/p>
-&lt;h2 id="stable-diffusion">Stable Diffusion&lt;/h2>
-&lt;p>文字生成圖像&lt;/p>
+&lt;h2 id="stable-diffusion">Stable Diffusion
+&lt;/h2>&lt;p>文字生成圖像&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -329,8 +329,8 @@ label="Firefly"
 theme="github-dark"
 crossorigin="anonymous"
 async>
-&lt;/script></description></item><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果&lt;/h1>
-&lt;p>llllasd&lt;/p>
+&lt;/script></description></item><item><title>Adobe Firefly 文字生成圖片 實測</title><link>https://wastu01.github.io/article/adobe-firefly-text-to-image/</link><pubDate>Wed, 18 Oct 2023 09:47:30 +0800</pubDate><guid>https://wastu01.github.io/article/adobe-firefly-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/adobe-firefly-text-to-image/adobe-firefly-text-to-image.jpg" alt="Featured image of post Adobe Firefly 文字生成圖片 實測" />&lt;h1 id="adobe-firefly-文字生成圖片效果">Adobe Firefly 文字生成圖片效果
+&lt;/h1>&lt;p>llllasd&lt;/p>
 &lt;p>使用軟體：&lt;mark>adoobe firelfy&lt;/mark>&amp;mdash;&lt;kbd>AI&lt;/kbd> 工具&lt;/p>
 &lt;p>動機：年初申請到 Adobe firefly 文字生成圖片的前期測試用戶，實測效果如何&lt;/p>
 &lt;hr>
@@ -359,8 +359,8 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;p>Adobe Firefly Discord 社群：https://discord.com/invite/adobefirefly&lt;/p>
 &lt;p>Adobe 03/29 更新內容：https://blog.adobe.com/en/publish/2023/03/29/adobe-firefly-beta-updates&lt;/p>
-&lt;h2 id="文字生成圖片">文字生成圖片&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/XCS3hxB.png"
+&lt;h2 id="文字生成圖片">文字生成圖片
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/XCS3hxB.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>Prompt 小技巧：增加多一點細節&lt;/p>
@@ -372,43 +372,43 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/b2QX0ve.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="畫面展示">畫面展示&lt;/h2>
-&lt;h2 id="中國特色">中國特色&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/H2p4LJB.jpg"
+&lt;h2 id="畫面展示">畫面展示
+&lt;/h2>&lt;h2 id="中國特色">中國特色
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/H2p4LJB.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/xgX9Mo6.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="街景">街景&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/zlCSfNP.jpg"
+&lt;h2 id="街景">街景
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/zlCSfNP.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="台灣演員街拍">台灣演員街拍&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/PcvjKIa.png"
+&lt;h2 id="台灣演員街拍">台灣演員街拍
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/PcvjKIa.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="貓咪開太空船">貓咪開太空船&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/PWxvp8t.jpg"
+&lt;h2 id="貓咪開太空船">貓咪開太空船
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/PWxvp8t.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="室內植栽">室內植栽&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/tlzkYZ4.jpg"
+&lt;h2 id="室內植栽">室內植栽
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/tlzkYZ4.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="大棕熊送蘋果">大棕熊送蘋果&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/1WMIGic.jpg"
+&lt;h2 id="大棕熊送蘋果">大棕熊送蘋果
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/1WMIGic.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;p>圖片構想參考自：&lt;a class="link" href="https://www.facebook.com/media/set/?set=a.547371650343390&amp;amp;type=3" target="_blank" rel="noopener"
 >用AI做繪本: 大棕熊送蘋果&lt;/a>&lt;/p>
-&lt;h2 id="狗狗太空人">狗狗太空人&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="狗狗太空人">狗狗太空人
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>a cute shiba inu astronaut in a red and white space suit, yellow background, digital art&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="貓貓開車">貓貓開車&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="貓貓開車">貓貓開車
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>a cat driving
 橘貓
@@ -419,15 +419,15 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/Wp62sc7.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="華人彈古箏">華人彈古箏&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="華人彈古箏">華人彈古箏
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>a Chinese man play Guzheng&lt;/p>
 &lt;/blockquote>
 &lt;p>DALL・E 有正確顯示樂器
 adobe firefly 顯示的是吉他&lt;/p>
-&lt;h2 id="螢火蟲森林">螢火蟲森林&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="螢火蟲森林">螢火蟲森林
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>Digital painting of a beautiful forest with shining lights, a calm pond and mist and fireflies in studio ghibli style&lt;/p>
 &lt;/blockquote>
@@ -437,24 +437,24 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/IVtT08n.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="室內植栽-1">室內植栽&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="室內植栽-1">室內植栽
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>Digital painting of a beautiful forest with shining lights, a calm pond and mist and fireflies in studio ghibli style&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img src="https://i.imgur.com/4rXGV5s.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="未來感城市">未來感城市&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="未來感城市">未來感城市
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>a future cyberpunk city art&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img src="https://i.imgur.com/1Hf5Pcb.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="在咖啡廳寫文章的女記者">在咖啡廳寫文章的女記者&lt;/h2>
-&lt;p>Prompt :&lt;/p>
+&lt;h2 id="在咖啡廳寫文章的女記者">在咖啡廳寫文章的女記者
+&lt;/h2>&lt;p>Prompt :&lt;/p>
 &lt;blockquote>
 &lt;p>A female journalist writing articles typing on a computer in a coffee shop
 surrounded by other people working&lt;/p>
@@ -464,8 +464,8 @@ surrounded by other people working&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/zHh6tJk.jpg"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="adobe-firefly-文字效果">Adobe Firefly 文字效果：&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/kc4sGuS.jpg"
+&lt;h2 id="adobe-firefly-文字效果">Adobe Firefly 文字效果：
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/kc4sGuS.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;!-- > [文字設計風格詠咒｜ChatGPT 咒語庫](/O4hgyaZUTOq34NtCq1K8fg) -->
@@ -489,22 +489,22 @@ title="YouTube Video"
 >https://medium.com/mr-wang&lt;/a>&lt;/p>
 &lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
 >https://wastu01.github.io/&lt;/a>&lt;/p>
-&lt;hr></description></item><item><title>Canva 魔法媒體工具 文字生成影片 Runway</title><link>https://wastu01.github.io/article/canva-magic/</link><pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/canva-magic/</guid><description>&lt;img src="https://wastu01.github.io/article/canva-magic/Canva-text-to-video.png" alt="Featured image of post Canva 魔法媒體工具 文字生成影片 Runway" />&lt;h1 id="canva-魔法媒體工具-文字生成影片-runway">Canva 魔法媒體工具 文字生成影片 Runway&lt;/h1>
-&lt;p>Canva 推出新的影片生成工具： Magic Studio&lt;/p>
+&lt;hr></description></item><item><title>Canva 魔法媒體工具 文字生成影片 Runway</title><link>https://wastu01.github.io/article/canva-magic/</link><pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/canva-magic/</guid><description>&lt;img src="https://wastu01.github.io/article/canva-magic/Canva-text-to-video.png" alt="Featured image of post Canva 魔法媒體工具 文字生成影片 Runway" />&lt;h1 id="canva-魔法媒體工具-文字生成影片-runway">Canva 魔法媒體工具 文字生成影片 Runway
+&lt;/h1>&lt;p>Canva 推出新的影片生成工具： Magic Studio&lt;/p>
 &lt;p>將 Gen-2 整合到 Canva 的 Magic Media App&lt;/p>
 &lt;p>允許使用者在欄位中輸入文字生成長達 4 秒的影片&lt;/p>
 &lt;p>目前僅限 Canvas 付費用戶使用&lt;/p>
 &lt;hr>
 &lt;p>以下是文件示範展示：&lt;/p>
-&lt;h2 id="魔法文案工具">魔法文案工具&lt;/h2>
-&lt;h2 id="一鍵生成文案">一鍵生成文案&lt;/h2>
-&lt;iframe loading="lazy" style="position: relative; width: 100%; height: 600px; max-height: 80vh; border: none; padding: 0; margin: 0; overflow: hidden;"
+&lt;h2 id="魔法文案工具">魔法文案工具
+&lt;/h2>&lt;h2 id="一鍵生成文案">一鍵生成文案
+&lt;/h2>&lt;iframe loading="lazy" style="position: relative; width: 100%; height: 600px; max-height: 80vh; border: none; padding: 0; margin: 0; overflow: hidden;"
 src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
 &lt;/iframe>
 AI 生成設計的文案 &lt;a href="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxDP6jH9M&amp;#x2F;view?utm_content=DAFxDP6jH9M&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=embeds&amp;amp;utm_source=link" target="_blank" rel="noopener">文案舉例說明並附上AI生成影片&lt;/a>
 &lt;h2 id="canva-新功能實測簡報展示httpswwwcanvacomdesigndafxnw2-xsm5axcu5tefpkuxeiyghvnrgwatchutm_contentdafxnw2-xsmutm_campaigndesignshareutm_mediumlinkutm_sourcepublishsharelink">&lt;a class="link" href="https://www.canva.com/design/DAFxNW2-XsM/5axcu5tEFPKUxeiYghvnRg/watch?utm_content=DAFxNW2-XsM&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link&amp;amp;utm_source=publishsharelink" target="_blank" rel="noopener"
->canva 新功能實測簡報展示：&lt;/a>&lt;/h2>
-&lt;div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+>canva 新功能實測簡報展示：&lt;/a>
+&lt;/h2>&lt;div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
 border-radius: 8px; will-change: transform;">
 &lt;iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
@@ -521,13 +521,13 @@ src="https:&amp;#x2F;&amp;#x2F;www.canva.com&amp;#x2F;design&amp;#x2F;DAFxNW2-Xs
 &lt;p>My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
 >https://wastu01.github.io/&lt;/a>&lt;/p>
 &lt;hr></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
-&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測&lt;/h1>
-&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
+&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測
+&lt;/h1>&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
 &lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
 >https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a>&lt;/p>
-&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片&lt;/h2>
-&lt;p>提示詞：&lt;/p>
+&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片
+&lt;/h2>&lt;p>提示詞：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -556,8 +556,8 @@ loading="lazy"
 &lt;p>&lt;img src="https://hackmd.io/_uploads/HJzCJYt-a.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="分析圖片">分析圖片&lt;/h2>
-&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
+&lt;h2 id="分析圖片">分析圖片
+&lt;/h2>&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>這是一個計算器的界面設計。以下是該界面的特點:&lt;/p>
@@ -570,8 +570,8 @@ loading="lazy"
 &lt;li>螢幕顯示: 目前為0，這是計算器的初始值。&lt;/li>
 &lt;/ol>
 &lt;p>整體來說，這個設計相當簡潔，主要功能都能夠快速識別，應該很容易上手使用。&lt;/p>
-&lt;h2 id="製作網頁">製作網頁&lt;/h2>
-&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
+&lt;h2 id="製作網頁">製作網頁
+&lt;/h2>&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
 &lt;hr>
 &lt;p>請幫我以此為樣式製作出網頁，並能夠點擊進行運算&lt;/p>
 &lt;p>1.一個外觀類似Apple計算機的HTML介面。&lt;/p>

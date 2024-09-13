@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Wang's Blog</title><link>https://wastu01.github.io/categories/python/</link><description>Recent content in Python on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Fri, 27 Oct 2023 10:37:31 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
-&lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練&lt;/h1>
-&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化&lt;/h2>
-&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on Wang's Blog</title><link>https://wastu01.github.io/categories/python/</link><description>Recent content in Python on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
+&lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練
+&lt;/h1>&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化
+&lt;/h2>&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/xBEiIlt.png"
 loading="lazy"
 >&lt;/p>
@@ -28,8 +28,8 @@ data-ad-slot="8624326011">&lt;/ins>
 &lt;p>我們這組的想法是應用於農民可拍照上傳產品外包裝編號查看農藥用途。&lt;/p>
 &lt;p>實做起來遇到一些問題微調操作&lt;/p>
 &lt;p>所以做個紀錄有了這篇筆記整理 📝&lt;/p>
-&lt;h2 id="安裝-tessract--語言包">安裝 Tessract / 語言包&lt;/h2>
-&lt;p>安裝環境： MacOS&lt;/p>
+&lt;h2 id="安裝-tessract--語言包">安裝 Tessract / 語言包
+&lt;/h2>&lt;p>安裝環境： MacOS&lt;/p>
 &lt;p>Homebrew 安裝&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -53,13 +53,13 @@ data-ad-slot="8624326011">&lt;/ins>
 >https://formulae.brew.sh/formula/tesseract-lang&lt;/a>&lt;/p>
 &lt;p>語言包一次打包 / 需要的再匯入&lt;/p>
 &lt;p>位置大概是這邊：&lt;code>/usr/local/Cellar/tesseract/4.x/share/tessdata&lt;/code>&lt;/p>
-&lt;h2 id="編譯安裝問題">編譯安裝問題&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="編譯安裝問題">編譯安裝問題
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Error: invalid option: --with-training-tools
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Error&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">invalid&lt;/span> &lt;span class="n">option&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">with&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">training&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">tools&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>要安裝訓練模型時，發現 tesseract
@@ -69,8 +69,8 @@ data-ad-slot="8624326011">&lt;/ins>
 &lt;p>&lt;strong>參考下列文章（感謝文章作者）&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://juejin.im/post/6844904097863188487" target="_blank" rel="noopener"
 >https://juejin.im/post/6844904097863188487&lt;/a>&lt;/p>
-&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="可下載-python-的相關模組">可下載 &lt;code>python&lt;/code> 的相關模組
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -90,8 +90,8 @@ loading="lazy"
 >https://lufor129.medium.com/pytesseract-&lt;/a>辨識圖片中的文字-b1024f678fac&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/huitailangyz/article/details/80390090" target="_blank" rel="noopener"
 >https://blog.csdn.net/huitailangyz/article/details/80390090&lt;/a>&lt;/p>
-&lt;h2 id="查看安裝版本">查看安裝版本&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="查看安裝版本">查看安裝版本
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
@@ -116,8 +116,8 @@ loading="lazy"
 &lt;/div>&lt;p>&lt;img src="https://i.imgur.com/HVS8rMt.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="參數設定">參數設定&lt;/h2>
-&lt;p>列出可使用的語言包&lt;/p>
+&lt;h2 id="參數設定">參數設定
+&lt;/h2>&lt;p>列出可使用的語言包&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -169,8 +169,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;hr>
-&lt;h2 id="psm-判別語句類型模式">PSM 判別語句類型模式&lt;/h2>
-&lt;ul>
+&lt;h2 id="psm-判別語句類型模式">PSM 判別語句類型模式
+&lt;/h2>&lt;ul>
 &lt;li>&amp;ndash;psm : 判別語句類型模式 / 大陸翻譯：自动页面分割模式&lt;/li>
 &lt;/ul>
 &lt;p>常用說明&lt;/p>
@@ -193,8 +193,8 @@ loading="lazy"
 &lt;p>PSM 參數詳細說明：
 &lt;a class="link" href="https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/" target="_blank" rel="noopener"
 >https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/&lt;/a>&lt;/p>
-&lt;h2 id="辨識效果測試">辨識效果測試&lt;/h2>
-&lt;p>執行畫面：&lt;/p>
+&lt;h2 id="辨識效果測試">辨識效果測試
+&lt;/h2>&lt;p>執行畫面：&lt;/p>
 &lt;p>&lt;img src="https://i.imgur.com/Us8mDqc.png"
 loading="lazy"
 >&lt;/p>
@@ -211,8 +211,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;p>線條干擾誤判斷成 - 符號&lt;/p>
-&lt;h2 id="圖片預處理--提升辨識度">圖片預處理 / 提升辨識度&lt;/h2>
-&lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
+&lt;h2 id="圖片預處理--提升辨識度">圖片預處理 / 提升辨識度
+&lt;/h2>&lt;p>再來就是要測試一些更難辨識的照片跟訓練了&lt;/p>
 &lt;p>官方文檔解釋：
 &lt;a class="link" href="https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing" target="_blank" rel="noopener"
 >https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html#image-processing&lt;/a>&lt;/p>
@@ -327,8 +327,8 @@ loading="lazy"
 &lt;p>&lt;a class="link" href="https://youtu.be/6DjFscX4I_c?t=502" target="_blank" rel="noopener"
 >https://youtu.be/6DjFscX4I_c?t=502&lt;/a>&lt;/p>
 &lt;p>訓練文字辨識，手動標註&lt;/p>
-&lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5&lt;/h2>
-&lt;p>手動標記｜工人智慧&lt;/p>
+&lt;h2 id="jtessboxeditor--vietocr-45">jTessBoxEditor / VietOCR-4.5
+&lt;/h2>&lt;p>手動標記｜工人智慧&lt;/p>
 &lt;p>下載位置：&lt;/p>
 &lt;p>&lt;a class="link" href="https://sourceforge.net/projects/vietocr/" target="_blank" rel="noopener"
 >https://sourceforge.net/projects/vietocr/&lt;/a>&lt;/p>
@@ -336,8 +336,8 @@ loading="lazy"
 &lt;p>&lt;img src="https://i.imgur.com/LcyLe83.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="使用語法總覽">使用語法總覽&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
+&lt;h2 id="使用語法總覽">使用語法總覽
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -407,42 +407,42 @@ loading="lazy"
 &lt;/span>&lt;span class="lnt">31
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Page segmentation modes:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Orientation and script detection (OSD) only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Automatic page segmentation with OSD.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Automatic page segmentation, but no OSD, or OCR. (not implemented)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Fully automatic page segmentation, but no OSD. (Default)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 4 Assume a single column of text of variable sizes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 5 Assume a single uniform block of vertically aligned text.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 6 Assume a single uniform block of text.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 7 Treat the image as a single text line.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 8 Treat the image as a single word.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 9 Treat the image as a single word in a circle.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 10 Treat the image as a single character.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 11 Sparse text. Find as much text as possible in no particular order.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 12 Sparse text with OSD.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 13 Raw line. Treat the image as a single text line,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> bypassing hacks that are Tesseract-specific.
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="n">Orientation&lt;/span> &lt;span class="ow">and&lt;/span> &lt;span class="n">script&lt;/span> &lt;span class="n">detection&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">OSD&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">1&lt;/span> &lt;span class="n">Automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">2&lt;/span> &lt;span class="n">Automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">but&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="ow">or&lt;/span> &lt;span class="n">OCR&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="ow">not&lt;/span> &lt;span class="n">implemented&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">3&lt;/span> &lt;span class="n">Fully&lt;/span> &lt;span class="n">automatic&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">but&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">Default&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">4&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">column&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">variable&lt;/span> &lt;span class="n">sizes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">5&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">uniform&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">vertically&lt;/span> &lt;span class="n">aligned&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">6&lt;/span> &lt;span class="n">Assume&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">uniform&lt;/span> &lt;span class="n">block&lt;/span> &lt;span class="n">of&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">7&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">8&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">word&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">9&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">word&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">circle&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">10&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">character&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">11&lt;/span> &lt;span class="n">Sparse&lt;/span> &lt;span class="n">text&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="n">Find&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">much&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">possible&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">no&lt;/span> &lt;span class="n">particular&lt;/span> &lt;span class="n">order&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">12&lt;/span> &lt;span class="n">Sparse&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">with&lt;/span> &lt;span class="n">OSD&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">13&lt;/span> &lt;span class="n">Raw&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="o">.&lt;/span> &lt;span class="n">Treat&lt;/span> &lt;span class="n">the&lt;/span> &lt;span class="n">image&lt;/span> &lt;span class="n">as&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="n">single&lt;/span> &lt;span class="n">text&lt;/span> &lt;span class="n">line&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">bypassing&lt;/span> &lt;span class="n">hacks&lt;/span> &lt;span class="n">that&lt;/span> &lt;span class="n">are&lt;/span> &lt;span class="n">Tesseract&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">specific&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OCR Engine modes:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 0 Legacy engine only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 1 Neural nets LSTM engine only.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 2 Legacy + LSTM engines.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 3 Default, based on what is available.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">OCR&lt;/span> &lt;span class="n">Engine&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">0&lt;/span> &lt;span class="n">Legacy&lt;/span> &lt;span class="n">engine&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">1&lt;/span> &lt;span class="n">Neural&lt;/span> &lt;span class="n">nets&lt;/span> &lt;span class="n">LSTM&lt;/span> &lt;span class="n">engine&lt;/span> &lt;span class="n">only&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">2&lt;/span> &lt;span class="n">Legacy&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="n">LSTM&lt;/span> &lt;span class="n">engines&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">3&lt;/span> &lt;span class="n">Default&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">based&lt;/span> &lt;span class="n">on&lt;/span> &lt;span class="n">what&lt;/span> &lt;span class="n">is&lt;/span> &lt;span class="n">available&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Single options:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -h, --help Show minimal help message.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-extra Show extra help for advanced users.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-psm Show page segmentation modes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --help-oem Show OCR Engine modes.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -v, --version Show version information.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --list-langs List available languages for tesseract engine.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> --print-parameters Print tesseract parameters.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Single&lt;/span> &lt;span class="n">options&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">minimal&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="n">message&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">extra&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">extra&lt;/span> &lt;span class="n">help&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">advanced&lt;/span> &lt;span class="n">users&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">psm&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">page&lt;/span> &lt;span class="n">segmentation&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">help&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">oem&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">OCR&lt;/span> &lt;span class="n">Engine&lt;/span> &lt;span class="n">modes&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">version&lt;/span> &lt;span class="n">Show&lt;/span> &lt;span class="n">version&lt;/span> &lt;span class="n">information&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="n">list&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">langs&lt;/span> &lt;span class="n">List&lt;/span> &lt;span class="n">available&lt;/span> &lt;span class="n">languages&lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="n">tesseract&lt;/span> &lt;span class="n">engine&lt;/span>&lt;span class="o">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nb">print&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">parameters&lt;/span> &lt;span class="n">Print&lt;/span> &lt;span class="n">tesseract&lt;/span> &lt;span class="n">parameters&lt;/span>&lt;span class="o">.&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>未完待續，下方整理了一些相關文章，有興趣的同學可以參考。&lt;/p>
-&lt;h2 id="參考文章">參考文章&lt;/h2>
-&lt;p>簡單的製作驗證碼範例：
+&lt;h2 id="參考文章">參考文章
+&lt;/h2>&lt;p>簡單的製作驗證碼範例：
 &lt;a class="link" href="https://ithelp.ithome.com.tw/articles/10159457" target="_blank" rel="noopener"
 >https://ithelp.ithome.com.tw/articles/10159457&lt;/a>&lt;/p>
 &lt;p>[ 實用心得 ] Tesseract-OCR&lt;/p>
@@ -479,13 +479,13 @@ loading="lazy"
 &lt;p>tessdata/configs/digits 沒找到&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/ADebugMan/article/details/100592200" target="_blank" rel="noopener"
 >https://blog.csdn.net/ADebugMan/article/details/100592200&lt;/a>&lt;/p>
-&lt;h2 id="檔案放置區">檔案放置區:&lt;/h2>
-&lt;blockquote>
+&lt;h2 id="檔案放置區">檔案放置區:
+&lt;/h2>&lt;blockquote>
 &lt;p>&lt;a class="link" href="https://medium.com/mr-wang/%e6%96%87%e5%ad%97%e8%be%a8%e8%ad%98%e5%af%a6%e4%bd%9c%e5%8f%8a%e9%80%86%e5%90%91%e8%a7%a3%e6%9e%90-e42078f50916" target="_blank" rel="noopener"
 >Tesseract-OCR 辨識＆ 驗證碼分析及實作&lt;/a>&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="圖片辨識結合自動回覆機器人">圖片辨識結合自動回覆機器人&lt;/h2>
-&lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
+&lt;h2 id="圖片辨識結合自動回覆機器人">圖片辨識結合自動回覆機器人
+&lt;/h2>&lt;p>&lt;img src="https://i.imgur.com/IxnKVer.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>&lt;a class="link" href="https://youtu.be/VZOmXhAzwrk" target="_blank" rel="noopener"
@@ -511,9 +511,52 @@ data-full-width-responsive="true">&lt;/ins>
 &lt;script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 &lt;/script></description></item><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;br>
-&lt;p>2023 更新： 更快的做法是命令 &lt;kbd>ChatGPT&lt;/kbd> 為 &lt;kbd>A.I&lt;/kbd> 程式導師
-提問如何用 &lt;kbd>Python&lt;/kbd> 爬取 PM2.5，(或使用 AutoGPT 設定明確目標執行爬蟲)，接下來剩下來的時間思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;kbd>&lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
->IFTTT&lt;/a>&lt;/kbd> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
+&lt;p>&lt;kbd>ChatGPT&lt;/kbd>&lt;/p>
+&lt;p>2024 更新：此篇教學是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
+>AQI&lt;/a> 空氣品質指標的資料，再篩選出我們熟悉的細懸浮微粒 PM2.5數據儲存成檔案。&lt;/p>
+&lt;p>其中讀取JSON檔案，轉成 Python 可以讀取的資料型態&lt;/p>
+&lt;p>最外層資料結構是 dict， 我們要撈出的資料是:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">key = &amp;#34;record&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">value = [{&amp;#34;sitename&amp;#34;:&amp;#34;各縣市&amp;#34;,&amp;#34;pm2.5&amp;#34;:&amp;#34;10&amp;#34;,其他數據},{同樣格式}]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>所以 &lt;code>aqi&lt;/code> (value) 外層是 list 資料型態， 再從 list 裡面的 dic 透過 key(sitename,pm2.5) 取 value(各縣市,10)。&lt;/p>
+&lt;p>資料結構格式：&lt;code>list[1,2,3]&lt;/code>,&lt;code>dic{key:value}&lt;/code>&lt;/p>
+&lt;p>爬蟲以及讀取資料的實作過程可以搭配&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">`print(type(data))`
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">`print(dir(requests))`
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>檔案讀寫的部分，&lt;code>rwa&amp;quot;+&amp;quot;&lt;/code> 模式都試試看&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">w+ 先讀再寫會：？
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a+ 先寫再讀會：？
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>可斟酌搭配 ChatGPT 提問如何用 python 爬取 pm2.5，(或是使用 AutoGPT 設定明確目標執行爬蟲)，剩下來的時間思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
+>IFTTT&lt;/a> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
+&lt;p>2023-0826 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自112年8月22日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺API維持新、舊API URL平行服務三個月，請於112年11月22日期限前內完成 API URL 更新。&lt;/p>
 &lt;p>實際案例應用：
 新竹科學園區空氣品質監測網：
 &lt;a class="link" href="https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx" target="_blank" rel="noopener"
@@ -523,7 +566,7 @@ data-full-width-responsive="true">&lt;/ins>
 &lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96.png"
 width="2788"
 height="1288"
-srcset="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_480x0_resize_box_3.png 480w, https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu1dde38d05d9bfef0f7b1ed5ecd267a20_299001_1024x0_resize_box_3.png 1024w"
+srcset="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu11677237478608569357.png 480w, https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu12341034092261996874.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="216"
@@ -539,10 +582,10 @@ data-flex-basis="519px"
 &lt;p>2022-04-29 更新：收到環保署資料開放平臺通知為提升 API 介接服務品質，平臺於 111 年 2 月 8 日更版，已更新第 2 版 API 資料介接功能，第 1 版 API 將於 5 月 19 日停止服務，為確保您的使用權益，歡迎至平臺重新註冊申請 API Key。所以有猜到下方 API Key 的可能日後也無法使用囉！&lt;/p>
 &lt;p>2023-08026 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自 112 年 8 月 22 日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺 API 維持新、舊 API URL 平行服務三個月，請於 112 年 11 月 22 日期限前內完成 API URL 更新。（白話文：API URL 規則有更改請更新）&lt;/p>
 &lt;hr>
-&lt;h1 id="執行畫面">執行畫面：&lt;/h1>
-&lt;iframe height="900px" width="100%" src="https://repl.it/@wastu01/PM25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">&lt;/iframe>
-&lt;h2 id="獲得資料方式">獲得資料方式&lt;/h2>
-&lt;ul>
+&lt;h1 id="執行畫面">執行畫面：
+&lt;/h1>&lt;iframe height="900px" width="100%" src="https://repl.it/@wastu01/PM25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">&lt;/iframe>
+&lt;h2 id="獲得資料方式">獲得資料方式
+&lt;/h2>&lt;ul>
 &lt;li>&lt;code>JSON&lt;/code> 格式：requests 獲取資料 python 直接解析&lt;/li>
 &lt;/ul>
 &lt;p>好用外掛工具 (chrome)：&lt;/p>
@@ -554,8 +597,8 @@ data-flex-basis="519px"
 &lt;p>Web API（Web Application Programming Interface）
 &lt;a class="link" href="https://tw.alphacamp.co/blog/api-introduction-understand-web-api-http-json" target="_blank" rel="noopener"
 >認識 Web API、HTTP 和 JSON 資料交換格式&lt;/a>&lt;/p>
-&lt;h2 id="資訊擷取來源">資訊擷取來源&lt;/h2>
-&lt;ul>
+&lt;h2 id="資訊擷取來源">資訊擷取來源
+&lt;/h2>&lt;ul>
 &lt;li>&lt;a class="link" href="https://data.gov.tw" target="_blank" rel="noopener"
 >https://data.gov.tw/&lt;/a>&lt;/li>
 &lt;/ul>
@@ -580,8 +623,8 @@ loading="lazy"
 &lt;p>註冊 API 使用說明：
 &lt;a class="link" href="https://data.epa.gov.tw/paradigm" target="_blank" rel="noopener"
 >https://data.epa.gov.tw/paradigm&lt;/a>&lt;/p>
-&lt;h2 id="request-and-json">request and json&lt;/h2>
-&lt;p>透過 &lt;code>json&lt;/code> 回傳的是一個 &lt;code>list&lt;/code>&lt;/p>
+&lt;h2 id="request-and-json">request and json
+&lt;/h2>&lt;p>透過 &lt;code>json&lt;/code> 回傳的是一個 &lt;code>list&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -615,12 +658,12 @@ loading="lazy"
 &lt;/div>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="輸出-list">輸出 List&lt;/h2>
-&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/92475ef8e70f465492ae72420bb458e5.png"
+&lt;h2 id="輸出-list">輸出 List
+&lt;/h2>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/92475ef8e70f465492ae72420bb458e5.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="檔案處理">檔案處理&lt;/h2>
-&lt;p>“r” 唯讀模式&lt;/p>
+&lt;h2 id="檔案處理">檔案處理
+&lt;/h2>&lt;p>“r” 唯讀模式&lt;/p>
 &lt;p>“w” 寫入模式（覆寫）&lt;/p>
 &lt;p>“a” 寫入模式（續寫）&lt;/p>
 &lt;p>&lt;code>with open(&amp;quot;data_pm25.txt&amp;quot;, &amp;quot;w&amp;quot;, encoding=&amp;quot;utf-8&amp;quot;) as file:&lt;/code>&lt;/p>
@@ -637,8 +680,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="參考資料">參考資料&lt;/h2>
-&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
+&lt;/div>&lt;h2 id="參考資料">參考資料
+&lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
 >輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials-requesting-web-api-edd417a57ba5" target="_blank" rel="noopener"
 >輕鬆學習 Python：透過 API 擷取網站資料&lt;/a>&lt;/p>

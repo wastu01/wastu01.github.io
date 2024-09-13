@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DALLE on Wang's Blog</title><link>https://wastu01.github.io/tags/dalle/</link><description>Recent content in DALLE on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/dalle/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
-&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測&lt;/h1>
-&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
+&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測
+&lt;/h1>&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
 &lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
 >https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a>&lt;/p>
-&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片&lt;/h2>
-&lt;p>提示詞：&lt;/p>
+&lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片
+&lt;/h2>&lt;p>提示詞：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -34,8 +34,8 @@ loading="lazy"
 &lt;p>&lt;img src="https://hackmd.io/_uploads/HJzCJYt-a.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="分析圖片">分析圖片&lt;/h2>
-&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
+&lt;h2 id="分析圖片">分析圖片
+&lt;/h2>&lt;p>&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>這是一個計算器的界面設計。以下是該界面的特點:&lt;/p>
@@ -48,8 +48,8 @@ loading="lazy"
 &lt;li>螢幕顯示: 目前為0，這是計算器的初始值。&lt;/li>
 &lt;/ol>
 &lt;p>整體來說，這個設計相當簡潔，主要功能都能夠快速識別，應該很容易上手使用。&lt;/p>
-&lt;h2 id="製作網頁">製作網頁&lt;/h2>
-&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
+&lt;h2 id="製作網頁">製作網頁
+&lt;/h2>&lt;p>&lt;mark>實測結果&lt;/mark>，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p>
 &lt;hr>
 &lt;p>請幫我以此為樣式製作出網頁，並能夠點擊進行運算&lt;/p>
 &lt;p>1.一個外觀類似Apple計算機的HTML介面。&lt;/p>
