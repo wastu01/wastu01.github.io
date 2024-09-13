@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>網頁 on Wang's Blog</title><link>https://wastu01.github.io/categories/%E7%B6%B2%E9%A0%81/</link><description>Recent content in 網頁 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 07 Nov 2023 08:04:28 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/categories/%E7%B6%B2%E9%A0%81/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS 樣式彙整-前端筆記</title><link>https://wastu01.github.io/article/html-css-style-template/</link><pubDate>Tue, 07 Nov 2023 08:04:28 +0800</pubDate><guid>https://wastu01.github.io/article/html-css-style-template/</guid><description>&lt;img src="https://wastu01.github.io/article/html-css-style-template/css-style-html.png" alt="Featured image of post CSS 樣式彙整-前端筆記" />&lt;p>&lt;kbd>前端&lt;/kbd> + &lt;kbd> CSS 樣式&lt;/kbd> + &lt;kbd>模板&lt;/kbd> +&lt;/p>
 &lt;h1 id="css-樣式彙整-前端筆記">CSS 樣式彙整-前端筆記
-&lt;/h1>&lt;p>更新日期：2023/10/03&lt;/p>
-&lt;p>在學期間初學網頁設計整理的語法/好用工具&lt;/p>
+&lt;/h1>&lt;p>在學期間初學網頁設計整理的語法/好用工具&lt;/p>
 &lt;p>css reset&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener"
@@ -580,10 +579,12 @@ on &lt;a href="https://codepen.io">CodePen&lt;/a>.
 See the Pen &lt;a href="https://codepen.io/yachen/pen/gOYEMoM">
 demo-box-shadow&lt;/a> by yachen (&lt;a href="https://codepen.io/yachen">@yachen&lt;/a>)
 on &lt;a href="https://codepen.io">CodePen&lt;/a>.
-&lt;/iframe></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
+&lt;/iframe>
+&lt;p>此篇文章原自寫於 Hackmd 平台，轉移至此的文章&lt;/p></description></item><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" />&lt;p>
 &lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測">OpenAI ChatGPT 圖片生成/分析圖片 實測
 &lt;/h1>&lt;p>實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p>
 &lt;p>另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p>
+&lt;p>想講結論：可以，但需要花時間來回修正想要的結果&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
 >https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a>&lt;/p>
 &lt;h2 id="dall-e-3-文字生成圖片">DALL-E 3 文字生成圖片
