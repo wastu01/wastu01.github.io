@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AQI on Wang's Blog</title><link>https://wastu01.github.io/tags/aqi/</link><description>Recent content in AQI on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/aqi/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;br>
-&lt;p>&lt;kbd>ChatGPT&lt;/kbd>&lt;/p>
-&lt;p>2024 更新：此篇教學是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AQI on Wang's Blog</title><link>https://wastu01.github.io/tags/aqi/</link><description>Recent content in AQI on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/aqi/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;p>&lt;kbd>Python&lt;/kbd> + &lt;kbd>PM25&lt;/kbd> + &lt;kbd>AQI&lt;/kbd>&lt;/p>
+&lt;p>2024更新：可斟酌搭配 ChatGPT/ClaudeAI 提問如何用 Python 爬取 pm2.5，或是使用 AutoGPT 設定明確目標執行爬蟲，剩下來的時間了解得到的資料結構怎麼轉換，思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
+>IFTTT&lt;/a> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
+&lt;p>2023-0826 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自112年8月22日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺API維持新、舊API URL平行服務三個月，請於112年11月22日期限前內完成 API URL 更新。&lt;/p>
+&lt;p>此篇教學是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
 >AQI&lt;/a> 空氣品質指標的資料，再篩選出我們熟悉的細懸浮微粒 PM2.5數據儲存成檔案。&lt;/p>
 &lt;p>其中讀取JSON檔案，轉成 Python 可以讀取的資料型態&lt;/p>
-&lt;p>最外層資料結構是 dict， 我們要撈出的資料是:&lt;/p>
+&lt;p>最外層資料結構是字典 &lt;code>dict&lt;/code>， 我們要撈出的資料是 :&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -14,7 +16,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">value = [{&amp;#34;sitename&amp;#34;:&amp;#34;各縣市&amp;#34;,&amp;#34;pm2.5&amp;#34;:&amp;#34;10&amp;#34;,其他數據},{同樣格式}]
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>所以 &lt;code>aqi&lt;/code> (value) 外層是 list 資料型態， 再從 list 裡面的 dic 透過 key(sitename,pm2.5) 取 value(各縣市,10)。&lt;/p>
+&lt;/div>&lt;p>所以 &lt;code>aqi&lt;/code> (value) 外層是 list 資料型態
+再從 list 裡面的字典(dict) 透過 key(sitename,pm2.5) 取 value(各縣市,10)。&lt;/p>
 &lt;p>資料結構格式：&lt;code>list[1,2,3]&lt;/code>,&lt;code>dic{key:value}&lt;/code>&lt;/p>
 &lt;p>爬蟲以及讀取資料的實作過程可以搭配&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -42,10 +45,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a+ 先寫再讀會：？
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>可斟酌搭配 ChatGPT 提問如何用 python 爬取 pm2.5，(或是使用 AutoGPT 設定明確目標執行爬蟲)，剩下來的時間思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
->IFTTT&lt;/a> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
-&lt;p>2023-0826 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自112年8月22日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺API維持新、舊API URL平行服務三個月，請於112年11月22日期限前內完成 API URL 更新。&lt;/p>
-&lt;p>實際案例應用：
+&lt;/div>&lt;p>實際案例應用：
 新竹科學園區空氣品質監測網：
 &lt;a class="link" href="https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx" target="_blank" rel="noopener"
 >https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx&lt;/a>&lt;/p>
