@@ -1,89 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pm25 on Wang's Blog</title><link>https://wastu01.github.io/tags/pm25/</link><description>Recent content in Pm25 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/pm25/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;p>&lt;kbd>Python&lt;/kbd> + &lt;kbd>PM25&lt;/kbd> + &lt;kbd>AQI&lt;/kbd>&lt;/p>
-&lt;p>2024更新：可斟酌搭配 ChatGPT/ClaudeAI 提問如何用 Python 爬取 pm2.5，或是使用 AutoGPT 設定明確目標執行爬蟲，剩下來的時間了解得到的資料結構怎麼轉換，思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
->IFTTT&lt;/a> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
-&lt;p>2023-0826 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自112年8月22日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺API維持新、舊API URL平行服務三個月，請於112年11月22日期限前內完成 API URL 更新。&lt;/p>
-&lt;p>此篇教學是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
+&lt;p>此篇是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
 >AQI&lt;/a> 空氣品質指標的資料，再篩選出我們熟悉的細懸浮微粒 PM2.5數據儲存成檔案。&lt;/p>
-&lt;p>其中讀取JSON檔案，轉成 Python 可以讀取的資料型態&lt;/p>
-&lt;p>最外層資料結構是字典 &lt;code>dict&lt;/code>， 我們要撈出的資料是 :&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">key = &amp;#34;record&amp;#34;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">value = [{&amp;#34;sitename&amp;#34;:&amp;#34;各縣市&amp;#34;,&amp;#34;pm2.5&amp;#34;:&amp;#34;10&amp;#34;,其他數據},{同樣格式}]
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>所以 &lt;code>aqi&lt;/code> (value) 外層是 list 資料型態
-再從 list 裡面的字典(dict) 透過 key(sitename,pm2.5) 取 value(各縣市,10)。&lt;/p>
-&lt;p>資料結構格式：&lt;code>list[1,2,3]&lt;/code>,&lt;code>dic{key:value}&lt;/code>&lt;/p>
-&lt;p>爬蟲以及讀取資料的實作過程可以搭配&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">`print(type(data))`
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">`print(dir(requests))`
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>檔案讀寫的部分，&lt;code>rwa&amp;quot;+&amp;quot;&lt;/code> 模式都試試看&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">w+ 先讀再寫會：？
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">a+ 先寫再讀會：？
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>實際案例應用：
-新竹科學園區空氣品質監測網：
-&lt;a class="link" href="https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx" target="_blank" rel="noopener"
->https://hspair.sipa.gov.tw/Hspairpeople/Default.aspx&lt;/a>&lt;/p>
-&lt;p>將 &lt;code>json&lt;/code> 剖析用 &lt;a class="link" href="https://developers.google.com/chart?hl=en" target="_blank" rel="noopener"
->Google Chart&lt;/a> 畫出趨勢圖
-&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96.png"
-width="2788"
-height="1288"
-srcset="https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu11677237478608569357.png 480w, https://wastu01.github.io/article/python-pm25-aqi-opendata/%E7%A9%BA%E6%B0%A3%E5%93%81%E8%B3%AA%E7%9B%A3%E6%B8%AC%E7%B6%B2PM25%E8%B6%A8%E5%8B%A2%E5%9C%96_hu12341034092261996874.png 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="216"
-data-flex-basis="519px"
->&lt;/p>
-&lt;p>實際案例教學:
-&lt;a class="link" href="https://yanwei-liu.medium.com/pm2-5%E7%9A%84line%E6%A9%9F%E5%99%A8%E4%BA%BA-%E4%BD%BF%E7%94%A8python-ifttt-%E5%82%B3%E9%80%81%E6%9C%80%E6%96%B0pm2-5%E6%95%B8%E5%80%BC-b5655436363e" target="_blank" rel="noopener"
->PM2.5 的 Line 機器人：使用 Python + IFTTT 傳送最新 PM2.5 數值&lt;/a>&lt;/p>
-&lt;p>Python 爬取空氣品質指標 ( AQI )：https://steam.oxxostudio.tw/category/python/spider/aqi.html&lt;/p>
 &lt;hr>
-&lt;p>課堂作業：爬取空氣品質 PM2.5 的即時資訊
-抓取政府資料開放平台 &lt;code>JSON&lt;/code> 資料 並做檔案處理&lt;/p>
-&lt;p>2022-04-29 更新：收到環保署資料開放平臺通知為提升 API 介接服務品質，平臺於 111 年 2 月 8 日更版，已更新第 2 版 API 資料介接功能，第 1 版 API 將於 5 月 19 日停止服務，為確保您的使用權益，歡迎至平臺重新註冊申請 API Key。所以有猜到下方 API Key 的可能日後也無法使用囉！&lt;/p>
-&lt;p>2023-08026 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自 112 年 8 月 22 日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺 API 維持新、舊 API URL 平行服務三個月，請於 112 年 11 月 22 日期限前內完成 API URL 更新。（白話文：API URL 規則有更改請更新）&lt;/p>
-&lt;hr>
-&lt;h1 id="執行畫面">執行畫面：
-&lt;/h1>&lt;iframe height="900px" width="100%" src="https://repl.it/@wastu01/PM25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">&lt;/iframe>
-&lt;h2 id="獲得資料方式">獲得資料方式
+&lt;p>課堂作業：透過 Pythob 爬取空氣品質 PM2.5 數據，練習如何抓取政府資料開放平台公開資料，解析 &lt;code>JSON&lt;/code> 檔案並做檔案處理。&lt;/p>
+&lt;h2 id="資料型態">資料型態
 &lt;/h2>&lt;ul>
-&lt;li>&lt;code>JSON&lt;/code> 格式：requests 獲取資料 python 直接解析&lt;/li>
+&lt;li>
+&lt;p>我們資料取得的是 &lt;code>JSON&lt;/code> 格式&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>requests 獲取資料後將 Json 解析成字典 Dictionary&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;p>好用外掛工具 (chrome)：&lt;/p>
-&lt;p>查看 Web API json 格式：
-&lt;a class="link" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"
+&lt;p>檢視 Json 的擴充工具 (chrome)： &lt;a class="link" href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"
 >https://chrome.google.com/webstore/detail/jsonview/&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>資料格式 : JSON、CSV、XML&lt;/p>
-&lt;p>Web API（Web Application Programming Interface）
-&lt;a class="link" href="https://tw.alphacamp.co/blog/api-introduction-understand-web-api-http-json" target="_blank" rel="noopener"
+&lt;p>常見的資料格式 : JSON、CSV、XML&lt;/p>
+&lt;p>可參考此篇說明：&lt;a class="link" href="https://tw.alphacamp.co/blog/api-introduction-understand-web-api-http-json" target="_blank" rel="noopener"
 >認識 Web API、HTTP 和 JSON 資料交換格式&lt;/a>&lt;/p>
 &lt;h2 id="資訊擷取來源">資訊擷取來源
 &lt;/h2>&lt;ul>
@@ -105,15 +37,42 @@ loading="lazy"
 >非公開 API 點擊無效&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>資料集名稱先記好比較快找到&lt;/p>
-&lt;p>&lt;img src="https://data.epa.gov.tw/base/images/access_data_img_zh_02.png"
+&lt;p>&lt;img src="https://data.moenv.gov.tw/_nuxt/img/access_data_img_zh_02.90b96df.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>註冊 API 使用說明：
-&lt;a class="link" href="https://data.epa.gov.tw/paradigm" target="_blank" rel="noopener"
->https://data.epa.gov.tw/paradigm&lt;/a>&lt;/p>
-&lt;h2 id="request-and-json">request and json
-&lt;/h2>&lt;p>透過 &lt;code>json&lt;/code> 回傳的是一個 &lt;code>list&lt;/code>&lt;/p>
+&lt;a class="link" href="https://data.moenv.gov.tw/paradigm" target="_blank" rel="noopener"
+>https://data.moenv.gov.tw/paradigm&lt;/a>&lt;/p>
+&lt;p>該單位也提供了手冊講解如何使用參數，Python 程式範例可供參考( api 網址記得更換到最新版本)&lt;/p>
+&lt;h2 id="篩選資料">篩選資料
+&lt;/h2>&lt;p>整個流程：request &amp;raquo;&amp;gt; json &amp;raquo;&amp;gt; dict &amp;raquo;&amp;gt; list &amp;raquo;&amp;gt; dict &amp;raquo; key get value&lt;/p>
+&lt;p>request 獲得資料，用 json() 方法，將資料轉成字典，Python 可以操作的資料型態。&lt;/p>
+&lt;p>我們要撈出的資料是 :&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;record&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="s2">&amp;#34;sitename&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;各縣市&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s2">&amp;#34;pm2.5&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">其他數據&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="n">同樣格式&lt;/span>&lt;span class="p">}]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>aqi&lt;/code> (value) 最外層是 &lt;code>list&lt;/code> 資料型態，再從裡面的 &lt;code>dict&lt;/code> 透過 &lt;code>key&lt;/code> (sitename,pm2.5) 取 &lt;code>value&lt;/code> (各縣市,10)。這也代表 list 裡面只要是物件都可以放入。&lt;/p>
+&lt;p>讀取資料的實作過程可以搭配&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">dir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">requests&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>會更容易了解有什麼方法可以用，資料型態是什麼&lt;/p>
+&lt;h2 id="實作過程">實作過程
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
 &lt;/span>&lt;span class="lnt"> 2
@@ -146,7 +105,7 @@ loading="lazy"
 &lt;/div>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
 loading="lazy"
 >&lt;/p>
-&lt;h2 id="輸出-list">輸出 List
+&lt;h2 id="資料輸出">資料輸出
 &lt;/h2>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/92475ef8e70f465492ae72420bb458e5.png"
 loading="lazy"
 >&lt;/p>
@@ -168,7 +127,11 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="參考資料">參考資料
+&lt;/div>&lt;p>檔案讀寫的部分，rwa&amp;quot;+&amp;quot; 模式
+可以都試試看，小心檔案被覆蓋
+w+ 先讀再寫會：？
+a+ 先寫再讀會：？&lt;/p>
+&lt;h2 id="參考資料">參考資料
 &lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
 >輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials-requesting-web-api-edd417a57ba5" target="_blank" rel="noopener"
@@ -178,9 +141,6 @@ loading="lazy"
 &lt;p>補充：ChatGPT 指令大全
 &lt;a class="link" href="https://www.explainthis.io/zh-hant/chatgpt" target="_blank" rel="noopener"
 >https://www.explainthis.io/zh-hant/chatgpt&lt;/a>&lt;/p>
-&lt;p>本篇原始文章：&lt;/p>
-&lt;p>&lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
->&lt;img src="https://avatars.githubusercontent.com/u/47618277?s=100&amp;amp;v=4"
-loading="lazy"
-alt="AQI"
->&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>本篇文章自 &lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
+>index.coderbridge&lt;/a> 平台移轉此處&lt;/p>
+&lt;p>並重新將資料型態的部分重新說明。&lt;/p></description></item></channel></rss>
