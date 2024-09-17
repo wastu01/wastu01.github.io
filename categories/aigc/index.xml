@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AIGC on Wang's Blog</title><link>https://wastu01.github.io/categories/aigc/</link><description>Recent content in AIGC on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><atom:link href="https://wastu01.github.io/categories/aigc/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 客製化聊天機器人 GPTs</title><link>https://wastu01.github.io/article/openai-custom-gpts-collection/</link><pubDate>Sun, 12 Nov 2023 03:33:42 +0800</pubDate><guid>https://wastu01.github.io/article/openai-custom-gpts-collection/</guid><description>&lt;img src="https://wastu01.github.io/article/openai-custom-gpts-collection/custome-chatgpt-gpts.png" alt="Featured image of post OpenAI ChatGPT 客製化聊天機器人 GPTs" />&lt;p>&lt;kbd>openai&lt;/kbd> + &lt;kbd>chatgpt&lt;/kbd> + &lt;kbd>gpts&lt;/kbd>&lt;/p>
-&lt;h1 id="openai-chatgpt-客製化聊天機器人--gpts">OpenAI ChatGPT 客製化聊天機器人 | GPTs
-&lt;/h1>&lt;p>&lt;code>GPT = Good Personal Tool&lt;/code>&lt;/p>
+&lt;p>&lt;code>GPT = Good Personal Tool&lt;/code>&lt;/p>
 &lt;p>前情提要：&lt;/p>
 &lt;p>OpenAI 最近推出了一項新功能 GPTs&lt;/p>
 &lt;p>允許用戶根據自己的需求客製化 GPT 模型。&lt;/p>
 &lt;p>這項功能目前(11/12)僅提供付費用戶開放使用&lt;/p>
-&lt;p>此篇蒐集網路上製作好的一些主題 GPTs&lt;/p>
+&lt;p>此篇整理筆者製作以及覺得有趣的主題應用&lt;/p>
 &lt;h2 id="資訊主題">資訊主題
 &lt;/h2>&lt;h3 id="net-開發人員助手">.NET 開發人員助手
 &lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-CoQmELkAS-net-kai-fa-ren-yuan-zhu-shou" target="_blank" rel="noopener"
@@ -37,11 +36,7 @@ alt="截圖 2023-11-12 上午3.28.23"
 &lt;h3 id="新聞報導-gpt">新聞報導 GPT
 &lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-xLQFz72P8-xin-wen-bao-dao-gpt&lt;/a>&lt;/p>
-&lt;p>製作人：筆者本人&lt;/p>
-&lt;p>&lt;img src="https://hackmd.io/_uploads/SJDGLU67T.png"
-loading="lazy"
-alt="截圖 2023-11-12 上午3.29.10"
->&lt;/p>
+&lt;!-- ![截圖 2023-11-12 上午3.29.10](https://hackmd.io/_uploads/SJDGLU67T.png) -->
 &lt;h2 id="娛樂主題">娛樂主題
 &lt;/h2>&lt;h3 id="rpg-gpt">RPG GPT
 &lt;/h3>&lt;p>悲慘世界 RPG
@@ -69,7 +64,6 @@ alt="截圖 2023-11-13 下午8.41.53"
 &lt;h3 id="設計靈感gpt">設計靈感GPT
 &lt;/h3>&lt;p>&lt;a class="link" href="https://chat.openai.com/g/g-2t4pST9p0-she-ji-ling-gan-gpt" target="_blank" rel="noopener"
 >https://chat.openai.com/g/g-2t4pST9p0-she-ji-ling-gan-gpt&lt;/a>&lt;/p>
-&lt;p>製作人：TaiwanBTS&lt;/p>
 &lt;p>&lt;img src="https://hackmd.io/_uploads/SJmDFcJ4a.png"
 loading="lazy"
 alt="截圖 2023-11-13 下午8.40.43"
