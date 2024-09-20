@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='簡易製作網頁地圖並顯示定位'>
 <title>OpenStreetMap-Leaflet-網頁地圖視覺化</title>
 
-<link rel='canonical' href='https://wastu01.github.io/article/openstreetmap-leaflet-map/'>
+<link rel='canonical' href='http://localhost:1313/article/openstreetmap-leaflet-map/'>
 
-<link rel="stylesheet" href="/scss/style.min.9ae095ddbf770520c87ab773c7e0ad0b8ea64bd8c86e3c51255254c40f7c5b55.css"><meta property='og:title' content="OpenStreetMap-Leaflet-網頁地圖視覺化">
+<link rel="stylesheet" href="/scss/style.min.20a9728cd33a1ab739310653beff98da9632ede0bbd246f411df8e07b57af547.css"><meta property='og:title' content="OpenStreetMap-Leaflet-網頁地圖視覺化">
 <meta property='og:description' content="簡易製作網頁地圖並顯示定位">
-<meta property='og:url' content='https://wastu01.github.io/article/openstreetmap-leaflet-map/'>
+<meta property='og:url' content='http://localhost:1313/article/openstreetmap-leaflet-map/'>
 <meta property='og:site_name' content='Wang&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Leaflet' /><meta property='article:tag' content='Openstreetmap' /><meta property='article:published_time' content='2023-10-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-11-11T08:46:47&#43;08:00'/><meta property='og:image' content='https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Leaflet' /><meta property='article:tag' content='Openstreetmap' /><meta property='article:published_time' content='2023-10-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-17T08:42:46&#43;08:00'/><meta property='og:image' content='http://localhost:1313/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png' />
 <meta name="twitter:site" content="@larry113052000">
     <meta name="twitter:creator" content="@larry113052000"><meta name="twitter:title" content="OpenStreetMap-Leaflet-網頁地圖視覺化">
 <meta name="twitter:description" content="簡易製作網頁地圖並顯示定位"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://wastu01.github.io/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png' />
+    <meta name="twitter:image" content='http://localhost:1313/article/openstreetmap-leaflet-map/OpenStreetMap-Leaflet-%E5%9C%B0%E5%9C%96%E8%A6%96%E8%A6%BA%E5%8C%96.png' />
     <link rel="shortcut icon" href="favicon.ico" />
 
 
 
 
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69M3QRWRW8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-69M3QRWRW8');
-</script>
 
 
 
@@ -342,10 +332,9 @@
     </div>
 
     
-        <footer class="article-time">
-            
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <footer class="article-time">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
   <circle cx="18" cy="18" r="4" />
@@ -354,22 +343,11 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                    <time class="article-time--published">Oct 02, 2023</time>
-                </div>
-            
-
-            
-            
-                    
-                    <div>最後修改時間:
-                        <time class="article-time--updated" datetime="2023-11-11 08:46:47 &#43;0800 CST" title="2023-11-11 08:46:47 &#43;0800 CST">
-                            2023-11-11
-                        </time>
-                    </div>
-
-            
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <time class="article-time--published">
+                發布於 Oct 02, 2023
+            </time>
+        </div><div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="12" r="9" />
   <polyline points="12 7 12 12 15 15" />
@@ -377,12 +355,10 @@
 
 
 
-                    <time class="article-time--reading">
-                        閱讀時間: 2 分鐘
-                    </time>
-                </div>
-            
-        </footer>
+            <time class="article-time--updated">
+                最後更新於 Sep 17, 2024 08:42 CST
+            </time>
+        </div></footer>
     
 
     
@@ -612,19 +588,10 @@
     </section>
 
 
-    <section class="article-lastmod">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
+    
 
-
-
-        <span>
-            最後修改於 Nov 11, 2023 08:46 CST
-        </span>
-    </section></footer>
+    
+</footer>
 
 
     
@@ -694,46 +661,54 @@
      
     
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="wastu01/Gitalk"
+    data-repo-id="R_kgDOKbN6Xw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOKbN6X84CZzx5"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
 <script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
         }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "wastu01" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
-<style>
-    .disqus-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
     }
-</style>
 
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (typeof DISQUS == 'object') {
-            DISQUS.reset({
-                reload: true
-            });
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
         }
-    })
+    })();
 </script>
 
     
@@ -786,8 +761,16 @@
     
             
     
+            
     
-    已產出：2865字，共 12篇文章</br><span><p>
+            
+    
+            
+    
+            
+    
+    
+    已產出：3396字，共 16篇文章</br><span><p>
          
     </section>
 

@@ -25,7 +25,7 @@
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/article/special-mobile-game-app/img/cat-jumping.gif&#34;
 	width=&#34;256&#34;
 	height=&#34;363&#34;
-	srcset=&#34;http://localhost:1313/article/special-mobile-game-app/img/cat-jumping_hu0ee50ec484e7456cd8484842639f0dbd_1571039_480x0_resize_box_1.gif 480w, http://localhost:1313/article/special-mobile-game-app/img/cat-jumping_hu0ee50ec484e7456cd8484842639f0dbd_1571039_1024x0_resize_box_1.gif 1024w&#34;
+	srcset=&#34;http://localhost:1313/article/special-mobile-game-app/img/cat-jumping_hu11689034207015101272.gif 480w, http://localhost:1313/article/special-mobile-game-app/img/cat-jumping_hu10344809098049836028.gif 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;踩高蹺的貓咪&#34;
@@ -39,7 +39,7 @@
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/article/special-mobile-game-app/img/game-screenshot.jpg&#34;
 	width=&#34;1920&#34;
 	height=&#34;1439&#34;
-	srcset=&#34;http://localhost:1313/article/special-mobile-game-app/img/game-screenshot_hu13dffa8d4a0376842246d65f73395e1e_100981_480x0_resize_q75_box.jpg 480w, http://localhost:1313/article/special-mobile-game-app/img/game-screenshot_hu13dffa8d4a0376842246d65f73395e1e_100981_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:1313/article/special-mobile-game-app/img/game-screenshot_hu2813755839634817666.jpg 480w, http://localhost:1313/article/special-mobile-game-app/img/game-screenshot_hu7912248587955948811.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;遊戲中貓咪可更換造型&#34;
