@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pm25 on Wang's Blog</title><link>https://wastu01.github.io/tags/pm25/</link><description>Recent content in Pm25 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/tags/pm25/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-爬取空氣品質-PM2.5-AQI</title><link>https://wastu01.github.io/article/python-pm25-aqi-opendata/</link><pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/python-pm25-aqi-opendata/</guid><description>&lt;img src="https://wastu01.github.io/article/python-pm25-aqi-opendata/Air-Quality-Index-Data-Set-Introduction.png" alt="Featured image of post Python-爬取空氣品質-PM2.5-AQI" />&lt;p>&lt;kbd>Python&lt;/kbd> + &lt;kbd>PM25&lt;/kbd> + &lt;kbd>AQI&lt;/kbd>&lt;/p>
 &lt;p>此篇是透過 Python 爬取 &lt;a class="link" href="https://airtw.moenv.gov.tw/cht/Information/Standard/AirQualityIndicator.aspx" target="_blank" rel="noopener"
->AQI&lt;/a> 空氣品質指標的資料，再篩選出我們熟悉的細懸浮微粒 PM2.5數據儲存成檔案。&lt;/p>
-&lt;p>2024 可斟酌搭配 ChatGPT/ClaudeAI 提問如何用 python 爬取 pm2.5，(或是使用 AutoGPT 設定明確目標執行爬蟲)，剩下來的時間了解資料結構該如何轉換，思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
+>AQI&lt;/a> 空氣品質指標的資料，再篩選出我們熟悉的細懸浮微粒 &lt;code>PM2.5&lt;/code>數據儲存成檔案。&lt;/p>
+&lt;p>2024 可搭配 ChatGPT/ClaudeAI 提問如何用 Python 爬取 &lt;code>PM2.5&lt;/code>，(或是使用 AutoGPT 設定明確目標執行爬蟲)，剩下來的時間了解資料結構該如何轉換，思考如何應用在日常生活中，例如用折線圖呈現產出一天內空氣品質變化，結合 &lt;a class="link" href="https://ifttt.com" target="_blank" rel="noopener"
 >IFTTT&lt;/a> 超過多少會提醒用戶之類的，並將資料搜集彙整顯示趨勢圖，以供後續研究。&lt;/p>
 &lt;p>2023-0826 更新：因工作緣故收到國家科學及技術委員會來函,配合本署組改為環境部，本署環境資料關放平臺、環境資源資料交換平臺及環境資源資料交換重構平臺自112年8月22日起變更網址及應用程式介面( Application ProgrammingInterface, API)，各平臺API維持新、舊API URL平行服務三個月，請於112年11月22日期限前內完成 API URL 更新。&lt;/p>
 &lt;hr>
@@ -46,34 +46,7 @@ loading="lazy"
 &lt;p>註冊 API 使用說明：
 &lt;a class="link" href="https://data.moenv.gov.tw/paradigm" target="_blank" rel="noopener"
 >https://data.moenv.gov.tw/paradigm&lt;/a>&lt;/p>
-&lt;p>該單位也提供了手冊講解如何使用參數，Python 程式範例可供參考( api 網址記得更換到最新版本)&lt;/p>
-&lt;h2 id="篩選資料">篩選資料
-&lt;/h2>&lt;p>整個流程：request &amp;raquo;&amp;gt; json &amp;raquo;&amp;gt; dict &amp;raquo;&amp;gt; list &amp;raquo;&amp;gt; dict &amp;raquo; key get value&lt;/p>
-&lt;p>request 獲得資料，用 json() 方法，將資料轉成字典，Python 可以操作的資料型態。&lt;/p>
-&lt;p>我們要撈出的資料是 :&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;record&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="s2">&amp;#34;sitename&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;各縣市&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s2">&amp;#34;pm2.5&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">其他數據&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="n">同樣格式&lt;/span>&lt;span class="p">}]&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;code>aqi&lt;/code> (value) 最外層是 &lt;code>list&lt;/code> 資料型態，再從裡面的 &lt;code>dict&lt;/code> 透過 &lt;code>key&lt;/code> (sitename,pm2.5) 取 &lt;code>value&lt;/code> (各縣市,10)。這也代表 list 裡面只要是物件都可以放入。&lt;/p>
-&lt;p>讀取資料的實作過程可以搭配&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">dir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">requests&lt;/span>&lt;span class="p">))&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>會更容易了解有什麼方法可以用，資料型態是什麼&lt;/p>
+&lt;p>該單位也提供了手冊講解如何使用參數，Python 程式範例可供參考( API 網址記得更換到最新版本)&lt;/p>
 &lt;h2 id="實作過程">實作過程
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -105,7 +78,35 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
+&lt;/div>&lt;h2 id="資料結構轉換說明">資料結構轉換說明
+&lt;/h2>&lt;p>整個流程：request &amp;raquo;&amp;gt; get json &amp;raquo;&amp;gt; convert to dict &amp;raquo;&amp;gt; list &amp;raquo;&amp;gt; dict &amp;raquo; key get value&lt;/p>
+&lt;p>request 獲得資料，用 json() 方法，將 json 格式的資料轉成 Python 可以操作的資料型態『字典』，再從 key (record) 取得我們想要的數據 (value) 。&lt;/p>
+&lt;p>資料結構如下 :&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">key&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;record&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="s2">&amp;#34;sitename&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;各縣市&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s2">&amp;#34;pm2.5&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">其他數據&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="n">同樣格式&lt;/span>&lt;span class="p">}]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>value (aqi) 最外層是 &lt;code>list&lt;/code> 資料型態，裡面每一個元素是 &lt;code>dict&lt;/code> 資料型態，我們再透過 &lt;code>key&lt;/code> (sitename,pm2.5) 取 &lt;code>value&lt;/code> (各縣市,10)。&lt;/p>
+&lt;p>*這也代表 list 裡面只要是物件都可以放入。&lt;/p>
+&lt;p>讀取資料的實作過程可以搭配&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">dir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">requests&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>會更容易了解有什麼方法可以用，資料型態是什麼&lt;/p>
+&lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
 loading="lazy"
 >&lt;/p>
 &lt;h2 id="資料輸出">資料輸出
@@ -130,10 +131,10 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>檔案讀寫的部分，rwa&amp;quot;+&amp;quot; 模式
-可以都試試看，小心檔案被覆蓋
-w+ 先讀再寫會：？
-a+ 先寫再讀會：？&lt;/p>
+&lt;/div>&lt;p>檔案讀寫的部分，rwa&amp;quot;+&amp;quot; 模式&lt;/p>
+&lt;p>可以都試試看，小心檔案被覆蓋&lt;/p>
+&lt;p>&lt;code>w+ 先讀再寫會：？&lt;/code>&lt;/p>
+&lt;p>&lt;code>a+ 先寫再讀會：？&lt;/code>&lt;/p>
 &lt;h2 id="參考資料">參考資料
 &lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
 >輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
