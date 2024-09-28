@@ -32,21 +32,26 @@ loading="lazy"
 &lt;p>&lt;a class="link" href="https://data.moenv.gov.tw/" target="_blank" rel="noopener"
 >環保署環境資料開放平台開放資料 API&lt;/a>&lt;/p>
 &lt;p>註冊 API Key 後可以篩選更多參數來撈資料&lt;/p>
-&lt;p>要解析的 json 網址：&lt;/p>
+&lt;p>要解析資料的來源網址結構如下：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a class="link" href="https://data.gov.tw/dataset/40448" target="_blank" rel="noopener"
->每小時提供各測站之空氣品質指標（AQI）&lt;/a>&lt;/li>
-&lt;li>&lt;a class="link" href="https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener"
->非公開 API 點擊無效&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://data.gov.tw/dataset/40448" target="_blank" rel="noopener"
+>每小時提供各測站之空氣品質指標（AQI）&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener"
+> https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=https://youtu.be/dQw4w9WgXcQ &lt;/a>&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;p>資料集名稱先記好比較快找到&lt;/p>
 &lt;p>&lt;img src="https://data.moenv.gov.tw/_nuxt/img/access_data_img_zh_02.90b96df.png"
 loading="lazy"
 >&lt;/p>
-&lt;p>註冊 API 使用說明：
+&lt;p>網站提供的註冊 API 使用說明：
 &lt;a class="link" href="https://data.moenv.gov.tw/paradigm" target="_blank" rel="noopener"
 >https://data.moenv.gov.tw/paradigm&lt;/a>&lt;/p>
-&lt;p>該單位也提供了手冊講解如何使用參數，Python 程式範例可供參考( API 網址記得更換到最新版本)&lt;/p>
+&lt;p>也提供了手冊講解如何使用參數，Python 程式範例可供參考&lt;/p>
+&lt;p>( API 網址記得更換到最新版本)&lt;/p>
 &lt;h2 id="實作過程">實作過程
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -60,14 +65,10 @@ loading="lazy"
 &lt;/span>&lt;span class="lnt"> 8
 &lt;/span>&lt;span class="lnt"> 9
 &lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">requests&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi_url&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;https://data.epa.gov.tw/api/v1/aqx_p_432?offset=0&amp;amp;limit=80&amp;amp;api_key=自行註冊&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># 環保署環境資料開放平臺 試行版 https://data.epa.gov.tw/&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># API 金鑰免費申請 ～&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">requests&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">aqi_url&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">aqi&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">json&lt;/span>&lt;span class="p">()[&lt;/span>&lt;span class="s1">&amp;#39;records&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">response&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">status_code&lt;/span>&lt;span class="p">)&lt;/span>
@@ -79,8 +80,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="資料結構轉換說明">資料結構轉換說明
-&lt;/h2>&lt;p>整個流程：request &amp;raquo;&amp;gt; get json &amp;raquo;&amp;gt; convert to dict &amp;raquo;&amp;gt; list &amp;raquo;&amp;gt; dict &amp;raquo; key get value&lt;/p>
-&lt;p>request 獲得資料，用 json() 方法，將 json 格式的資料轉成 Python 可以操作的資料型態『字典』，再從 key (record) 取得我們想要的數據 (value) 。&lt;/p>
+&lt;/h2>&lt;p>整個流程：request &amp;ndash;&amp;gt; get json &amp;ndash;&amp;gt; convert to list &amp;mdash;&amp;gt; dict &amp;ndash;&amp;gt; key get value&lt;/p>
+&lt;p>request 獲得資料，用 json() 方法，將 JSON 格式的資料的資料轉成 Python 可以操作的資料型態『字典』，再從 key (record) 取得我們想要的數據 (value) 。&lt;/p>
 &lt;p>資料結構如下 :&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -92,8 +93,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">value&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[{&lt;/span>&lt;span class="s2">&amp;#34;sitename&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;各縣市&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s2">&amp;#34;pm2.5&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;10&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">其他數據&lt;/span>&lt;span class="p">},{&lt;/span>&lt;span class="n">同樣格式&lt;/span>&lt;span class="p">}]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>value (aqi) 最外層是 &lt;code>list&lt;/code> 資料型態，裡面每一個元素是 &lt;code>dict&lt;/code> 資料型態，我們再透過 &lt;code>key&lt;/code> (sitename,pm2.5) 取 &lt;code>value&lt;/code> (各縣市,10)。&lt;/p>
-&lt;p>*這也代表 list 裡面只要是物件都可以放入。&lt;/p>
+&lt;/div>&lt;p>value (aqi) 最外層是 &lt;code>list&lt;/code> 資料型態，裡面每一個元素是 &lt;code>list&lt;/code> 資料型態，我們再透過 &lt;code>key&lt;/code> (sitename,pm2.5) 取 &lt;code>value&lt;/code> (各縣市,10)。&lt;/p>
+&lt;p>*這也代表 list 裡面可以放入不同類型的物件，如 dict、str、int 等。&lt;/p>
 &lt;p>讀取資料的實作過程可以搭配&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -105,7 +106,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">dir&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">requests&lt;/span>&lt;span class="p">))&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>會更容易了解有什麼方法可以用，資料型態是什麼&lt;/p>
+&lt;/div>&lt;p>了解有什麼方法可以用，資料型態是什麼&lt;/p>
 &lt;p>&lt;img src="https://static.coderbridge.com/img/mrwang01/8f8cccef2a934901ac68b62e16c60b7a.png"
 loading="lazy"
 >&lt;/p>
@@ -131,10 +132,12 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">f&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>檔案讀寫的部分，rwa&amp;quot;+&amp;quot; 模式&lt;/p>
-&lt;p>可以都試試看，小心檔案被覆蓋&lt;/p>
+&lt;/div>&lt;p>檔案讀寫，&lt;code>rwa&amp;quot;+&amp;quot;&lt;/code> 模式&lt;/p>
+&lt;p>可以都測試看看&lt;/p>
 &lt;p>&lt;code>w+ 先讀再寫會：？&lt;/code>&lt;/p>
 &lt;p>&lt;code>a+ 先寫再讀會：？&lt;/code>&lt;/p>
+&lt;p>進階思考：&lt;/p>
+&lt;p>Q : 如何儲存連續的紀錄？&lt;/p>
 &lt;h2 id="參考資料">參考資料
 &lt;/h2>&lt;p>&lt;a class="link" href="https://medium.com/datainpoint/python-essentials/home" target="_blank" rel="noopener"
 >輕鬆學習 Python | 資料分析&lt;/a>&lt;/p>
@@ -147,4 +150,4 @@ loading="lazy"
 >https://www.explainthis.io/zh-hant/chatgpt&lt;/a>&lt;/p>
 &lt;p>本篇文章自 &lt;a class="link" href="https://index.coderbridge.io" target="_blank" rel="noopener"
 >index.coderbridge&lt;/a> 平台移轉此處&lt;/p>
-&lt;p>並重新將資料型態的部分重新說明。&lt;/p></description></item></channel></rss>
+&lt;p>並重新將資料型態的部分重新說明，補完當初沒有理解清楚的部分。&lt;/p></description></item></channel></rss>
