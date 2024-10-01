@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大學專題 on Wang's Blog</title><link>https://wastu01.github.io/tags/%E5%A4%A7%E5%AD%B8%E5%B0%88%E9%A1%8C/</link><description>Recent content in 大學專題 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Fri, 27 Oct 2023 10:37:31 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/%E5%A4%A7%E5%AD%B8%E5%B0%88%E9%A1%8C/index.xml" rel="self" type="application/rss+xml"/><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>大學專題 on Wang's Blog</title><link>https://wastu01.github.io/tags/%E5%A4%A7%E5%AD%B8%E5%B0%88%E9%A1%8C/</link><description>Recent content in 大學專題 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sun, 29 Sep 2024 19:00:00 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/%E5%A4%A7%E5%AD%B8%E5%B0%88%E9%A1%8C/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析</title><link>https://wastu01.github.io/article/python-wordcloud-word/</link><pubDate>Sun, 29 Sep 2024 19:00:00 +0800</pubDate><guid>https://wastu01.github.io/article/python-wordcloud-word/</guid><description>&lt;img src="https://picsum.photos/800/600.webp?random=60742c9d" alt="Featured image of post Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析" />&lt;p>&lt;kbd>小註記&lt;/kbd> + &lt;mark>重點！&lt;/mark>&lt;/p>
+&lt;p>此篇為之前人工智慧課程發想的 Python 應用專題，因最近於職訓課程再次接觸 Python Pandas, Numpy，比較深入了解如何將文字、圖片數據做處理跟轉換，搭配大型語言模型輔助開發，將專案重新 Review &amp;amp; Rewrite。&lt;/p>
+&lt;p>1.Pandas 資料處理排序&lt;/p>
+&lt;p>2.Numpy 讀取圖片遮罩&lt;/p>
+&lt;p>3.新增自定義圖片遮罩&lt;/p>
+&lt;p>4.使用中研院的斷詞模型&lt;/p>
+&lt;p>&lt;strong>理想目標：擴大文本搜尋範圍，改善斷詞結果，在網頁前端直接生成文字雲，方便分享至社群平台。&lt;/strong>&lt;/p>
+&lt;p>輸出結果：&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/img/%e7%96%ab%e6%83%85%e6%96%b0%e8%81%9e%e9%97%9c%e9%8d%b5%e5%ad%97%e6%96%87%e5%ad%97%e9%9b%b2.png"
+loading="lazy"
+alt="疫情關鍵字文字雲"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/img/%e6%9f%af%e6%96%87%e5%93%b2%e6%96%b0%e8%81%9e%e9%97%9c%e9%8d%b5%e5%ad%97%e6%96%87%e5%ad%97%e9%9b%b2.png"
+loading="lazy"
+alt="柯文哲關鍵字文字雲"
+>&lt;/p>
+&lt;p>中文文字斷詞模型初期筆者採用 Jieba 簡體中文為主開發的模型，現在改用中研院開源的中文斷詞模型：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://pypi.org/project/jieba/" target="_blank" rel="noopener"
+>jieba&lt;/a>&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="匯入模組">匯入模組
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">pandas&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">GoogleNews&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">matplotlib&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">Pillow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">numpy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">scipy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">wordcloud&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料
+&lt;/h2>&lt;h2 id="專案程式碼">專案程式碼
+&lt;/h2></description></item><item><title>Tesseract 使用 安裝 訓練</title><link>https://wastu01.github.io/article/python-tesseract-ocr/</link><pubDate>Fri, 27 Oct 2023 10:37:31 +0800</pubDate><guid>https://wastu01.github.io/article/python-tesseract-ocr/</guid><description>&lt;img src="https://i.imgur.com/ORSlEI8.png" alt="Featured image of post Tesseract 使用 安裝 訓練" />&lt;p>&lt;kbd>python&lt;/kbd> &lt;kbd>tessract&lt;/kbd> &lt;kbd>ocr&lt;/kbd> &lt;kbd>辨識文字&lt;/kbd>&lt;/p>
 &lt;h1 id="tesseract-使用安裝訓練">Tesseract 使用＆安裝＆訓練
 &lt;/h1>&lt;h2 id="簡單驗證碼去噪-灰度二值化">簡單驗證碼去噪 灰度二值化
 &lt;/h2>&lt;p>無意間找到網址是固定的 教育部某平台之簡易驗證碼&lt;/p>

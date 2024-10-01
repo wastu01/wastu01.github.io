@@ -1,104 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Google新聞 on Wang&#39;s Blog</title>
-        <link>http://localhost:1313/tags/google%E6%96%B0%E8%81%9E/</link>
-        <description>Recent content in Google新聞 on Wang&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language>
-        <copyright>版權 Wang</copyright>
-        <lastBuildDate>Thu, 19 Sep 2024 11:19:10 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/google%E6%96%B0%E8%81%9E/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析</title>
-        <link>http://localhost:1313/article/2024-09-19-.zh/</link>
-        <pubDate>Thu, 19 Sep 2024 11:19:10 +0800</pubDate>
-        
-        <guid>http://localhost:1313/article/2024-09-19-.zh/</guid>
-        <description>&lt;img src="https://picsum.photos/800/600.webp?random=60742c9d" alt="Featured image of post Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析" /&gt;&lt;p&gt;&lt;kbd&gt;小註記&lt;/kbd&gt; + &lt;mark&gt;重點！&lt;/mark&gt;&lt;/p&gt;
-&lt;p&gt;此篇為之前人工智慧課程發想的 Python 應用專題，筆者最近於職訓課程再次接觸 Python pandas, numpy 藉由此專案實際將資料操作，加上 ChatGPT AI 輔助開發程式改善斷詞分析成果。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;使用者輸入欲搜尋新聞主題，得到 Google 新聞搜尋文字內容，接續使用 Jieba 套件進行斷詞分析，TF-IDF 算法提取關鍵詞，最終生成文字雲。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;理想目標：擴大文本搜尋範圍，改善斷詞結果，在網頁前端直接生成文字雲，方便分享至社群平台。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;先上輸出的結果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/2021-05-13-%e7%96%ab%e6%83%85.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;疫情關鍵字文字雲&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/20240918_%e6%9f%af%e6%96%87%e5%93%b2_relative_scaling30%25.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;柯文哲關鍵字文字雲&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;先備知識：Python 檔案讀取，資料型態轉換，numpy 陣列操作，Pandas 資料排序。&lt;/p&gt;
-&lt;p&gt;使用 PyPI 取得 Python 第三方套件模組&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/GoogleNews/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GoogleNews&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/jieba/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;jieba&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/wordcloud/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;wordcloud&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/matplotlib/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;matplotlib&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/Pillow/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PIL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/pandas/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;pandas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/numpy/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;numpy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://pypi.org/project/scipy/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;scipy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;匯入模組&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pandas&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;jieba&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;GoogleNews&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;matplotlib&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Pillow&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;numpy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;scipy&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wordcloud&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/HhRdDJgdjiw&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;參考資料&#34;&gt;參考資料
-&lt;/h2&gt;</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google新聞 on Wang's Blog</title><link>https://wastu01.github.io/tags/google%E6%96%B0%E8%81%9E/</link><description>Recent content in Google新聞 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sun, 29 Sep 2024 19:00:00 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/google%E6%96%B0%E8%81%9E/index.xml" rel="self" type="application/rss+xml"/><item><title>Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析</title><link>https://wastu01.github.io/article/python-wordcloud-word/</link><pubDate>Sun, 29 Sep 2024 19:00:00 +0800</pubDate><guid>https://wastu01.github.io/article/python-wordcloud-word/</guid><description>&lt;img src="https://picsum.photos/800/600.webp?random=60742c9d" alt="Featured image of post Python-WordCloud 文字雲視覺化應用 新聞關鍵字分析" />&lt;p>&lt;kbd>小註記&lt;/kbd> + &lt;mark>重點！&lt;/mark>&lt;/p>
+&lt;p>此篇為之前人工智慧課程發想的 Python 應用專題，因最近於職訓課程再次接觸 Python Pandas, Numpy，比較深入了解如何將文字、圖片數據做處理跟轉換，搭配大型語言模型輔助開發，將專案重新 Review &amp;amp; Rewrite。&lt;/p>
+&lt;p>1.Pandas 資料處理排序&lt;/p>
+&lt;p>2.Numpy 讀取圖片遮罩&lt;/p>
+&lt;p>3.新增自定義圖片遮罩&lt;/p>
+&lt;p>4.使用中研院的斷詞模型&lt;/p>
+&lt;p>&lt;strong>理想目標：擴大文本搜尋範圍，改善斷詞結果，在網頁前端直接生成文字雲，方便分享至社群平台。&lt;/strong>&lt;/p>
+&lt;p>輸出結果：&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/img/%e7%96%ab%e6%83%85%e6%96%b0%e8%81%9e%e9%97%9c%e9%8d%b5%e5%ad%97%e6%96%87%e5%ad%97%e9%9b%b2.png"
+loading="lazy"
+alt="疫情關鍵字文字雲"
+>&lt;/p>
+&lt;p>&lt;img src="https://wastu01.github.io/img/%e6%9f%af%e6%96%87%e5%93%b2%e6%96%b0%e8%81%9e%e9%97%9c%e9%8d%b5%e5%ad%97%e6%96%87%e5%ad%97%e9%9b%b2.png"
+loading="lazy"
+alt="柯文哲關鍵字文字雲"
+>&lt;/p>
+&lt;p>中文文字斷詞模型初期筆者採用 Jieba 簡體中文為主開發的模型，現在改用中研院開源的中文斷詞模型：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://pypi.org/project/jieba/" target="_blank" rel="noopener"
+>jieba&lt;/a>&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="匯入模組">匯入模組
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">pandas&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">GoogleNews&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">matplotlib&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">Pillow&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">numpy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">scipy&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pip&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="n">wordcloud&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="參考資料">參考資料
+&lt;/h2>&lt;h2 id="專案程式碼">專案程式碼
+&lt;/h2></description></item></channel></rss>
