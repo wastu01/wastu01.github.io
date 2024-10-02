@@ -2,8 +2,10 @@
 
 這是我的部落格：[wastu01.github.io](https://wastu01.github.io)
 
-## 參考與致謝
+本部落格使用的主題是 **Stack**，由 [Jimmy Cai](https://jimmycai.com) 提供。
 
-本網站使用的主題是 **Stack**，由 [Jimmy Cai](https://jimmycai.com) 設計。特此感謝 Jimmy Cai 對該主題的貢獻。
+部落格樣式風格採用 [L1nSn0w](https://linsnow.cn) 提供的範例。
 
-此外，本網站的自定義風格參考了 [L1nSn0w](https://linsnow.cn) 提供的範例。感謝 L1nSn0w 在網站設計方面的靈感和指導。
+也學習到如何使用 Github Actions 實現自動化部署部落格的流程。
+
+另外採用 [Ernest Chiang](https://www.ernestchiang.com/zh/posts/2021/my-hugo-workflow/) 的 Hugo 工作流程，新增 `newpost.sh` 腳本，使用 [ImageOptim](https://imageoptim.com/mac) 加速載入圖檔。
