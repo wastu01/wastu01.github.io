@@ -1,280 +1,1258 @@
-<!doctype html><html lang=zh-tw dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content='彙整網頁設計 CSS 好看的樣式/基本模板/語法'><title>CSS 樣式彙整-前端筆記</title>
-<link rel=canonical href=https://wastu01.github.io/article/html-css-style-template/><link rel=stylesheet href=/scss/style.min.d0ae89ab8ae9da728fcae8cb3ad00b279033b8d5a82aca4e8228c01903e4bdf7.css><meta property='og:title' content="CSS 樣式彙整-前端筆記"><meta property='og:description' content="彙整網頁設計 CSS 好看的樣式/基本模板/語法"><meta property='og:url' content='https://wastu01.github.io/article/html-css-style-template/'><meta property='og:site_name' content="Wang's Blog"><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='CSS'><meta property='article:tag' content='模板'><meta property='article:published_time' content='2023-11-07T08:04:28+08:00'><meta property='article:modified_time' content='2024-09-13T22:21:02+08:00'><meta property='og:image' content='https://wastu01.github.io/article/html-css-style-template/css-style-html.png'><meta name=twitter:site content="@larry113052000"><meta name=twitter:creator content="@larry113052000"><meta name=twitter:title content="CSS 樣式彙整-前端筆記"><meta name=twitter:description content="彙整網頁設計 CSS 好看的樣式/基本模板/語法"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://wastu01.github.io/article/html-css-style-template/css-style-html.png'><link rel="shortcut icon" href=favicon.ico><script async src="https://www.googletagmanager.com/gtag/js?id=G-69M3QRWRW8"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-69M3QRWRW8")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9854600345673328" crossorigin=anonymous></script></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.setItem(e,"dark")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切換選單>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu2486757883689189126.png width=300 height=304 class=site-logo loading=lazy alt=Avatar></a></figure><div class=site-meta><h1 class=site-name><a href=/>Wang's Blog</a></h1><h2 class=site-description>嗨，這裡是 Wa.01 的 Blog</h2></div></header><ol class=menu-social><li><a href=https://github.com/wastu01 target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.youtube.com/@11305205219/videos target=_blank title=Youtube rel=me><svg class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 014-4h12a4 4 0 014 4v8a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M10 9l5 3-5 3z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
-<span>主頁</span></a></li><li><a href=/wa.01/><svg class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
-<span>WA.01</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
-<span>所有文章</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
-<span>文章搜尋</span></a></li><li><a href=/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
-<span>社群連結</span></a></li><li class=menu-bottom-section><ol class=menu></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目錄</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#假圖假字圖片>假圖假字圖片</a></li><li><a href=#html-模板>HTML 模板</a></li><li><a href=#css模板>CSS模板</a></li><li><a href=#字體單位設定>字體單位設定</a></li><li><a href=#overflow>overflow</a></li><li><a href=#border-radius>border-radius:</a></li><li><a href=#html-iframe>Html iframe</a></li><li><a href=#svg-icons>SVG Icons</a></li><li><a href=#icon-to-font>Icon to Font</a></li><li><a href=#button>Button</a></li><li><a href=#大小寫轉換>大小寫轉換</a></li><li><a href=#-dl---dt---dd->&lt; dl > &lt; dt > &lt; dd ></a></li><li><a href=#垂直置中>垂直置中</a></li><li><a href=#input-美化>Input 美化</a></li><li><a href=#flexbox>flexbox</a></li><li><a href=#錨點偽類>錨點偽類</a></li><li><a href=#-child>-child</a></li><li><a href=#偽元素-pseudo-elements>偽元素 Pseudo-elements</a></li><li><a href=#hover>Hover</a></li><li><a href=#calc-數值運算>calc() 數值運算</a></li><li><a href=#rwd-tablet>RWD-Tablet</a></li><li><a href=#客製化-web-fonts-icon>客製化 web fonts icon</a></li><li><a href=#圖片輪播-carousel>圖片輪播 Carousel</a></li><li><a href=#bootstrap-元件>bootstrap 元件</a></li><li><a href=#jquery---owl-carousel>jQuery - Owl Carousel</a></li><li><a href=#陰影-box-shadow>陰影 box-shadow</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/article/html-css-style-template/><img src=/article/html-css-style-template/css-style-html_hu15841451491460336254.png srcset="/article/html-css-style-template/css-style-html_hu15841451491460336254.png 800w, /article/html-css-style-template/css-style-html_hu8347775217083015741.png 1600w" width=800 height=457 loading=lazy alt="Featured image of post CSS 樣式彙整-前端筆記"></a></div><div class=article-details><header class=article-category><a href=/categories/%E7%B6%B2%E9%A0%81/ style=background-color:#2a9d8f;color:#fff>網頁</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/article/html-css-style-template/>CSS 樣式彙整-前端筆記</a></h2><h3 class=article-subtitle>彙整網頁設計 CSS 好看的樣式/基本模板/語法</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
-<time class=article-time--published>發布於 Nov 07, 2023</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
-<time class=article-time--updated>最後更新於 Sep 13, 2024 22:21 +0800</time></div></footer></div></header><section class=article-content><p><kbd>前端</kbd> + <kbd>CSS 樣式</kbd> + <kbd>模板</kbd> +</p><h1 id=css-樣式彙整-前端筆記>CSS 樣式彙整-前端筆記</h1><p>在學期間初學網頁設計整理的語法/好用工具</p><p>css reset</p><blockquote><p><a class=link href=https://meyerweb.com/eric/tools/css/reset/ target=_blank rel=noopener>https://meyerweb.com/eric/tools/css/reset/</a></p></blockquote><p>css 優先順序</p><blockquote><p><a class=link href=https://www.oxxostudio.tw/articles/201405/css-specificity.html target=_blank rel=noopener>https://www.oxxostudio.tw/articles/201405/css-specificity.html</a></p></blockquote><p>Codepen 線上編輯器:</p><blockquote><p><a class=link href=https://codepen.io/mrwang01/ target=_blank rel=noopener>https://codepen.io/mrwang01/</a></p></blockquote><h2 id=假圖假字圖片>假圖假字圖片</h2><p><a class=link href=https://hackmd.io/@chupai/SJOEPUpSE target=_blank rel=noopener>假字、假圖產生器整理</a></p><p><a class=link href=https://fakeimg.pl/ target=_blank rel=noopener>https://fakeimg.pl/</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;img src=&#34;https://fakeimg.pl/350x200/ff0000,128/000,255&#34;&gt;
-</span></span><span class=line><span class=cl>&lt;img src=&#34;https://fakeimg.pl/寬x高/顏色（HEX 色碼）,亮度/黑字,255&#34;&gt;
-</span></span></code></pre></td></tr></table></div></div><hr><p>實際應用：</p><p><img src=https://i.imgur.com/rzOST1o.png loading=lazy></p><p>模板的部分，可自行搜尋相關 Vscode 擴充套件</p><h2 id=html-模板>HTML 模板</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;!DOCTYPE html&gt;
-</span></span><span class=line><span class=cl>&lt;html lang=&#34;en&#34; &gt;
-</span></span><span class=line><span class=cl>&lt;head&gt;
-</span></span><span class=line><span class=cl>  &lt;meta charset=&#34;UTF-8&#34;&gt;
-</span></span><span class=line><span class=cl>  &lt;title&gt;title&lt;/title&gt;
-</span></span><span class=line><span class=cl>  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&#34;&gt;
-</span></span><span class=line><span class=cl>  &lt;link rel=&#34;stylesheet&#34; href=&#34;index.css&#34;&gt;
-</span></span><span class=line><span class=cl>  //需創立 index.css
-</span></span><span class=line><span class=cl>&lt;/head&gt;
-</span></span><span class=line><span class=cl>  &lt;body&gt; 
-</span></span><span class=line><span class=cl>     &lt;div class=&#34;style&#34;&gt;    
-</span></span><span class=line><span class=cl>         &lt;h1&gt;我是區塊元素&lt;/h1&gt;
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     &lt;/div&gt;
-</span></span><span class=line><span class=cl>  
-</span></span><span class=line><span class=cl>  &lt;/body&gt;
-</span></span><span class=line><span class=cl>    &lt;script  src=&#34;index.js&#34;&gt;&lt;/script&gt;
-</span></span><span class=line><span class=cl>  //需創立 index.js
-</span></span><span class=line><span class=cl>&lt;/script&gt;
-</span></span><span class=line><span class=cl>&lt;/html&gt;
-</span></span></code></pre></td></tr></table></div></div><h2 id=css模板>CSS模板</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-</span></span><span class=line><span class=cl>* {
-</span></span><span class=line><span class=cl>  font-family: &#34;Noto Sans TC&#34;;
-</span></span><span class=line><span class=cl>}
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>body {
-</span></span><span class=line><span class=cl>  background-color: red;
-</span></span><span class=line><span class=cl>}
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>html, body {
-</span></span><span class=line><span class=cl>  display: flex;
-</span></span><span class=line><span class=cl>  justify-content: center;
-</span></span><span class=line><span class=cl>  align-items: center;
-</span></span><span class=line><span class=cl>  
-</span></span><span class=line><span class=cl>}
-</span></span></code></pre></td></tr></table></div></div><h2 id=字體單位設定>字體單位設定</h2><p>參考文章：<a class=link href=https://www.oxxostudio.tw/articles/201809/css-font-size.html target=_blank rel=noopener>一次搞懂 CSS 字體單位：px、em、rem 和 %</a></p><p>（ 作者還有很多實用前端技術文章 ）</p><ul><li>px : 絕對單位 固定 pixel</li><li>em : 相對單位 只跟根元素相乘 自己x祖先(或預設)</li><li>rem: 相對單位 與該父元素相乘 自己x老爸x老爸的老爸</li></ul><h2 id=overflow>overflow</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>  overflow: auto;
-</span></span><span class=line><span class=cl>  //自動捲軸
-</span></span><span class=line><span class=cl>  //如果要顯示超出內容，，可以加上 title Attribute
-</span></span><span class=line><span class=cl>  
-</span></span><span class=line><span class=cl>  text-overflow: ellipsis;
-</span></span><span class=line><span class=cl>  display: -webkit-box;
-</span></span><span class=line><span class=cl>  -webkit-box-orient: vertical;
-</span></span><span class=line><span class=cl>  -webkit-line-clamp: 3;
-</span></span><span class=line><span class=cl>  //只顯示三行
-</span></span><span class=line><span class=cl>  box-sizing:border-box;
-</span></span><span class=line><span class=cl>  
-</span></span></code></pre></td></tr></table></div></div><h2 id=border-radius>border-radius:</h2><p>border-radius: 左上 右上 右下 左下 ;</p><h2 id=html-iframe>Html iframe</h2><p>frameborder=&ldquo;0&rdquo; ──不顯示邊框
-frameborder=&ldquo;1&rdquo; ──要顯示邊框</p><p>scrolling=&ldquo;no&rdquo; ──代表不顯示
-scrolling=&ldquo;auto&rdquo; ──則代表根據網頁大小自動顯示。</p><h2 id=svg-icons>SVG Icons</h2><p>編輯模式可查看原始程式碼</p><p>Open source free SVG icons</p><svg class="icon icon-tabler icon-tabler-file-type-css" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="##6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 001 1h4"/><path d="M5 12V5a2 2 0 012-2h7l5 5v4"/><path d="M8 16.5a1.5 1.5.0 00-3 0v3a1.5 1.5.0 003 0"/><path d="M11 20.25c0 .414.336.75.75.75H13a1 1 0 001-1v-1a1 1 0 00-1-1h-1a1 1 0 01-1-1v-1a1 1 0 011-1h1.25a.75.75.0 01.75.75"/><path d="M17 20.25c0 .414.336.75.75.75H19a1 1 0 001-1v-1a1 1 0 00-1-1h-1a1 1 0 01-1-1v-1a1 1 0 011-1h1.25a.75.75.0 01.75.75"/></svg><svg class="icon icon-tabler icon-tabler-box-margin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 8h8v8H8z"/><path d="M4 4v.01"/><path d="M8 4v.01"/><path d="M12 4v.01"/><path d="M16 4v.01"/><path d="M20 4v.01"/><path d="M4 20v.01"/><path d="M8 20v.01"/><path d="M12 20v.01"/><path d="M16 20v.01"/><path d="M20 20v.01"/><path d="M20 16v.01"/><path d="M20 12v.01"/><path d="M20 8v.01"/><path d="M4 16v.01"/><path d="M4 12v.01"/><path d="M4 8v.01"/></svg><svg class="icon icon-tabler icon-tabler-seo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#098" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8H4A1 1 0 003 9v2a1 1 0 001 1h2a1 1 0 011 1v2a1 1 0 01-1 1H3"/><path d="M14 16h-4V8h4"/><path d="M11 12h2"/><path d="M17 8m0 1a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1z"/></svg><svg class="icon icon-tabler icon-tabler-world-www" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#098" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 7A9 9 0 0012 3 8.991 8.991.0 004.516 7"/><path d="M11.5 3A16.989 16.989.0 009.674 7"/><path d="M12.5 3a16.989 16.989.0 011.828 4"/><path d="M19.5 17A9 9 0 0112 21a8.991 8.991.0 01-7.484-4"/><path d="M11.5 21a16.989 16.989.0 01-1.826-4"/><path d="M12.5 21a16.989 16.989.0 001.828-4"/><path d="M2 10l1 4 1.5-4L6 14l1-4"/><path d="M17 10l1 4 1.5-4 1.5 4 1-4"/><path d="M9.5 10l1 4 1.5-4 1.5 4 1-4"/></svg><h2 id=icon-to-font>Icon to Font</h2><p>IcoMoon──將icon轉成Font的平台</p><p><a class=link href=https://icomoon.io/app/#/select target=_blank rel=noopener>https://icomoon.io/app/#/select</a></p><h2 id=button>Button</h2><p>1.基本按鈕樣式</p><iframe height=265 style=width:100% scrolling=no title=CSS-Button樣式 src="https://codepen.io/mrwang01/embed/preview/jObLLvR?height=265&theme-id=light&default-tab=css,result" frameborder=no loading=lazy allowtransparency=true allowfullscreen>See the Pen <a href=https://codepen.io/mrwang01/pen/jObLLvR>CSS-Button樣式</a> by mrwang01
-(<a href=https://codepen.io/mrwang01>@mrwang01</a>) on <a href=https://codepen.io>CodePen</a>.</iframe><p>2.完美的按鈕並不存ㄗ&mldr;</p><iframe height=300 style=width:100% scrolling=no title="CSS Tricks button style" src="https://codepen.io/noelpena/embed/dlovG?default-tab=css%2Cresult&theme-id=light" frameborder=no loading=lazy allowtransparency=true allowfullscreen>See the Pen <a href=https://codepen.io/noelpena/pen/dlovG>CSS Tricks button style</a> by Noel Peña (<a href=https://codepen.io/noelpena>@noelpena</a>)
-on <a href=https://codepen.io>CodePen</a>.</iframe><p>button（單純按鈕）、reset（清空表單）、submit（送出表單）</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span><span class=lnt>7
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;input type=&#34;button&#34; value=&#34;按鈕值&#34; name=&#34;按鈕名稱&#34; style=&#34;按鈕樣式&#34;&gt;
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>input{
-</span></span><span class=line><span class=cl>border:0;
-</span></span><span class=line><span class=cl>color:#fff;
-</span></span><span class=line><span class=cl>background-color:#003C9D;
-</span></span><span class=line><span class=cl>border-radius:10px;}
-</span></span></code></pre></td></tr></table></div></div><h2 id=大小寫轉換>大小寫轉換</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;p style=&#34;text-transform:uppercase;&#34;&gt;Ework Design&lt;/p&gt;
-</span></span><span class=line><span class=cl>&lt;p style=&#34;text-transform:lowercase;&#34;&gt;Ework Design&lt;/p&gt;
-</span></span><span class=line><span class=cl>&lt;p style=&#34;text-transform:capitalize;&#34;&gt;ework design&lt;/p&gt;
-</span></span></code></pre></td></tr></table></div></div><h2 id=-dl---dt---dd->&lt; dl > &lt; dt > &lt; dd ></h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;dl&gt;
-</span></span><span class=line><span class=cl>　&lt;dt&gt;項目標題一&lt;/dt&gt;
-</span></span><span class=line><span class=cl>　&lt;dd&gt;這裡是項目敘述一 ...&lt;/dd&gt;
-</span></span><span class=line><span class=cl>　&lt;dt&gt;項目標題二&lt;/dt&gt;
-</span></span><span class=line><span class=cl>　&lt;dd&gt;這裡是項目敘述二 ...&lt;/dd&gt;
-</span></span><span class=line><span class=cl>&lt;/dl&gt;
-</span></span></code></pre></td></tr></table></div></div><h2 id=垂直置中>垂直置中</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>1. 
-</span></span><span class=line><span class=cl>display:flex;
-</span></span><span class=line><span class=cl>align-items:center;(垂直置中) 
-</span></span><span class=line><span class=cl>justify-content:center;(水平置中)
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>2. 
-</span></span><span class=line><span class=cl>display:table-cell;
-</span></span><span class=line><span class=cl>/*假表格*/
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>3.
-</span></span><span class=line><span class=cl>transform:translateY(-50%);
-</span></span><span class=line><span class=cl>/*子元素加 position:relative*/
-</span></span><span class=line><span class=cl>/*CSS3位移*/
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>4.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>calc 動態計算(算數學)
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>課堂老師提起的
-</span></span></code></pre></td></tr></table></div></div><p>參考文章：</p><p><a class=link href=https://www.oxxostudio.tw/articles/201408/css-vertical-align.html target=_blank rel=noopener>https://www.oxxostudio.tw/articles/201408/css-vertical-align.html</a></p><p><a class=link href=https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html target=_blank rel=noopener>https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html</a></p><h2 id=input-美化>Input 美化</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl> input[type=&#34;text&#34;]
-</span></span><span class=line><span class=cl>{
-</span></span><span class=line><span class=cl>  padding:9px 35px; 
-</span></span><span class=line><span class=cl>  border:3px black solid;
-</span></span><span class=line><span class=cl>  cursor:pointer;
-</span></span><span class=line><span class=cl>  -webkit-border-radius: 5px;
-</span></span><span class=line><span class=cl>  border-radius: 5px; 
-</span></span><span class=line><span class=cl>}
-</span></span></code></pre></td></tr></table></div></div><p><img src=https://i.imgur.com/5bN2kvp.png loading=lazy></p><h2 id=flexbox>flexbox</h2><p>詳細原理：<a class=link href=https://wcc723.github.io/css/2017/07/21/css-flex/ target=_blank rel=noopener>圖解：CSS Flex 屬性一點也不難</a></p><blockquote><p>justify-content 主軸對齊 主軸線預設左到右</p></blockquote><p>圖片參考：</p><p><a class=link href=https://www.webdesigns.com.tw/flexbox_flex-container.asp target=_blank rel=noopener>CSS3的flexbox版面配置－flex container(容器)可用的屬性</a></p><h2 id=錨點偽類>錨點偽類</h2><p>以:為開頭，方便精準控制</p><p><img src=https://i.imgur.com/HnN4DIU.gif loading=lazy></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>hover</span> <span class=nt>要在</span> <span class=nt>link</span> <span class=nt>visted</span> <span class=nt>之後</span>
-</span></span><span class=line><span class=cl><span class=nt>active</span> <span class=nt>要在</span> <span class=nt>hover之後</span>
-</span></span></code></pre></td></tr></table></div></div><blockquote><h2 id=-child>-child</h2></blockquote><ul><li>first-child：第一個子元素</li><li>last-child：最後一個子元素</li><li>nth-child(數字)：第幾個子元素</li><li>nth-child(2n)：挑出偶數的元素(2的倍數)</li><li>nth-child(2n+1)：挑出奇數的元素</li><li>nth-last-child(數字)：從後面數來第幾個子元素</li><li>only-child：只有一個子元素</li></ul><p>p>span :
-<code>&lt;p> 中的第一個 &lt;span></code></p><p>其他變化一樣規則</p><p>學習資源: <a class=link href=https://ithelp.ithome.com.tw/articles/10265504 target=_blank rel=noopener>Day 02 HTML/CSS 點擊超連結會經歷的偽類選取器(Pseudo-classes)</a></p><h2 id=偽元素-pseudo-elements>偽元素 Pseudo-elements</h2><ul><li>::before ::after</li></ul><p>e.g 滑鼠滑過(hover)改變顏色可用</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl> .xxx:hover::before{
-</span></span><span class=line><span class=cl> background-color:#7f7f7f;
-</span></span><span class=line><span class=cl> }
-</span></span></code></pre></td></tr></table></div></div><p><img src=/article/html-css-style-template/CSS-pseudo-elements-hover.gif width=480 height=98 srcset="/article/html-css-style-template/CSS-pseudo-elements-hover_hu8014142911520736808.gif 480w, /article/html-css-style-template/CSS-pseudo-elements-hover_hu11679316896385558895.gif 1024w" loading=lazy class=gallery-image data-flex-grow=489 data-flex-basis=1175px></p><p>詳細參數設定： <a class=link href=https://www.oxxostudio.tw/articles/201706/pseudo-element-1.html target=_blank rel=noopener>CSS 偽元素 ( before 與 after )</a></p><h2 id=hover>Hover</h2><p><del>圖床不見了 imgur 上傳的 mp4</del></p><p><del><a class=link href=https://i.imgur.com/CRfi2St.mp4 target=_blank rel=noopener>https://i.imgur.com/CRfi2St.mp4</a></del></p><p>按鈕 <code>hover</code> 樣式：</p><p>用 pug sass 製作的按鈕範例，系上學長製作的範例</p><p><a class=link href=https://codepen.io/mrwang01/pen/VRaWvM target=_blank rel=noopener>https://codepen.io/mrwang01/pen/VRaWvM</a></p><p>偽元素+hover+animation 極致應用:</p><p><a class=link href=https://codepen.io/argyleink/pen/poEjvpd target=_blank rel=noopener>https://codepen.io/argyleink/pen/poEjvpd</a></p><iframe height=500 style=width:100% scrolling=no title="CSS mouse-out transition effect" src="https://codepen.io/argyleink/embed/poEjvpd?default-tab=&theme-id=light" frameborder=no loading=lazy allowtransparency=true allowfullscreen>See the Pen <a href=https://codepen.io/argyleink/pen/poEjvpd>CSS mouse-out transition effect</a> by Adam Argyle (<a href=https://codepen.io/argyleink>@argyleink</a>)
-on <a href=https://codepen.io>CodePen</a>.</iframe><h2 id=calc-數值運算>calc() 數值運算</h2><p>calc() 用來定位該元素</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>width</span><span class=o>:</span> <span class=nt>calc</span><span class=o>(</span><span class=nt>50</span><span class=o>%</span> <span class=o>+</span> <span class=nt>8px</span><span class=o>)</span>
-</span></span><span class=line><span class=cl><span class=c>/* 50% 的寬度 + 8px */</span>
-</span></span></code></pre></td></tr></table></div></div><p>置中方式之一</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>.text {
-</span></span><span class=line><span class=cl>  position: absolute;
-</span></span><span class=line><span class=cl>  left: calc(40px);
-</span></span><span class=line><span class=cl>  width: calc(100% - 80px);
-</span></span></code></pre></td></tr></table></div></div><p>但是記得要加上或扣除 border、padding 的部分 <del>算數學</del></p><h2 id=rwd-tablet>RWD-Tablet</h2><ul><li>後台電商購物清單
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='彙整網頁設計 CSS 好看的樣式/基本模板/語法'>
+<title>CSS 樣式彙整-前端筆記</title>
+
+<link rel='canonical' href='https://wastu01.github.io/article/html-css-style-template/'>
+
+<link rel="stylesheet" href="/scss/style.min.d0ae89ab8ae9da728fcae8cb3ad00b279033b8d5a82aca4e8228c01903e4bdf7.css"><meta property='og:title' content="CSS 樣式彙整-前端筆記">
+<meta property='og:description' content="彙整網頁設計 CSS 好看的樣式/基本模板/語法">
+<meta property='og:url' content='https://wastu01.github.io/article/html-css-style-template/'>
+<meta property='og:site_name' content='Wang&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='CSS' /><meta property='article:tag' content='模板' /><meta property='article:published_time' content='2023-11-07T08:04:28&#43;08:00'/><meta property='article:modified_time' content='2024-09-13T22:21:02&#43;08:00'/><meta property='og:image' content='https://wastu01.github.io/article/html-css-style-template/css-style-html.png' />
+<meta name="twitter:site" content="@larry113052000">
+    <meta name="twitter:creator" content="@larry113052000"><meta name="twitter:title" content="CSS 樣式彙整-前端筆記">
+<meta name="twitter:description" content="彙整網頁設計 CSS 好看的樣式/基本模板/語法"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://wastu01.github.io/article/html-css-style-template/css-style-html.png' />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-69M3QRWRW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-69M3QRWRW8');
+</script>
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9854600345673328"
+     crossorigin="anonymous"></script>
+
+        
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "dark");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu2486757883689189126.png" width="300"
+                            height="304" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Wang&#39;s Blog</a></h1>
+            <h2 class="site-description">嗨，這裡是 Wa.01 的 Blog</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/wastu01'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.youtube.com/@11305205219/videos'
+                        target="_blank"
+                        title="Youtube"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+  <path d="M10 9l5 3l-5 3z" />
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主頁</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/wa.01/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>WA.01</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>所有文章</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>文章搜尋</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E7%A4%BE%E7%BE%A4%E9%80%A3%E7%B5%90/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>社群連結</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#假圖假字圖片">假圖假字圖片</a></li>
+    <li><a href="#html-模板">HTML 模板</a></li>
+    <li><a href="#css模板">CSS模板</a></li>
+    <li><a href="#字體單位設定">字體單位設定</a></li>
+    <li><a href="#overflow">overflow</a></li>
+    <li><a href="#border-radius">border-radius:</a></li>
+    <li><a href="#html-iframe">Html iframe</a></li>
+    <li><a href="#svg-icons">SVG Icons</a></li>
+    <li><a href="#icon-to-font">Icon to Font</a></li>
+    <li><a href="#button">Button</a></li>
+    <li><a href="#大小寫轉換">大小寫轉換</a></li>
+    <li><a href="#-dl---dt---dd-">&lt; dl &gt; &lt; dt &gt; &lt; dd &gt;</a></li>
+    <li><a href="#垂直置中">垂直置中</a></li>
+    <li><a href="#input-美化">Input 美化</a></li>
+    <li><a href="#flexbox">flexbox</a></li>
+    <li><a href="#錨點偽類">錨點偽類</a></li>
+    <li><a href="#-child">-child</a></li>
+    <li><a href="#偽元素-pseudo-elements">偽元素 Pseudo-elements</a></li>
+    <li><a href="#hover">Hover</a></li>
+    <li><a href="#calc-數值運算">calc() 數值運算</a></li>
+    <li><a href="#rwd-tablet">RWD-Tablet</a></li>
+    <li><a href="#客製化-web-fonts-icon">客製化 web fonts icon</a></li>
+    <li><a href="#圖片輪播-carousel">圖片輪播 Carousel</a></li>
+    <li><a href="#bootstrap-元件">bootstrap 元件</a></li>
+    <li><a href="#jquery---owl-carousel">jQuery - Owl Carousel</a></li>
+    <li><a href="#陰影-box-shadow">陰影 box-shadow</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/article/html-css-style-template/">
+                <img src="/article/html-css-style-template/css-style-html_hu15841451491460336254.png"
+                        srcset="/article/html-css-style-template/css-style-html_hu15841451491460336254.png 800w, /article/html-css-style-template/css-style-html_hu8347775217083015741.png 1600w"
+                        width="800" 
+                        height="457" 
+                        loading="lazy"
+                        alt="Featured image of post CSS 樣式彙整-前端筆記" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%B6%B2%E9%A0%81/" style="background-color: #2a9d8f; color: #fff;">
+                網頁
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/article/html-css-style-template/">CSS 樣式彙整-前端筆記</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            彙整網頁設計 CSS 好看的樣式/基本模板/語法
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+            <time class="article-time--published">
+                發布於 Nov 07, 2023
+            </time>
+        </div><div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+            <time class="article-time--updated">
+                最後更新於 Sep 13, 2024 22:21 CST
+            </time>
+        </div></footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><kbd>前端</kbd> + <kbd> CSS 樣式</kbd> + <kbd>模板</kbd> +</p>
+<h1 id="css-樣式彙整-前端筆記">CSS 樣式彙整-前端筆記
+</h1><p>在學期間初學網頁設計整理的語法/好用工具</p>
+<p>css reset</p>
+<blockquote>
+<p><a class="link" href="https://meyerweb.com/eric/tools/css/reset/"  target="_blank" rel="noopener"
+    >https://meyerweb.com/eric/tools/css/reset/</a></p>
+</blockquote>
+<p>css 優先順序</p>
+<blockquote>
+<p><a class="link" href="https://www.oxxostudio.tw/articles/201405/css-specificity.html"  target="_blank" rel="noopener"
+    >https://www.oxxostudio.tw/articles/201405/css-specificity.html</a></p>
+</blockquote>
+<p>Codepen 線上編輯器:</p>
+<blockquote>
+<p><a class="link" href="https://codepen.io/mrwang01/"  target="_blank" rel="noopener"
+    >https://codepen.io/mrwang01/</a></p>
+</blockquote>
+<h2 id="假圖假字圖片">假圖假字圖片
+</h2><p><a class="link" href="https://hackmd.io/@chupai/SJOEPUpSE"  target="_blank" rel="noopener"
+    >假字、假圖產生器整理</a></p>
+<p><a class="link" href="https://fakeimg.pl/"  target="_blank" rel="noopener"
+    >https://fakeimg.pl/</a></p>
+<!-- <img src="https://fakeimg.pl/350x200/ff0000,128/000,255"> -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;img src=&#34;https://fakeimg.pl/350x200/ff0000,128/000,255&#34;&gt;
+</span></span><span class="line"><span class="cl">&lt;img src=&#34;https://fakeimg.pl/寬x高/顏色（HEX 色碼）,亮度/黑字,255&#34;&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>實際應用：</p>
+<p><img src="https://i.imgur.com/rzOST1o.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>模板的部分，可自行搜尋相關 Vscode 擴充套件</p>
+<h2 id="html-模板">HTML 模板
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!DOCTYPE html&gt;
+</span></span><span class="line"><span class="cl">&lt;html lang=&#34;en&#34; &gt;
+</span></span><span class="line"><span class="cl">&lt;head&gt;
+</span></span><span class="line"><span class="cl">  &lt;meta charset=&#34;UTF-8&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;title&gt;title&lt;/title&gt;
+</span></span><span class="line"><span class="cl">  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;link rel=&#34;stylesheet&#34; href=&#34;index.css&#34;&gt;
+</span></span><span class="line"><span class="cl">  //需創立 index.css
+</span></span><span class="line"><span class="cl">&lt;/head&gt;
+</span></span><span class="line"><span class="cl">  &lt;body&gt; 
+</span></span><span class="line"><span class="cl">     &lt;div class=&#34;style&#34;&gt;    
+</span></span><span class="line"><span class="cl">         &lt;h1&gt;我是區塊元素&lt;/h1&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     &lt;/div&gt;
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  &lt;/body&gt;
+</span></span><span class="line"><span class="cl">    &lt;script  src=&#34;index.js&#34;&gt;&lt;/script&gt;
+</span></span><span class="line"><span class="cl">  //需創立 index.js
+</span></span><span class="line"><span class="cl">&lt;/script&gt;
+</span></span><span class="line"><span class="cl">&lt;/html&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="css模板">CSS模板
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+</span></span><span class="line"><span class="cl">* {
+</span></span><span class="line"><span class="cl">  font-family: &#34;Noto Sans TC&#34;;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">body {
+</span></span><span class="line"><span class="cl">  background-color: red;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">html, body {
+</span></span><span class="line"><span class="cl">  display: flex;
+</span></span><span class="line"><span class="cl">  justify-content: center;
+</span></span><span class="line"><span class="cl">  align-items: center;
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="字體單位設定">字體單位設定
+</h2><p>參考文章：<a class="link" href="https://www.oxxostudio.tw/articles/201809/css-font-size.html"  target="_blank" rel="noopener"
+    >一次搞懂 CSS 字體單位：px、em、rem 和 %</a></p>
+<p>（ 作者還有很多實用前端技術文章 ）</p>
+<ul>
+<li>px : 絕對單位 固定 pixel</li>
+<li>em : 相對單位 只跟根元素相乘 自己x祖先(或預設)</li>
+<li>rem: 相對單位 與該父元素相乘 自己x老爸x老爸的老爸</li>
+</ul>
+<h2 id="overflow">overflow
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  overflow: auto;
+</span></span><span class="line"><span class="cl">  //自動捲軸
+</span></span><span class="line"><span class="cl">  //如果要顯示超出內容，，可以加上 title Attribute
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  text-overflow: ellipsis;
+</span></span><span class="line"><span class="cl">  display: -webkit-box;
+</span></span><span class="line"><span class="cl">  -webkit-box-orient: vertical;
+</span></span><span class="line"><span class="cl">  -webkit-line-clamp: 3;
+</span></span><span class="line"><span class="cl">  //只顯示三行
+</span></span><span class="line"><span class="cl">  box-sizing:border-box;
+</span></span><span class="line"><span class="cl">  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="border-radius">border-radius:
+</h2><p>border-radius: 左上 右上 右下 左下 ;</p>
+<h2 id="html-iframe">Html iframe
+</h2><p>frameborder=&ldquo;0&rdquo; ──不顯示邊框
+frameborder=&ldquo;1&rdquo; ──要顯示邊框</p>
+<p>scrolling=&ldquo;no&rdquo; ──代表不顯示
+scrolling=&ldquo;auto&rdquo; ──則代表根據網頁大小自動顯示。</p>
+<h2 id="svg-icons">SVG Icons
+</h2><p>編輯模式可查看原始程式碼</p>
+<p>Open source free SVG icons</p>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-type-css" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="##6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+  <path d="M8 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+  <path d="M11 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+  <path d="M17 20.25c0 .414 .336 .75 .75 .75h1.25a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-1a1 1 0 0 1 -1 -1v-1a1 1 0 0 1 1 -1h1.25a.75 .75 0 0 1 .75 .75" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box-margin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M8 8h8v8h-8z" />
+  <path d="M4 4v.01" />
+  <path d="M8 4v.01" />
+  <path d="M12 4v.01" />
+  <path d="M16 4v.01" />
+  <path d="M20 4v.01" />
+  <path d="M4 20v.01" />
+  <path d="M8 20v.01" />
+  <path d="M12 20v.01" />
+  <path d="M16 20v.01" />
+  <path d="M20 20v.01" />
+  <path d="M20 16v.01" />
+  <path d="M20 12v.01" />
+  <path d="M20 8v.01" />
+  <path d="M4 16v.01" />
+  <path d="M4 12v.01" />
+  <path d="M4 8v.01" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-seo" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3" />
+  <path d="M14 16h-4v-8h4" />
+  <path d="M11 12h2" />
+  <path d="M17 8m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world-www" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4" />
+  <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4" />
+  <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4" />
+  <path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4" />
+  <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4" />
+  <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4" />
+  <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4" />
+  <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4" />
+  <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4" />
+</svg>
+<h2 id="icon-to-font">Icon to Font
+</h2><p>IcoMoon──將icon轉成Font的平台</p>
+<p><a class="link" href="https://icomoon.io/app/#/select"  target="_blank" rel="noopener"
+    >https://icomoon.io/app/#/select</a></p>
+<h2 id="button">Button
+</h2><p>1.基本按鈕樣式</p>
+<iframe height="265" style="width: 100%;" scrolling="no" title="CSS-Button樣式" src="https://codepen.io/mrwang01/embed/preview/jObLLvR?height=265&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/mrwang01/pen/jObLLvR'>CSS-Button樣式</a> by mrwang01
+  (<a href='https://codepen.io/mrwang01'>@mrwang01</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+<p>2.完美的按鈕並不存ㄗ&hellip;</p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="CSS Tricks button style" src="https://codepen.io/noelpena/embed/dlovG?default-tab=css%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/noelpena/pen/dlovG">
+  CSS Tricks button style</a> by Noel Peña (<a href="https://codepen.io/noelpena">@noelpena</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>button（單純按鈕）、reset（清空表單）、submit（送出表單）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;input type=&#34;button&#34; value=&#34;按鈕值&#34; name=&#34;按鈕名稱&#34; style=&#34;按鈕樣式&#34;&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">input{
+</span></span><span class="line"><span class="cl">border:0;
+</span></span><span class="line"><span class="cl">color:#fff;
+</span></span><span class="line"><span class="cl">background-color:#003C9D;
+</span></span><span class="line"><span class="cl">border-radius:10px;}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="大小寫轉換">大小寫轉換
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;p style=&#34;text-transform:uppercase;&#34;&gt;Ework Design&lt;/p&gt;
+</span></span><span class="line"><span class="cl">&lt;p style=&#34;text-transform:lowercase;&#34;&gt;Ework Design&lt;/p&gt;
+</span></span><span class="line"><span class="cl">&lt;p style=&#34;text-transform:capitalize;&#34;&gt;ework design&lt;/p&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-dl---dt---dd-">&lt; dl &gt; &lt; dt &gt; &lt; dd &gt;
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;dl&gt;
+</span></span><span class="line"><span class="cl">　&lt;dt&gt;項目標題一&lt;/dt&gt;
+</span></span><span class="line"><span class="cl">　&lt;dd&gt;這裡是項目敘述一 ...&lt;/dd&gt;
+</span></span><span class="line"><span class="cl">　&lt;dt&gt;項目標題二&lt;/dt&gt;
+</span></span><span class="line"><span class="cl">　&lt;dd&gt;這裡是項目敘述二 ...&lt;/dd&gt;
+</span></span><span class="line"><span class="cl">&lt;/dl&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="垂直置中">垂直置中
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 
+</span></span><span class="line"><span class="cl">display:flex;
+</span></span><span class="line"><span class="cl">align-items:center;(垂直置中) 
+</span></span><span class="line"><span class="cl">justify-content:center;(水平置中)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2. 
+</span></span><span class="line"><span class="cl">display:table-cell;
+</span></span><span class="line"><span class="cl">/*假表格*/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3.
+</span></span><span class="line"><span class="cl">transform:translateY(-50%);
+</span></span><span class="line"><span class="cl">/*子元素加 position:relative*/
+</span></span><span class="line"><span class="cl">/*CSS3位移*/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">4.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">calc 動態計算(算數學)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">課堂老師提起的
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>參考文章：</p>
+<p><a class="link" href="https://www.oxxostudio.tw/articles/201408/css-vertical-align.html"  target="_blank" rel="noopener"
+    >https://www.oxxostudio.tw/articles/201408/css-vertical-align.html</a></p>
+<p><a class="link" href="https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html"  target="_blank" rel="noopener"
+    >https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html</a></p>
+<h2 id="input-美化">Input 美化
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> input[type=&#34;text&#34;]
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  padding:9px 35px; 
+</span></span><span class="line"><span class="cl">  border:3px black solid;
+</span></span><span class="line"><span class="cl">  cursor:pointer;
+</span></span><span class="line"><span class="cl">  -webkit-border-radius: 5px;
+</span></span><span class="line"><span class="cl">  border-radius: 5px; 
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.imgur.com/5bN2kvp.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="flexbox">flexbox
+</h2><p>詳細原理：<a class="link" href="https://wcc723.github.io/css/2017/07/21/css-flex/"  target="_blank" rel="noopener"
+    >圖解：CSS Flex 屬性一點也不難</a></p>
+<blockquote>
+<p>justify-content 主軸對齊 主軸線預設左到右</p>
+</blockquote>
+<p>圖片參考：</p>
+<p><a class="link" href="https://www.webdesigns.com.tw/flexbox_flex-container.asp"  target="_blank" rel="noopener"
+    >CSS3的flexbox版面配置－flex container(容器)可用的屬性</a></p>
+<!-- display:flex
+
+![](https://i.imgur.com/nyRA0A1.gif)
+
+水平/空格間格
+
+![](https://i.imgur.com/pSI9zAR.gif)
+
+垂直/拉伸/ baseline
+
+![](https://i.imgur.com/t2eHPzE.gif)
+
+直橫排列
+
+![](https://i.imgur.com/azBpjcn.gif)
+
+不換行/換行 
+
+![](https://i.imgur.com/QF51Nyx.gif) -->
+<h2 id="錨點偽類">錨點偽類
+</h2><p>以:為開頭，方便精準控制</p>
+<p><img src="https://i.imgur.com/HnN4DIU.gif"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">hover</span> <span class="nt">要在</span> <span class="nt">link</span> <span class="nt">visted</span> <span class="nt">之後</span>
+</span></span><span class="line"><span class="cl"><span class="nt">active</span> <span class="nt">要在</span> <span class="nt">hover之後</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<h2 id="-child">-child
+</h2></blockquote>
+<ul>
+<li>first-child：第一個子元素</li>
+<li>last-child：最後一個子元素</li>
+<li>nth-child(數字)：第幾個子元素</li>
+<li>nth-child(2n)：挑出偶數的元素(2的倍數)</li>
+<li>nth-child(2n+1)：挑出奇數的元素</li>
+<li>nth-last-child(數字)：從後面數來第幾個子元素</li>
+<li>only-child：只有一個子元素</li>
+</ul>
+<p>p&gt;span :
+<code>&lt;p&gt; 中的第一個 &lt;span&gt;</code></p>
+<p>其他變化一樣規則</p>
+<p>學習資源: <a class="link" href="https://ithelp.ithome.com.tw/articles/10265504"  target="_blank" rel="noopener"
+    >Day 02 HTML/CSS 點擊超連結會經歷的偽類選取器(Pseudo-classes)</a></p>
+<h2 id="偽元素-pseudo-elements">偽元素 Pseudo-elements
+</h2><ul>
+<li>::before ::after</li>
+</ul>
+<p>e.g 滑鼠滑過(hover)改變顏色可用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> .xxx:hover::before{
+</span></span><span class="line"><span class="cl"> background-color:#7f7f7f;
+</span></span><span class="line"><span class="cl"> }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/article/html-css-style-template/CSS-pseudo-elements-hover.gif"
+	width="480"
+	height="98"
+	srcset="/article/html-css-style-template/CSS-pseudo-elements-hover_hu8014142911520736808.gif 480w, /article/html-css-style-template/CSS-pseudo-elements-hover_hu11679316896385558895.gif 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="489"
+		data-flex-basis="1175px"
+	
+></p>
+<p>詳細參數設定： <a class="link" href="https://www.oxxostudio.tw/articles/201706/pseudo-element-1.html"  target="_blank" rel="noopener"
+    >CSS 偽元素 ( before 與 after )</a></p>
+<h2 id="hover">Hover
+</h2><p><del>圖床不見了 imgur 上傳的 mp4</del></p>
+<p><del><a class="link" href="https://i.imgur.com/CRfi2St.mp4"  target="_blank" rel="noopener"
+    >https://i.imgur.com/CRfi2St.mp4</a></del></p>
+<p>按鈕 <code>hover</code> 樣式：</p>
+<p>用 pug sass 製作的按鈕範例，系上學長製作的範例</p>
+<p><a class="link" href="https://codepen.io/mrwang01/pen/VRaWvM"  target="_blank" rel="noopener"
+    >https://codepen.io/mrwang01/pen/VRaWvM</a></p>
+<p>偽元素+hover+animation 極致應用:</p>
+<p><a class="link" href="https://codepen.io/argyleink/pen/poEjvpd"  target="_blank" rel="noopener"
+    >https://codepen.io/argyleink/pen/poEjvpd</a></p>
+<iframe height="500" style="width: 100%;" scrolling="no" title="CSS mouse-out transition effect" src="https://codepen.io/argyleink/embed/poEjvpd?default-tab=&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/argyleink/pen/poEjvpd">
+  CSS mouse-out transition effect</a> by Adam Argyle (<a href="https://codepen.io/argyleink">@argyleink</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2 id="calc-數值運算">calc() 數值運算
+</h2><p>calc() 用來定位該元素</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">width</span><span class="o">:</span> <span class="nt">calc</span><span class="o">(</span><span class="nt">50</span><span class="o">%</span> <span class="o">+</span> <span class="nt">8px</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c">/* 50% 的寬度 + 8px */</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>置中方式之一</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.text {
+</span></span><span class="line"><span class="cl">  position: absolute;
+</span></span><span class="line"><span class="cl">  left: calc(40px);
+</span></span><span class="line"><span class="cl">  width: calc(100% - 80px);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>但是記得要加上或扣除 border、padding 的部分 <del>算數學</del></p>
+<h2 id="rwd-tablet">RWD-Tablet
+</h2><ul>
+<li>後台電商購物清單
 簡潔的表單設計
-<a class=link href=https://codepen.io/AllThingsSmitty/pen/MyqmdM target=_blank rel=noopener>https://codepen.io/AllThingsSmitty/pen/MyqmdM</a></li><li>多樣商品列表清單
-<a class=link href=https://codepen.io/pumii/pen/WNxvNGg target=_blank rel=noopener>https://codepen.io/pumii/pen/WNxvNGg</a></li></ul><h2 id=客製化-web-fonts-icon>客製化 web fonts icon</h2><p>實習期間修改 <code>bootstrap</code> 模版發現到的東西
-<a class=link href=https://icomoon.io/app/#/select target=_blank rel=noopener>https://icomoon.io/app/#/select</a>
-資料來源：<a class=link href=https://wcc723.github.io/css/2013/10/05/web-fonts-2/ target=_blank rel=noopener>自己做web fonts icons</a></p><h2 id=圖片輪播-carousel>圖片輪播 Carousel</h2><h2 id=bootstrap-元件>bootstrap 元件</h2><p><a class=link href=https://bootstrap5.hexschool.com/docs/5.0/components/carousel/ target=_blank rel=noopener>https://bootstrap5.hexschool.com/docs/5.0/components/carousel/</a></p><h2 id=jquery---owl-carousel>jQuery - Owl Carousel</h2><p>教學文章：
-<a class=link href=https://ithelp.ithome.com.tw/articles/10247358 target=_blank rel=noopener>https://ithelp.ithome.com.tw/articles/10247358</a></p><p>基本款：
-<a class=link href=https://codepen.io/pumii/pen/yLJeZvg target=_blank rel=noopener>https://codepen.io/pumii/pen/yLJeZvg</a></p><p>好看的輪播圖片樣式：
-<a class=link href=https://codepen.io/fadzrinmadu/pen/RwryOVN target=_blank rel=noopener>https://codepen.io/fadzrinmadu/pen/RwryOVN</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl>  <span class=nx>loop</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=c1>// 循環播放
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>margin</span><span class=o>:</span> <span class=mi>10</span><span class=p>,</span> <span class=c1>// 外距 10px
-</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>nav</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=c1>// 顯示點點
-</span></span></span><span class=line><span class=cl><span class=c1></span>  
-</span></span><span class=line><span class=cl><span class=nx>responsive</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>    <span class=mi>0</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=nx>items</span><span class=o>:</span> <span class=mi>1</span> <span class=c1>// 螢幕大小為 0~600 顯示 1 個項目
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>},</span>
-</span></span><span class=line><span class=cl>    <span class=mi>600</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=nx>items</span><span class=o>:</span> <span class=mi>3</span> <span class=c1>// 螢幕大小為 600~1000 顯示 3 個項目
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>},</span>
-</span></span><span class=line><span class=cl>    <span class=mi>1000</span><span class=o>:</span> <span class=p>{</span>
-</span></span><span class=line><span class=cl>      <span class=nx>items</span><span class=o>:</span> <span class=mi>5</span> <span class=c1>// 螢幕大小為 1000 以上 顯示 5 個項目
-</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>}</span>
-</span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><h2 id=陰影-box-shadow>陰影 box-shadow</h2><p>好看的陰影</p><iframe height=900 style=width:100% scrolling=no title="Material Design Box Shadows" src="https://codepen.io/sdthornton/embed/wBZdXq?default-tab=result" frameborder=no loading=lazy allowtransparency=true allowfullscreen>See the Pen <a href=https://codepen.io/sdthornton/pen/wBZdXq>Material Design Box Shadows</a> by Samuel Thornton (<a href=https://codepen.io/sdthornton>@sdthornton</a>)
-on <a href=https://codepen.io>CodePen</a>.</iframe><p><a class=link href=https://codepen.io/sdthornton/pen/wBZdXq target=_blank rel=noopener>https://codepen.io/sdthornton/pen/wBZdXq</a></p><p>陰影做動畫 酷炫的功能 實用性未知</p><p><a class=link href=https://ithelp.ithome.com.tw/articles/10220686 target=_blank rel=noopener>https://ithelp.ithome.com.tw/articles/10220686</a></p><iframe height=300 style=width:100% scrolling=no title=demo-box-shadow src="https://codepen.io/yachen/embed/gOYEMoM?default-tab=html%2Cresult" frameborder=no loading=lazy allowtransparency=true allowfullscreen>See the Pen <a href=https://codepen.io/yachen/pen/gOYEMoM>demo-box-shadow</a> by yachen (<a href=https://codepen.io/yachen>@yachen</a>)
-on <a href=https://codepen.io>CodePen</a>.</iframe><p>此篇文章原自寫於 Hackmd 平台，轉移至此的文章</p></section><footer class=article-footer><section class=article-tags><a href=/tags/css/>CSS</a>
-<a href=/tags/%E6%A8%A1%E6%9D%BF/>模板</a></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相關文章</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/article/chatgpt-dalle3-text-to-image/><div class=article-image><img src=/article/chatgpt-dalle3-text-to-image/apple.7cd5529cdcb46e0096f6f5684f4ca70c_hu6976804502288877345.png width=250 height=150 loading=lazy alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" data-key=ChatGPT-DALLE3-text-to-image data-hash="md5-fNVSnNy0bgCW9vVoT0ynDA=="></div><div class=article-details><h2 class=article-title>OpenAI ChatGPT 圖片生成/分析圖片 實測</h2></div></a></article></div></div></aside><script src=https://giscus.app/client.js data-repo=wastu01/Gitalk data-repo-id=R_kgDOKbN6Xw data-category=Announcements data-category-id=DIC_kwDOKbN6X84CZzx5 data-mapping=title data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=en crossorigin=anonymous async></script><script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"light":"dark_dimmed")}})()</script><footer class=site-footer><section class=copyright>&copy;
-2023 -
-2024 版權 Wang</section><section class=powerby>使用 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> 建立<br>主題 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.26.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 設計<br>已產出：2559字，共 11篇文章</br><span><p></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-</button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
+<a class="link" href="https://codepen.io/AllThingsSmitty/pen/MyqmdM"  target="_blank" rel="noopener"
+    >https://codepen.io/AllThingsSmitty/pen/MyqmdM</a></li>
+<li>多樣商品列表清單
+<a class="link" href="https://codepen.io/pumii/pen/WNxvNGg"  target="_blank" rel="noopener"
+    >https://codepen.io/pumii/pen/WNxvNGg</a></li>
+</ul>
+<h2 id="客製化-web-fonts-icon">客製化 web fonts icon
+</h2><p>實習期間修改 <code>bootstrap</code> 模版發現到的東西
+<a class="link" href="https://icomoon.io/app/#/select"  target="_blank" rel="noopener"
+    >https://icomoon.io/app/#/select</a>
+資料來源：<a class="link" href="https://wcc723.github.io/css/2013/10/05/web-fonts-2/"  target="_blank" rel="noopener"
+    >自己做web fonts icons</a></p>
+<h2 id="圖片輪播-carousel">圖片輪播 Carousel
+</h2><h2 id="bootstrap-元件">bootstrap 元件
+</h2><p><a class="link" href="https://bootstrap5.hexschool.com/docs/5.0/components/carousel/"  target="_blank" rel="noopener"
+    >https://bootstrap5.hexschool.com/docs/5.0/components/carousel/</a></p>
+<h2 id="jquery---owl-carousel">jQuery - Owl Carousel
+</h2><p>教學文章：
+<a class="link" href="https://ithelp.ithome.com.tw/articles/10247358"  target="_blank" rel="noopener"
+    >https://ithelp.ithome.com.tw/articles/10247358</a></p>
+<p>基本款：
+<a class="link" href="https://codepen.io/pumii/pen/yLJeZvg"  target="_blank" rel="noopener"
+    >https://codepen.io/pumii/pen/yLJeZvg</a></p>
+<p>好看的輪播圖片樣式：
+<a class="link" href="https://codepen.io/fadzrinmadu/pen/RwryOVN"  target="_blank" rel="noopener"
+    >https://codepen.io/fadzrinmadu/pen/RwryOVN</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">  <span class="nx">loop</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 循環播放
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">margin</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="c1">// 外距 10px
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">nav</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 顯示點點
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl"><span class="nx">responsive</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="mi">0</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">items</span><span class="o">:</span> <span class="mi">1</span> <span class="c1">// 螢幕大小為 0~600 顯示 1 個項目
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="mi">600</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">items</span><span class="o">:</span> <span class="mi">3</span> <span class="c1">// 螢幕大小為 600~1000 顯示 3 個項目
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="mi">1000</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">items</span><span class="o">:</span> <span class="mi">5</span> <span class="c1">// 螢幕大小為 1000 以上 顯示 5 個項目
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="陰影-box-shadow">陰影 box-shadow
+</h2><p>好看的陰影</p>
+<iframe height="900" style="width: 100%;" scrolling="no" title="Material Design Box Shadows" src="https://codepen.io/sdthornton/embed/wBZdXq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/sdthornton/pen/wBZdXq">
+  Material Design Box Shadows</a> by Samuel Thornton (<a href="https://codepen.io/sdthornton">@sdthornton</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p><a class="link" href="https://codepen.io/sdthornton/pen/wBZdXq"  target="_blank" rel="noopener"
+    >https://codepen.io/sdthornton/pen/wBZdXq</a></p>
+<p>陰影做動畫 酷炫的功能 實用性未知</p>
+<p><a class="link" href="https://ithelp.ithome.com.tw/articles/10220686"  target="_blank" rel="noopener"
+    >https://ithelp.ithome.com.tw/articles/10220686</a></p>
+<iframe height="300" style="width: 100%;" scrolling="no" title="demo-box-shadow" src="https://codepen.io/yachen/embed/gOYEMoM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/yachen/pen/gOYEMoM">
+  demo-box-shadow</a> by yachen (<a href="https://codepen.io/yachen">@yachen</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p>此篇文章原自寫於 Hackmd 平台，轉移至此的文章</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/css/">CSS</a>
+        
+            <a href="/tags/%E6%A8%A1%E6%9D%BF/">模板</a>
+        
+    </section>
+
+
+    
+
+    
+</footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相關文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/article/chatgpt-dalle3-text-to-image/">
+        
+        
+            <div class="article-image">
+                <img src="/article/chatgpt-dalle3-text-to-image/apple.7cd5529cdcb46e0096f6f5684f4ca70c_hu6976804502288877345.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測"
+                        data-key="ChatGPT-DALLE3-text-to-image" 
+                        data-hash="md5-fNVSnNy0bgCW9vVoT0ynDA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">OpenAI ChatGPT 圖片生成/分析圖片 實測</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="wastu01/Gitalk"
+    data-repo-id="R_kgDOKbN6Xw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOKbN6X84CZzx5"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2023 - 
+        
+        2024 版權 Wang
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
+        <br/>
+
+        
+        
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+            
+    
+    
+    已產出：2559字，共 11篇文章</br><span><p>
+         
+    </section>
+
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
