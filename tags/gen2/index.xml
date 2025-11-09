@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gen2 on Wang's Blog</title><link>https://wastu01.github.io/tags/gen2/</link><description>Recent content in Gen2 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sat, 28 Oct 2023 22:56:02 +0800</lastBuildDate><atom:link href="https://wastu01.github.io/tags/gen2/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 生成提示詞彙整｜咒語關鍵字</title><link>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</link><pubDate>Sat, 28 Oct 2023 22:56:02 +0800</pubDate><guid>https://wastu01.github.io/article/ai-text-prompts-all-in-one/</guid><description>&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/firefly-aigc.jpg" alt="Featured image of post AI 生成提示詞彙整｜咒語關鍵字" /&gt;&lt;p&gt;AI 生成提示詞彙整｜咒語關鍵字&lt;/p&gt;
+&lt;h2 id="runwayml-gen1--gen2"&gt;Runwayml Gen1 / Gen2
+&lt;/h2&gt;&lt;p&gt;文字/圖片生成影片&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Red Lamborghini driving at high speed in the tunnel, night, Rainy Day, Telephoto Lens
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;影片效果：&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/yDY-bT7xPF8"
+allowfullscreen
+title="YouTube Video"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Talking to camera, man, American style, --upscale
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;影片效果：&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/VGP6P_QYe8w"
+allowfullscreen
+title="YouTube Video"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;space suit walking on mars, university background, chaos, lava
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;影片效果：&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/TtyaT4CykRk"
+allowfullscreen
+title="YouTube Video"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;@Gen-2 Fast Cinematic Tracking shot of a fast driving red vintage ford mustang driving down a wet road, explosions and fire, intense action city scene, haze, professional teal &amp;amp; orange color grading, epic cinematic lighting, nighttime, Shot on Alexa Mini, Cookie S4/i --i --u --c 12
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;影片效果：&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/_vHOSyIENmM"
+allowfullscreen
+title="YouTube Video"
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id="adobe-firefly"&gt;Adobe Firefly
+&lt;/h2&gt;&lt;h3 id="文字材質提示詞"&gt;文字材質提示詞
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;文字+在白色背景上用黑色無襯線字型製作，中間有一個小貓的輪廓
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Text+made with black sans-serif font on a white background, with a small cat silhouette in the center
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;script src="https://giscus.app/client.js"
+data-repo="wastu01/github-imgur"
+data-repo-id="R_kgDOKmLOJg"
+data-mapping="number"
+data-term="12"
+data-reactions-enabled="1"
+data-emit-metadata="0"
+data-input-position="bottom"
+data-theme="preferred_color_scheme"
+data-lang="zh-TW"
+data-loading="lazy"
+crossorigin="anonymous"
+async&gt;
+&lt;/script&gt;
+&lt;details&gt; &lt;summary&gt;點我看更多貓咪&lt;/summary&gt;
+&lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="10"
+theme="preferred-color-scheme"
+crossorigin="anonymous"
+async&gt;
+&lt;/script&gt;
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;h3 id="文字生成圖片提示詞"&gt;文字生成圖片提示詞
+&lt;/h3&gt;&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;span class="lnt"&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Firefly_future+street, robot architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog_photo,wide_angle,concept_art_24964
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Firefly_Asia,+Taiwan, street, motorcycle, architecture, minimalistic, abstract, mist, vector, flat, unreal engine, by jewel tones, painting style, morning, fog, blue and grey, 4k_art,low_lighting,hyper_realistic,3d_36809
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;prompt 參考來源：
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;[https://twitter.com/ciguleva](https://twitter.com/ciguleva)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;城市街景&lt;/code&gt; &lt;code&gt;台灣&lt;/code&gt; &lt;code&gt;日本&lt;/code&gt; &lt;code&gt;機器人&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;各國風格街景概念圖&lt;/p&gt;
+&lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="13"
+label="Firefly"
+theme="github-dark"
+crossorigin="anonymous"
+async&gt;
+&lt;/script&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;汽車&lt;/code&gt; &lt;code&gt;電影鏡頭&lt;/code&gt; &lt;code&gt;調色&lt;/code&gt; &lt;code&gt;城市&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Firefly_explosions,+fire, intense action city scene, haze, professional teal, color grading, epic cinematic lighting, nighttime, Shot on Audi race car, Cookie S4_I, Fast Cinematic Tracking shot of a fast driving gray vintage ford mustang driving
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="14"
+label="Firefly"
+theme="github-dark"
+crossorigin="anonymous"
+async&gt;
+&lt;/script&gt;
+&lt;h2 id="midjourney"&gt;Midjourney
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny.png"
+width="1024"
+height="1024"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu_7aa065b66477b564.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny_hu_1f1b1d9ce909b1d0.png 1024w"
+loading="lazy"
+alt="A_purple_dog_typing_like_man_to_use_a_computer_on_a_red_chair"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2.png"
+width="896"
+height="512"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu_694be6fa0b446428.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny2_hu_cb0507c942b898c9.png 1024w"
+loading="lazy"
+alt="Ernest_Hemingways_The_Old_Man_and_the_Sea_depicts_an_elderl"
+class="gallery-image"
+data-flex-grow="175"
+data-flex-basis="420px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3.png"
+width="2048"
+height="1152"
+srcset="https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu_c644474ea8e23b1d.png 480w, https://wastu01.github.io/article/ai-text-prompts-all-in-one/midjourny3_hu_96b1e0d1f789b870.png 1024w"
+loading="lazy"
+alt="a_cozy_indoor_scene_with_intricate_lighting_and_attention"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;
+&lt;h2 id="stable-diffusion"&gt;Stable Diffusion
+&lt;/h2&gt;&lt;p&gt;文字生成圖像&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;青花瓷
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;parameters
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;shukezouma, negative space, , shuimobysim, &amp;lt;lora:shukezouma_v1_1:0.8&amp;gt;, portrait of a woman standing, A person waiting for their love, admiring the beauty of Chinese blue and white porcelain. standing in a dimly lit room, gazing at a stunning piece of white porcelain on display. a room decorate with antique chinese furniture, atmosphere is tranquil and peaceful. detailed porcelain piece, a pure white background on blue designs, a mesmerizing eyes. a illustration that mimics traditional chinese brushwork, with precise lines and bold strokes. detailed of the porcelain and the person&amp;#39;s facial expression.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Negative prompt: (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, skin spots, acnes, skin blemishes, age spot, glans, (watermark:2),
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Steps: 22, Sampler: DPM++ SDE Karras, CFG scale: 5, Seed: 3358592551, Size: 512x768, Model hash:
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;f2511737a, Model: chilloutmix
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;script src="https://utteranc.es/client.js"
+repo="wastu01/github-imgur"
+issue-number="15"
+label="Firefly"
+theme="github-dark"
+crossorigin="anonymous"
+async&gt;
+&lt;/script&gt;</description></item></channel></rss>

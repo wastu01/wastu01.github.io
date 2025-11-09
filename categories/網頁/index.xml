@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>網頁 on Wang's Blog</title><link>https://wastu01.github.io/categories/%E7%B6%B2%E9%A0%81/</link><description>Recent content in 網頁 on Wang's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><copyright>版權 Wang</copyright><lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wastu01.github.io/categories/%E7%B6%B2%E9%A0%81/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenAI ChatGPT 圖片生成/分析圖片 實測</title><link>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</link><pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate><guid>https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/</guid><description>&lt;img src="https://wastu01.github.io/article/chatgpt-dalle3-text-to-image/apple.png" alt="Featured image of post OpenAI ChatGPT 圖片生成/分析圖片 實測" /&gt;&lt;p&gt;
+&lt;h1 id="openai-chatgpt-圖片生成分析圖片-實測"&gt;OpenAI ChatGPT 圖片生成/分析圖片 實測
+&lt;/h1&gt;&lt;p&gt;實際用 GPT-4 AI 生成圖片/解析圖片資訊&lt;/p&gt;
+&lt;p&gt;另外測試 ChatGPT 能否分析圖片並生成程式碼完成網頁設計。&lt;/p&gt;
+&lt;p&gt;想講結論：可以，但需要花時間來回修正想要的結果&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/wastu01/ChatGPT4-Generate-Html" target="_blank" rel="noopener"
+&gt;https://github.com/wastu01/ChatGPT4-Generate-Html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="dall-e-3-文字生成圖片"&gt;DALL-E 3 文字生成圖片
+&lt;/h2&gt;&lt;p&gt;提示詞：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Cinematic render of an intense action scene in a city at night, featuring a dark-colored vintage Ford Mustang speeding on a damp road, surrounded by fiery explosions, haze, and dramatic teal &amp;amp; orange lighting.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;效果圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://hackmd.io/_uploads/HyOtCkK-p.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;p&gt;提示詞：生成一張 1280x640 比例的 social preview 有關於 網頁版本 Apple 風格的計算機，圖片仿造蘋果公司的風格&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Digital representation of a web calculator, imbued with Apple design principles, juxtaposed against a background evocative of Apple renowned product introduction visuals.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;效果圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://hackmd.io/_uploads/Sy3IC_KZ6.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://hackmd.io/_uploads/HJzCJYt-a.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;h2 id="分析圖片"&gt;分析圖片
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://hackmd.io/_uploads/HJL7jJKZp.png"
+loading="lazy"
+&gt;&lt;/p&gt;
+&lt;p&gt;這是一個計算器的界面設計。以下是該界面的特點:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;顏色配色: 主要以深色背景為主，搭配明亮的按鈕顏色。&lt;/li&gt;
+&lt;li&gt;視窗左上角: 有三個顏色點，通常表示應用程式的最小化、最大化和關閉按鈕。&lt;/li&gt;
+&lt;li&gt;數字按鈕: 從0到9，供使用者輸入數字。&lt;/li&gt;
+&lt;li&gt;運算子按鈕: 有加(+)、減(-)、乘(x)、除(÷)以及其他功能鍵，如正負號切換(+/-)、百分比(%)等。&lt;/li&gt;
+&lt;li&gt;控制按鈕: 有「AC」按鈕，通常用於清除輸入或結果。&lt;/li&gt;
+&lt;li&gt;螢幕顯示: 目前為0，這是計算器的初始值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;整體來說，這個設計相當簡潔，主要功能都能夠快速識別，應該很容易上手使用。&lt;/p&gt;
+&lt;h2 id="製作網頁"&gt;製作網頁
+&lt;/h2&gt;&lt;p&gt;&lt;mark&gt;實測結果&lt;/mark&gt;，要一次全部完成較進階任務偶爾會卡住，分批處理會比較好&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;請幫我以此為樣式製作出網頁，並能夠點擊進行運算&lt;/p&gt;
+&lt;p&gt;1.一個外觀類似Apple計算機的HTML介面。&lt;/p&gt;
+&lt;p&gt;2.使用CSS來設計計算機的外觀，使其看起來像Apple的計算機。&lt;/p&gt;
+&lt;p&gt;3.使用JavaScript處理按鈕點擊事件以實現計算功能，並將計算結果顯示在計算機螢幕上。&lt;/p&gt;
+&lt;p&gt;4.包括外部的CSS和JavaScript文件，以確保代碼結構整潔。&lt;/p&gt;
+&lt;p&gt;我們先處理外觀介面的部分，計算的功能稍待再執行&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;iOS-Calculator-Web&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;網頁版計算機，模仿 iOS裝置計算機外觀的介面，使用HTML與ChatGPT製作。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/wastu01/iOS-Caculator-Html/main/iOS-Calculator-Web.png"
+loading="lazy"
+alt="網頁版計算機 Caculator"
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;My HackMD : &lt;a class="link" href="https://hackmd.io/@DCT" target="_blank" rel="noopener"
+&gt;https://hackmd.io/@DCT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My Medium : &lt;a class="link" href="https://medium.com/mr-wang" target="_blank" rel="noopener"
+&gt;https://medium.com/mr-wang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My Blog : &lt;a class="link" href="https://wastu01.github.io/" target="_blank" rel="noopener"
+&gt;https://wastu01.github.io/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;</description></item></channel></rss>
